@@ -1,14 +1,169 @@
 <!DOCTYPE html>
-<html>
+<html lang="tr">
 <head>
-    <title>Kricoglobal</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kricoglobal - Global Lojistik ve Taşımacılık</title>
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; background-color: #f4f4f4; }
-        h1 { color: #2ea44f; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; line-height: 1.6; color: #333; }
+        
+        /* Üst Menü */
+        header { background: #0a2540; color: white; padding: 20px 40px; position: sticky; top: 0; z-index: 100; }
+        nav { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; }
+        nav h1 { font-size: 24px; letter-spacing: 2px; }
+        nav ul { display: flex; list-style: none; gap: 30px; }
+        nav ul a { color: white; text-decoration: none; font-weight: 500; transition: color 0.3s; }
+        nav ul a:hover { color: #2ea44f; }
+
+        /* Hero Bölümü */
+        .hero { background: linear-gradient(rgba(10,37,64,0.85), rgba(10,37,64,0.85)), url('container%20port.jpg'); 
+                background-size: cover; background-position: center; color: white; padding: 120px 20px; text-align: center; }
+        .hero h2 { font-size: 48px; margin-bottom: 20px; }
+        .hero p { font-size: 20px; max-width: 800px; margin: 0 auto 30px; }
+        .hero a { background: #2ea44f; color: white; padding: 15px 40px; text-decoration: none; border-radius: 5px; font-weight: bold; display: inline-block; }
+        .hero a:hover { background: #238636; }
+
+        /* Bölümler */
+        section { padding: 80px 20px; }
+        .container { max-width: 1200px; margin: 0 auto; }
+        h3 { font-size: 36px; color: #0a2540; margin-bottom: 20px; text-align: center; }
+        h3::after { content: ''; display: block; width: 60px; height: 4px; background: #2ea44f; margin: 15px auto; }
+
+        /* Hakkımızda */
+        #hakkimizda { background: #f9f9f9; }
+        #hakkimizda p { max-width: 900px; margin: 0 auto; text-align: center; font-size: 18px; color: #555; }
+
+        /* Hizmetler */
+        .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-top: 50px; }
+        .service-card { background: white; padding: 40px 30px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); border-top: 5px solid #2ea44f; transition: transform 0.3s; }
+        .service-card:hover { transform: translateY(-10px); }
+        .service-card h4 { font-size: 22px; color: #0a2540; margin-bottom: 15px; }
+        .service-card p { color: #666; }
+
+        /* Galeri */
+        #galeri { background: #0a2540; color: white; }
+        #galeri h3 { color: white; }
+        .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-top: 40px; }
+        .gallery img { width: 100%; height: 250px; object-fit: cover; border-radius: 10px; transition: transform 0.3s; }
+        .gallery img:hover { transform: scale(1.05); }
+
+        /* İletişim */
+        #iletisim { background: #f9f9f9; }
+        .contact-info { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-top: 50px; text-align: center; }
+        .contact-box { background: white; padding: 40px 20px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); }
+        .contact-box h4 { color: #0a2540; margin-bottom: 15px; font-size: 20px; }
+        .contact-box p { color: #666; }
+        .contact-box a { color: #2ea44f; text-decoration: none; }
+
+        /* Alt Bilgi */
+        footer { background: #0a2540; color: white; text-align: center; padding: 30px 20px; }
+        footer p { opacity: 0.8; }
+
+        @media (max-width: 768px) {
+            nav ul { display: none; }
+            .hero h2 { font-size: 32px; }
+        }
     </style>
 </head>
 <body>
-    <h1>Merhaba Dünya!</h1>
-    <p>Kricoglobal web sitesi çok yakında burada olacak.</p>
+
+    <!-- Üst Menü -->
+    <header>
+        <nav>
+            <h1>KRICOGLOBAL</h1>
+            <ul>
+                <li><a href="#hakkimizda">Hakkımızda</a></li>
+                <li><a href="#hizmetler">Hizmetler</a></li>
+                <li><a href="#galeri">Galeri</a></li>
+                <li><a href="#iletisim">İletişim</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Bölümü -->
+    <div class="hero">
+        <h2>Global Ticaretin Güvenilir Ortağı</h2>
+        <p>Deniz, demiryolu ve kara taşımacılığında uçtan uca lojistik çözümleri sunuyoruz. Yükünüz dünyanın her yerine güvende.</p>
+        <a href="#iletisim">Bize Ulaşın</a>
+    </div>
+
+    <!-- Hakkımızda -->
+    <section id="hakkimizda">
+        <div class="container">
+            <h3>Hakkımızda</h3>
+            <p>Kricoglobal olarak, uluslararası ticaret ve lojistik sektöründe edindiğimiz yılların deneyimiyle, müşterilerimize konteyner taşımacılığı, gemi kiralama, demiryolu taşımacılığı ve tedarik zinciri yönetimi alanlarında profesyonel hizmet sunuyoruz. Küresel ağımız, uzman ekibimiz ve güçlü iş ortaklıklarımızla yükünüzü dünyanın dört bir yanına zamanında ve güvenle ulaştırıyoruz.</p>
+        </div>
+    </section>
+
+    <!-- Hizmetler -->
+    <section id="hizmetler">
+        <div class="container">
+            <h3>Hizmetlerimiz</h3>
+            <div class="services">
+                <div class="service-card">
+                    <h4>🚢 Deniz Taşımacılığı</h4>
+                    <p>FCL ve LCL konteyner taşımacılığı ile küresel limanlara kesintisiz ve ekonomik çözümler.</p>
+                </div>
+                <div class="service-card">
+                    <h4>🚂 Demiryolu Taşımacılığı</h4>
+                    <p>Asya-Avrupa hattında hızlı, güvenli ve çevre dostu demiryolu lojistik hizmetleri.</p>
+                </div>
+                <div class="service-card">
+                    <h4>📦 Lojistik & Depolama</h4>
+                    <p>Modern depolama tesislerimizde güvenli stok yönetimi ve dağıtım çözümleri.</p>
+                </div>
+                <div class="service-card">
+                    <h4>🌍 Gümrük & Danışmanlık</h4>
+                    <p>İthalat-ihracat süreçlerinizde uzman gümrük müşavirliği ve ticaret danışmanlığı.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeri -->
+    <section id="galeri">
+        <div class="container">
+            <h3>Faaliyetlerimizden Kareler</h3>
+            <div class="gallery">
+                <img src="container%20port.jpg" alt="Konteyner Limanı">
+                <img src="container%20ship.jpg" alt="Konteyner Gemisi">
+                <img src="container%20ship%202.jpg" alt="Yük Gemisi">
+                <img src="ship3.jpg" alt="Gemi Taşımacılığı">
+                <img src="train1.jpg" alt="Demiryolu Taşımacılığı">
+                <img src="train%202.jpg" alt="Tren Lojistiği">
+                <img src="train2.jpg" alt="Yük Treni">
+                <img src="trade%20map.webp" alt="Global Ticaret Ağı">
+                <img src="map.jpg" alt="Ticaret Haritası">
+            </div>
+        </div>
+    </section>
+
+    <!-- İletişim -->
+    <section id="iletisim">
+        <div class="container">
+            <h3>İletişim</h3>
+            <div class="contact-info">
+                <div class="contact-box">
+                    <h4>📧 E-posta</h4>
+                    <p><a href="mailto:sales@kricoglobal.com">info@kricoglobal.com</a></p>
+                </div>
+                <div class="contact-box">
+                    <h4>📞 Telefon</h4>
+                    <p>+90 (535) 978 56 42</p>
+                </div>
+                <div class="contact-box">
+                    <h4>📍 Adres</h4>
+                    <p>İstanbul, Türkiye</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Alt Bilgi -->
+    <footer>
+        <p>&copy; 2026 Kricoglobal. Tüm hakları saklıdır.</p>
+    </footer>
+
 </body>
 </html>
