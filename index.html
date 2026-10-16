@@ -11,9 +11,9 @@
         body { font-family: 'Montserrat', sans-serif; line-height: 1.6; color: #333; overflow-x: hidden; }
 
         /* ---------- HEADER ---------- */
-        header { background: #15466C; color: white; padding: 15px 40px; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        header { background: #15466C; color: white; padding: 18px 40px; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
         nav { display: flex; justify-content: space-between; align-items: center; max-width: 1300px; margin: 0 auto; }
-        .logo img { height: 85px; vertical-align: middle; background: white; padding: 5px 12px; border-radius: 5px; }
+        .logo img { height: 110px; vertical-align: middle; background: white; padding: 6px 14px; border-radius: 6px; }
         nav ul { display: flex; list-style: none; gap: 25px; align-items: center; }
         nav ul a { color: #e0e8f0; text-decoration: none; font-weight: 600; font-size: 13px; text-transform: uppercase; letter-spacing: 0.5px; transition: color 0.3s; }
         nav ul a:hover { color: #2B7BB9; }
@@ -21,11 +21,11 @@
         .lang-btn:hover { background: #1a5c8a; }
 
         /* ---------- HERO ---------- */
-        .hero { background: linear-gradient(rgba(21,70,108,0.85), rgba(21,70,108,0.85)), url('container%20port.jpg'); 
-                background-size: cover; background-position: center; color: white; padding: 120px 20px; text-align: center; }
-        .hero .brand-name { font-size: 54px; font-weight: 800; letter-spacing: -1.5px; margin-bottom: 15px; line-height: 1.1; }
+        .hero { background: linear-gradient(rgba(21,70,108,0.85), rgba(21,70,108,0.85)), url('trade%20map.webp'); 
+                background-size: cover; background-position: center; color: white; padding: 140px 20px; text-align: center; }
+        .hero .brand-name { font-size: 56px; font-weight: 800; letter-spacing: -1.5px; margin-bottom: 15px; line-height: 1.1; }
         .hero .slogan { font-size: 24px; font-weight: 500; color: #5AA9E6; margin-bottom: 30px; font-style: italic; letter-spacing: 1px; }
-        .hero .description { font-size: 18px; font-weight: 400; max-width: 800px; margin: 0 auto 40px; color: #dbe6f0; }
+        .hero .description { font-size: 18px; font-weight: 400; max-width: 850px; margin: 0 auto 40px; color: #dbe6f0; }
         .hero-buttons { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; }
         .btn-primary { background: #2B7BB9; color: white; padding: 15px 35px; text-decoration: none; border-radius: 6px; font-weight: 700; display: inline-block; transition: all 0.3s; font-family: inherit; font-size: 15px; }
         .btn-primary:hover { background: #1a5c8a; transform: translateY(-2px); box-shadow: 0 8px 20px rgba(43,123,185,0.4); }
@@ -117,7 +117,7 @@
         .footer-col h5 { color: white; font-size: 15px; margin-bottom: 20px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; }
         .footer-col p, .footer-col a { color: #97a7bb; font-size: 14px; text-decoration: none; display: block; margin-bottom: 10px; transition: color 0.3s; font-weight: 500; }
         .footer-col a:hover { color: #5AA9E6; }
-        .footer-logo { height: 85px; margin-bottom: 15px; background: white; padding: 5px 12px; border-radius: 5px; display: inline-block; }
+        .footer-logo { height: 100px; margin-bottom: 15px; background: white; padding: 6px 14px; border-radius: 6px; display: inline-block; }
         .footer-bottom { max-width: 1200px; margin: 40px auto 0; padding-top: 25px; border-top: 1px solid #1e4f73; text-align: center; color: #6b7d94; font-size: 13px; font-weight: 500; }
 
         /* ---------- RESPONSIVE (TABLET) ---------- */
@@ -125,6 +125,7 @@
             header { padding: 15px 25px; }
             nav ul { gap: 18px; }
             nav ul a { font-size: 12px; }
+            .logo img { height: 90px; }
             .hero .brand-name { font-size: 42px; }
             .hero .slogan { font-size: 20px; }
             .feature-row { gap: 35px; }
@@ -138,7 +139,7 @@
             nav { flex-direction: column; gap: 12px; }
             nav ul { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; padding: 0; }
             nav ul a { font-size: 11px; }
-            .logo img { height: 60px; }
+            .logo img { height: 75px; }
             .lang-btn { padding: 6px 12px; font-size: 11px; }
 
             .hero { padding: 80px 20px; }
@@ -192,7 +193,7 @@
             .footer-content { gap: 30px; }
             .footer-col h5 { font-size: 14px; margin-bottom: 14px; }
             .footer-col p, .footer-col a { font-size: 13px; }
-            .footer-logo { height: 60px; }
+            .footer-logo { height: 75px; }
             .footer-bottom { margin-top: 30px; padding-top: 20px; font-size: 12px; }
         }
 
@@ -202,6 +203,7 @@
             .hero .slogan { font-size: 15px; }
             nav ul a { font-size: 10px; }
             .section-title { font-size: 21px; }
+            .logo img { height: 65px; }
         }
     </style>
 </head>
@@ -227,9 +229,9 @@
         <div class="brand-name">Krico Global & Partners</div>
         <div class="slogan">Lifting Your Business...</div>
         <p class="description" 
-           data-tr="25 yılı aşkın süredir, 40'tan fazla ülkede sınır ötesi ticaret, lojistik ve stratejik danışmanlık çözümleri sunuyoruz." 
-           data-en="For over 25 years, we have been providing cross-border trade, logistics and strategic consulting solutions in more than 40 countries.">
-           25 yılı aşkın süredir, 40'tan fazla ülkede sınır ötesi ticaret, lojistik ve stratejik danışmanlık çözümleri sunuyoruz.
+           data-tr="25 yılı aşkın süredir, 40'tan fazla ülkede uluslararası cross trade, ihracat-ithalat ve uçtan uca dış ticaret danışmanlığı çözümleri sunuyoruz." 
+           data-en="For over 25 years, we have been providing international cross trade, export-import and end-to-end foreign trade consulting solutions in more than 40 countries.">
+           25 yılı aşkın süredir, 40'tan fazla ülkede uluslararası cross trade, ihracat-ithalat ve uçtan uca dış ticaret danışmanlığı çözümleri sunuyoruz.
         </p>
         <div class="hero-buttons">
             <a href="#faaliyetler" class="btn-primary" data-tr="Faaliyetlerimiz" data-en="Our Operations">Faaliyetlerimiz</a>
@@ -266,29 +268,29 @@
                 Vizyonunuzu Küresel Başarıya Dönüştürüyoruz
             </h2>
             <p class="about-text" 
-               data-tr="Krico Global & Partners, hızla değişen küresel pazar dinamiklerinde kurumların ve markaların ihtiyaç duyduğu stratejik rehberliği sunar. 25 yılı aşkın süredir sınır ötesi (cross-border) ticaret, lojistik ve danışmanlık alanında faaliyet gösteriyor, 40'tan fazla ülkede iş ortaklarımıza değer katıyoruz. Deneyimli uzman kadromuz, teknoloji odaklı yaklaşımımız ve geniş hizmet ağımızla, operasyonlarınızı büyütmek ve sürdürülebilir rekabet avantajı sağlamak için yanınızdayız." 
-               data-en="Krico Global & Partners provides the strategic guidance that institutions and brands need in rapidly changing global market dynamics. We have been operating in cross-border trade, logistics and consulting for over 25 years, adding value to our partners in more than 40 countries. With our experienced expert team, technology-driven approach, and extensive service network, we are by your side to grow your operations and provide sustainable competitive advantage.">
-               Krico Global & Partners, hızla değişen küresel pazar dinamiklerinde kurumların ve markaların ihtiyaç duyduğu stratejik rehberliği sunar. 25 yılı aşkın süredir sınır ötesi (cross-border) ticaret, lojistik ve danışmanlık alanında faaliyet gösteriyor, 40'tan fazla ülkede iş ortaklarımıza değer katıyoruz. Deneyimli uzman kadromuz, teknoloji odaklı yaklaşımımız ve geniş hizmet ağımızla, operasyonlarınızı büyütmek ve sürdürülebilir rekabet avantajı sağlamak için yanınızdayız.
+               data-tr="Krico Global & Partners, hızla değişen küresel pazar dinamiklerinde kurumların ve markaların ihtiyaç duyduğu stratejik dış ticaret rehberliğini sunar. 25 yılı aşkın süredir uluslararası cross trade, ihracat-ithalat, uçtan uca dış ticaret operasyonları ve danışmanlık alanında faaliyet gösteriyor, 40'tan fazla ülkede iş ortaklarımıza değer katıyoruz. Deneyimli uzman kadromuz, teknoloji odaklı yaklaşımımız ve geniş global ağımızla, dış ticaret operasyonlarınızı büyütmek ve sürdürülebilir rekabet avantajı sağlamak için yanınızdayız." 
+               data-en="Krico Global & Partners provides the strategic foreign trade guidance that institutions and brands need in rapidly changing global market dynamics. For over 25 years, we have been operating in international cross trade, export-import, end-to-end foreign trade operations and consulting, adding value to our partners in more than 40 countries. With our experienced expert team, technology-driven approach and extensive global network, we are by your side to grow your foreign trade operations and provide sustainable competitive advantage.">
+               Krico Global & Partners, hızla değişen küresel pazar dinamiklerinde kurumların ve markaların ihtiyaç duyduğu stratejik dış ticaret rehberliğini sunar. 25 yılı aşkın süredir uluslararası cross trade, ihracat-ithalat, uçtan uca dış ticaret operasyonları ve danışmanlık alanında faaliyet gösteriyor, 40'tan fazla ülkede iş ortaklarımıza değer katıyoruz. Deneyimli uzman kadromuz, teknoloji odaklı yaklaşımımız ve geniş global ağımızla, dış ticaret operasyonlarınızı büyütmek ve sürdürülebilir rekabet avantajı sağlamak için yanınızdayız.
             </p>
 
             <div class="mv-grid">
                 <div class="mv-box">
                     <h4 data-tr="🎯 Misyonumuz" data-en="🎯 Our Mission">🎯 Misyonumuz</h4>
-                    <p data-tr="Müşterilerimizin küresel ölçekte rekabet edebilirliklerini artırmak, inovatif yaklaşımlarla iş süreçlerini dönüştürmek ve değer yaratan stratejiler geliştirmek." 
-                       data-en="To increase our clients' global competitiveness, transform their business processes with innovative approaches, and develop value-creating strategies.">
-                       Müşterilerimizin küresel ölçekte rekabet edebilirliklerini artırmak, inovatif yaklaşımlarla iş süreçlerini dönüştürmek ve değer yaratan stratejiler geliştirmek.</p>
+                    <p data-tr="Müşterilerimizin küresel ölçekte dış ticaret rekabet edebilirliklerini artırmak, inovatif yaklaşımlarla cross trade ve ihracat-ithalat süreçlerini dönüştürmek ve değer yaratan stratejiler geliştirmek." 
+                       data-en="To increase our clients' global foreign trade competitiveness, transform their cross trade and export-import processes with innovative approaches, and develop value-creating strategies.">
+                       Müşterilerimizin küresel ölçekte dış ticaret rekabet edebilirliklerini artırmak, inovatif yaklaşımlarla cross trade ve ihracat-ithalat süreçlerini dönüştürmek ve değer yaratan stratejiler geliştirmek.</p>
                 </div>
                 <div class="mv-box">
                     <h4 data-tr="🚀 Vizyonumuz" data-en="🚀 Our Vision">🚀 Vizyonumuz</h4>
-                    <p data-tr="Uluslararası pazarlarda güvenilirlik, inovasyon ve sürdürülebilirlik ilkeleriyle tanınan lider bir global danışmanlık markası olmak." 
-                       data-en="To be a leading global consulting brand recognized for reliability, innovation and sustainability principles in international markets.">
-                       Uluslararası pazarlarda güvenilirlik, inovasyon ve sürdürülebilirlik ilkeleriyle tanınan lider bir global danışmanlık markası olmak.</p>
+                    <p data-tr="Uluslararası pazarlarda güvenilirlik, inovasyon ve sürdürülebilirlik ilkeleriyle tanınan lider bir global dış ticaret ve danışmanlık markası olmak." 
+                       data-en="To be a leading global foreign trade and consulting brand recognized for reliability, innovation and sustainability principles in international markets.">
+                       Uluslararası pazarlarda güvenilirlik, inovasyon ve sürdürülebilirlik ilkeleriyle tanınan lider bir global dış ticaret ve danışmanlık markası olmak.</p>
                 </div>
                 <div class="mv-box">
                     <h4 data-tr="💎 Değerlerimiz" data-en="💎 Our Values">💎 Değerlerimiz</h4>
-                    <p data-tr="Şeffaflık & Güven, İnovasyon ve Mükemmeliyetçilik. Tüm süreçlerimizde açık iletişim kurar, modern çözümler geliştirir ve kaliteden ödün vermeden sonuç odaklı çalışırız." 
-                       data-en="Transparency & Trust, Innovation, and Excellence. We communicate openly in all our processes, develop modern solutions, and work result-oriented without compromising quality.">
-                       Şeffaflık & Güven, İnovasyon ve Mükemmeliyetçilik. Tüm süreçlerimizde açık iletişim kurar, modern çözümler geliştirir ve kaliteden ödün vermeden sonuç odaklı çalışırız.</p>
+                    <p data-tr="Şeffaflık & Güven, İnovasyon ve Mükemmeliyetçilik. Tüm dış ticaret süreçlerimizde açık iletişim kurar, modern çözümler geliştirir ve kaliteden ödün vermeden sonuç odaklı çalışırız." 
+                       data-en="Transparency & Trust, Innovation, and Excellence. We communicate openly in all our foreign trade processes, develop modern solutions, and work result-oriented without compromising quality.">
+                       Şeffaflık & Güven, İnovasyon ve Mükemmeliyetçilik. Tüm dış ticaret süreçlerimizde açık iletişim kurar, modern çözümler geliştirir ve kaliteden ödün vermeden sonuç odaklı çalışırız.</p>
                 </div>
             </div>
         </div>
@@ -299,116 +301,120 @@
         <div class="container">
             <h2 class="section-title" data-tr="Faaliyetlerimiz ve Uzmanlık Alanlarımız" data-en="Our Operations & Areas of Expertise">Faaliyetlerimiz ve Uzmanlık Alanlarımız</h2>
 
-            <!-- 1. Liman -->
+            <!-- 1. Cross Trade -->
             <div class="feature-row">
                 <div class="feature-image">
-                    <img src="container%20port.jpg" alt="Liman Operasyonları">
+                    <img src="trade%20map.webp" alt="Uluslararası Cross Trade">
                 </div>
                 <div class="feature-content">
-                    <span class="badge" data-tr="Liman" data-en="Port">Liman</span>
-                    <h3 data-tr="Liman ve Konteyner Operasyonları" data-en="Port and Container Operations">Liman ve Konteyner Operasyonları</h3>
-                    <p data-tr="Dünyanın önde gelen limanlarında konteyner elleçleme, yükleme ve boşaltma süreçlerini profesyonel ekibimizle yönetiyoruz." 
-                       data-en="We manage container handling, loading and unloading processes in the world's leading ports with our professional team.">
-                       Dünyanın önde gelen limanlarında konteyner elleçleme, yükleme ve boşaltma süreçlerini profesyonel ekibimizle yönetiyoruz.</p>
+                    <span class="badge" data-tr="Cross Trade" data-en="Cross Trade">Cross Trade</span>
+                    <h3 data-tr="Uluslararası Cross Trade" data-en="International Cross Trade">Uluslararası Cross Trade</h3>
+                    <p data-tr="Üçüncü ülke ticareti (cross trade) kapsamında, farklı ülkelerdeki alıcı ve satıcıları buluşturarak, ülkemizden geçmeyen ticaret akışlarını güvenle yönetiyoruz." 
+                       data-en="Within the scope of third-country trade (cross trade), we bring together buyers and sellers in different countries, safely managing trade flows that do not pass through our country.">
+                       Üçüncü ülke ticareti (cross trade) kapsamında, farklı ülkelerdeki alıcı ve satıcıları buluşturarak, ülkemizden geçmeyen ticaret akışlarını güvenle yönetiyoruz.</p>
                     <ul>
-                        <li data-tr="Uluslararası liman ağı ve iş ortaklıkları" data-en="International port network and partnerships">Uluslararası liman ağı ve iş ortaklıkları</li>
-                        <li data-tr="Hızlı yükleme ve boşaltma operasyonları" data-en="Fast loading and unloading operations">Hızlı yükleme ve boşaltma operasyonları</li>
-                        <li data-tr="Gümrük ve dokümantasyon desteği" data-en="Customs and documentation support">Gümrük ve dokümantasyon desteği</li>
+                        <li data-tr="Üçüncü ülke ticareti (third-country trade) operasyonları" data-en="Third-country trade operations">Üçüncü ülke ticareti (third-country trade) operasyonları</li>
+                        <li data-tr="Akreditif (L/C) ve ödeme yöntemleri yönetimi" data-en="Letter of Credit (L/C) and payment method management">Akreditif (L/C) ve ödeme yöntemleri yönetimi</li>
+                        <li data-tr="Uluslararası sözleşme ve dokümantasyon desteği" data-en="International contract and documentation support">Uluslararası sözleşme ve dokümantasyon desteği</li>
                     </ul>
                 </div>
             </div>
 
-            <!-- 2. Deniz Taşımacılığı -->
+            <!-- 2. İhracat -->
             <div class="feature-row reverse">
                 <div class="feature-image">
-                    <img src="container%20ship.jpg" alt="Deniz Taşımacılığı">
+                    <img src="container%20port.jpg" alt="İhracat Operasyonları">
                 </div>
                 <div class="feature-content">
-                    <span class="badge" data-tr="Deniz" data-en="Sea">Deniz</span>
-                    <h3 data-tr="Deniz Taşımacılığı" data-en="Sea Freight">Deniz Taşımacılığı</h3>
-                    <p data-tr="FCL ve LCL konteyner taşımacılığı ile küresel limanlara kesintisiz, ekonomik ve güvenli çözümler sunuyoruz." 
-                       data-en="We offer uninterrupted, economical and safe solutions to global ports with FCL and LCL container shipping.">
-                       FCL ve LCL konteyner taşımacılığı ile küresel limanlara kesintisiz, ekonomik ve güvenli çözümler sunuyoruz.</p>
+                    <span class="badge" data-tr="İhracat" data-en="Export">İhracat</span>
+                    <h3 data-tr="İhracat (Export) Operasyonları" data-en="Export Operations">İhracat (Export) Operasyonları</h3>
+                    <p data-tr="Uçtan uca ihracat süreçlerinizi yönetiyor; pazar araştırmasından sevkiyata, gümrük işlemlerinden tahsilata kadar tüm adımları profesyonel ekibimizle yürütüyoruz." 
+                       data-en="We manage your end-to-end export processes; from market research to shipment, from customs procedures to collection, we carry out all steps with our professional team.">
+                       Uçtan uca ihracat süreçlerinizi yönetiyor; pazar araştırmasından sevkiyata, gümrük işlemlerinden tahsilata kadar tüm adımları profesyonel ekibimizle yürütüyoruz.</p>
                     <ul>
-                        <li data-tr="Tam konteyner (FCL) ve kısmi yük (LCL)" data-en="Full container (FCL) and less than container (LCL)">Tam konteyner (FCL) ve kısmi yük (LCL)</li>
-                        <li data-tr="Reefer ve özel yük taşımacılığı" data-en="Reefer and special cargo transportation">Reefer ve özel yük taşımacılığı</li>
-                        <li data-tr="Küresel hatlar ve düzenli seferler" data-en="Global lines and regular sailings">Küresel hatlar ve düzenli seferler</li>
+                        <li data-tr="Hedef pazar araştırması ve alıcı bulma" data-en="Target market research and buyer finding">Hedef pazar araştırması ve alıcı bulma</li>
+                        <li data-tr="Proforma, fatura ve ihracat dokümantasyonu" data-en="Proforma, invoice and export documentation">Proforma, fatura ve ihracat dokümantasyonu</li>
+                        <li data-tr="GTİP, menşe şahadetnamesi ve gümrük müşavirliği" data-en="HS Code, certificate of origin and customs brokerage">GTİP, menşe şahadetnamesi ve gümrük müşavirliği</li>
+                        <li data-tr="İhracat teşvikleri ve devlet destekleri danışmanlığı" data-en="Export incentives and government support consulting">İhracat teşvikleri ve devlet destekleri danışmanlığı</li>
                     </ul>
                 </div>
             </div>
 
-            <!-- 3. Demiryolu -->
+            <!-- 3. İthalat -->
             <div class="feature-row">
                 <div class="feature-image">
-                    <img src="train1.jpg" alt="Demiryolu Taşımacılığı">
+                    <img src="container%20ship.jpg" alt="İthalat Operasyonları">
                 </div>
                 <div class="feature-content">
-                    <span class="badge" data-tr="Demiryolu" data-en="Rail">Demiryolu</span>
-                    <h3 data-tr="Demiryolu Taşımacılığı" data-en="Rail Freight">Demiryolu Taşımacılığı</h3>
-                    <p data-tr="Asya-Avrupa hattında hızlı, güvenli ve çevre dostu demiryolu lojistik hizmetleriyle tedarik zincirinizi güçlendiriyoruz." 
-                       data-en="We strengthen your supply chain with fast, safe and eco-friendly rail logistics services on the Asia-Europe route.">
-                       Asya-Avrupa hattında hızlı, güvenli ve çevre dostu demiryolu lojistik hizmetleriyle tedarik zincirinizi güçlendiriyoruz.</p>
+                    <span class="badge" data-tr="İthalat" data-en="Import">İthalat</span>
+                    <h3 data-tr="İthalat (Import) Operasyonları" data-en="Import Operations">İthalat (Import) Operasyonları</h3>
+                    <p data-tr="Yurt dışından tedarik etmek istediğiniz ürünler için tedarikçi araştırmasından mal kabulüne kadar tüm ithalat sürecini güvenle yönetiyoruz." 
+                       data-en="We safely manage the entire import process, from supplier research to goods receipt, for the products you wish to procure from abroad.">
+                       Yurt dışından tedarik etmek istediğiniz ürünler için tedarikçi araştırmasından mal kabulüne kadar tüm ithalat sürecini güvenle yönetiyoruz.</p>
                     <ul>
-                        <li data-tr="Trans-Avrupa ve Orta Koridor hatları" data-en="Trans-Europe and Middle Corridor lines">Trans-Avrupa ve Orta Koridor hatları</li>
-                        <li data-tr="Konteyner ve dökme yük trenleri" data-en="Container and bulk cargo trains">Konteyner ve dökme yük trenleri</li>
-                        <li data-tr="Sınır geçiş ve gümrük işlemleri" data-en="Border crossing and customs procedures">Sınır geçiş ve gümrük işlemleri</li>
+                        <li data-tr="Yurt dışı tedarikçi araştırması ve doğrulama" data-en="Overseas supplier research and verification">Yurt dışı tedarikçi araştırması ve doğrulama</li>
+                        <li data-tr="Numune, proforma ve sipariş yönetimi" data-en="Sample, proforma and order management">Numune, proforma ve sipariş yönetimi</li>
+                        <li data-tr="İthalat vergileri, KDV ve gümrük hesaplamaları" data-en="Import duties, VAT and customs calculations">İthalat vergileri, KDV ve gümrük hesaplamaları</li>
+                        <li data-tr="Kalite kontrol ve denetim organizasyonu" data-en="Quality control and inspection organization">Kalite kontrol ve denetim organizasyonu</li>
                     </ul>
                 </div>
             </div>
 
-            <!-- 4. Yük Gemileri -->
+            <!-- 4. Uçtan Uca Dış Ticaret -->
             <div class="feature-row reverse">
                 <div class="feature-image">
-                    <img src="ship3.jpg" alt="Yük Gemisi Operasyonları">
+                    <img src="map.jpg" alt="Uçtan Uca Dış Ticaret">
                 </div>
                 <div class="feature-content">
-                    <span class="badge" data-tr="Gemi" data-en="Vessel">Gemi</span>
-                    <h3 data-tr="Gemi Kiralama & Operasyonları" data-en="Ship Chartering & Operations">Gemi Kiralama & Operasyonları</h3>
-                    <p data-tr="Proje kargoları ve büyük hacimli yükler için gemi kiralama ve operasyon yönetimi hizmetleri sunuyoruz." 
-                       data-en="We provide ship chartering and operation management services for project cargo and large volume shipments.">
-                       Proje kargoları ve büyük hacimli yükler için gemi kiralama ve operasyon yönetimi hizmetleri sunuyoruz.</p>
+                    <span class="badge" data-tr="Uçtan Uca" data-en="End-to-End">Uçtan Uca</span>
+                    <h3 data-tr="Uçtan Uca Dış Ticaret Yönetimi" data-en="End-to-End Foreign Trade Management">Uçtan Uca Dış Ticaret Yönetimi</h3>
+                    <p data-tr="Fikirden teslimata kadar tüm dış ticaret sürecinizi tek çatı altında yönetiyoruz. Siz işinize odaklanın, gerisini biz halledelim." 
+                       data-en="We manage your entire foreign trade process under one roof, from idea to delivery. You focus on your business, we handle the rest.">
+                       Fikirden teslimata kadar tüm dış ticaret sürecinizi tek çatı altında yönetiyoruz. Siz işinize odaklanın, gerisini biz halledelim.</p>
                     <ul>
-                        <li data-tr="Voyage ve time charter seçenekleri" data-en="Voyage and time charter options">Voyage ve time charter seçenekleri</li>
-                        <li data-tr="Proje ve ağır yük taşımacılığı" data-en="Project and heavy lift transportation">Proje ve ağır yük taşımacılığı</li>
-                        <li data-tr="Liman acente ve operasyon desteği" data-en="Port agency and operation support">Liman acente ve operasyon desteği</li>
+                        <li data-tr="Sözleşme, akreditif ve ödeme süreç yönetimi" data-en="Contract, letter of credit and payment process management">Sözleşme, akreditif ve ödeme süreç yönetimi</li>
+                        <li data-tr="Uluslararası lojistik ve sigorta koordinasyonu" data-en="International logistics and insurance coordination">Uluslararası lojistik ve sigorta koordinasyonu</li>
+                        <li data-tr="Gümrük, dokümantasyon ve uyum yönetimi" data-en="Customs, documentation and compliance management">Gümrük, dokümantasyon ve uyum yönetimi</li>
+                        <li data-tr="Tahsilat, kur ve risk yönetimi" data-en="Collection, currency and risk management">Tahsilat, kur ve risk yönetimi</li>
                     </ul>
                 </div>
             </div>
 
-            <!-- 5. Tren Lojistiği -->
+            <!-- 5. Dış Ticaret Danışmanlığı -->
             <div class="feature-row">
                 <div class="feature-image">
-                    <img src="train2.jpg" alt="Tren Lojistiği">
+                    <img src="images.jpg" alt="Dış Ticaret Danışmanlığı">
                 </div>
                 <div class="feature-content">
-                    <span class="badge" data-tr="Kombine" data-en="Combined">Kombine</span>
-                    <h3 data-tr="Kombine Taşımacılık" data-en="Combined Transportation">Kombine Taşımacılık</h3>
-                    <p data-tr="Deniz, demiryolu ve kara taşımacılığını birleştirerek en verimli ve ekonomik çözümleri sunuyoruz." 
-                       data-en="We offer the most efficient and economical solutions by combining sea, rail and road transportation.">
-                       Deniz, demiryolu ve kara taşımacılığını birleştirerek en verimli ve ekonomik çözümleri sunuyoruz.</p>
+                    <span class="badge" data-tr="Danışmanlık" data-en="Consulting">Danışmanlık</span>
+                    <h3 data-tr="Dış Ticaret Danışmanlığı" data-en="Foreign Trade Consulting">Dış Ticaret Danışmanlığı</h3>
+                    <p data-tr="Şirketlere özel stratejik dış ticaret danışmanlığı sunuyor; pazar giriş stratejilerinden kurumsal yapılanmaya kadar her aşamada yanlarında oluyoruz." 
+                       data-en="We provide tailor-made strategic foreign trade consulting to companies; we stand by them at every stage, from market entry strategies to corporate structuring.">
+                       Şirketlere özel stratejik dış ticaret danışmanlığı sunuyor; pazar giriş stratejilerinden kurumsal yapılanmaya kadar her aşamada yanlarında oluyoruz.</p>
                     <ul>
-                        <li data-tr="Multimodal taşıma çözümleri" data-en="Multimodal transport solutions">Multimodal taşıma çözümleri</li>
-                        <li data-tr="Kapıdan kapıya teslimat" data-en="Door-to-door delivery">Kapıdan kapıya teslimat</li>
-                        <li data-tr="Uçtan uca takip ve raporlama" data-en="End-to-end tracking and reporting">Uçtan uca takip ve raporlama</li>
+                        <li data-tr="Uluslararası pazara giriş ve konumlandırma stratejileri" data-en="International market entry and positioning strategies">Uluslararası pazara giriş ve konumlandırma stratejileri</li>
+                        <li data-tr="Dış ticaret mevzuatı ve uyum (compliance) danışmanlığı" data-en="Foreign trade legislation and compliance consulting">Dış ticaret mevzuatı ve uyum (compliance) danışmanlığı</li>
+                        <li data-tr="Kurumsal dış ticaret departmanı kurulumu" data-en="Corporate foreign trade department setup">Kurumsal dış ticaret departmanı kurulumu</li>
+                        <li data-tr="Devlet destekleri ve teşvik başvuru yönetimi" data-en="Government support and incentive application management">Devlet destekleri ve teşvik başvuru yönetimi</li>
                     </ul>
                 </div>
             </div>
 
-            <!-- 6. Global Ticaret Ağı -->
+            <!-- 6. Global Tedarik Ağı -->
             <div class="feature-row reverse">
                 <div class="feature-image">
-                    <img src="trade%20map.webp" alt="Global Ticaret Ağı">
+                    <img src="ship3.jpg" alt="Global Tedarik Ağı">
                 </div>
                 <div class="feature-content">
-                    <span class="badge" data-tr="Global" data-en="Global">Global</span>
-                    <h3 data-tr="Global Ticaret Ağı" data-en="Global Trade Network">Global Ticaret Ağı</h3>
-                    <p data-tr="40'tan fazla ülkede geniş iş ortaklıklarımız ve güçlü lojistik ağımızla sınır ötesi ticaretinizi kolaylaştırıyoruz." 
-                       data-en="We facilitate your cross-border trade with our extensive partnerships and strong logistics network in more than 40 countries.">
-                       40'tan fazla ülkede geniş iş ortaklıklarımız ve güçlü lojistik ağımızla sınır ötesi ticaretinizi kolaylaştırıyoruz.</p>
+                    <span class="badge" data-tr="Global Ağ" data-en="Global Network">Global Ağ</span>
+                    <h3 data-tr="Global Tedarik ve İş Ortaklığı Ağı" data-en="Global Sourcing & Partnership Network">Global Tedarik ve İş Ortaklığı Ağı</h3>
+                    <p data-tr="40'tan fazla ülkede güçlü iş ortaklıklarımız ve doğrulanmış tedarikçi ağımızla, doğru ürünü, doğru fiyatla, doğru zamanda size ulaştırıyoruz." 
+                       data-en="With our strong partnerships and verified supplier network in more than 40 countries, we deliver the right product at the right price at the right time.">
+                       40'tan fazla ülkede güçlü iş ortaklıklarımız ve doğrulanmış tedarikçi ağımızla, doğru ürünü, doğru fiyatla, doğru zamanda size ulaştırıyoruz.</p>
                     <ul>
-                        <li data-tr="Küresel iş ortaklığı ağı" data-en="Global partnership network">Küresel iş ortaklığı ağı</li>
-                        <li data-tr="Bölgesel pazar uzmanlığı" data-en="Regional market expertise">Bölgesel pazar uzmanlığı</li>
-                        <li data-tr="Yerel operasyonel destek" data-en="Local operational support">Yerel operasyonel destek</li>
+                        <li data-tr="Küresel doğrulanmış tedarikçi ağı" data-en="Global verified supplier network">Küresel doğrulanmış tedarikçi ağı</li>
+                        <li data-tr="Bölgesel pazar uzmanlığı ve yerel temsil" data-en="Regional market expertise and local representation">Bölgesel pazar uzmanlığı ve yerel temsil</li>
+                        <li data-tr="Ürün kaynak bulma (sourcing) ve fiyat müzakeresi" data-en="Product sourcing and price negotiation">Ürün kaynak bulma (sourcing) ve fiyat müzakeresi</li>
                     </ul>
                 </div>
             </div>
@@ -435,42 +441,42 @@
                 </div>
 
                 <div class="service-card">
-                    <span class="service-icon">📢</span>
-                    <h4 data-tr="Marka Yönetimi & İletişim" data-en="Brand Management & Communication">Marka Yönetimi & İletişim</h4>
+                    <span class="service-icon">🤝</span>
+                    <h4 data-tr="Cross Trade & Üçüncü Ülke Ticareti" data-en="Cross Trade & Third-Country Trade">Cross Trade & Üçüncü Ülke Ticareti</h4>
                     <ul>
-                        <li data-tr="Küresel marka konumlandırma" data-en="Global brand positioning">Küresel marka konumlandırma</li>
-                        <li data-tr="Dijital pazarlama ve büyüme stratejileri" data-en="Digital marketing and growth strategies">Dijital pazarlama ve büyüme stratejileri</li>
-                        <li data-tr="İtibar ve kriz yönetimi" data-en="Reputation and crisis management">İtibar ve kriz yönetimi</li>
+                        <li data-tr="Üçüncü ülke ticareti operasyon yönetimi" data-en="Third-country trade operation management">Üçüncü ülke ticareti operasyon yönetimi</li>
+                        <li data-tr="Uluslararası akreditif ve ödeme yönetimi" data-en="International L/C and payment management">Uluslararası akreditif ve ödeme yönetimi</li>
+                        <li data-tr="Çoklu ülke sözleşme ve dokümantasyonu" data-en="Multi-country contract and documentation">Çoklu ülke sözleşme ve dokümantasyonu</li>
                     </ul>
                 </div>
 
                 <div class="service-card">
-                    <span class="service-icon">📈</span>
-                    <h4 data-tr="Yönetim & İş Geliştirme" data-en="Management & Business Development">Yönetim & İş Geliştirme</h4>
+                    <span class="service-icon">📤</span>
+                    <h4 data-tr="İhracat Yönetimi" data-en="Export Management">İhracat Yönetimi</h4>
                     <ul>
-                        <li data-tr="Gelir modelleri ve finansal mimari" data-en="Revenue models and financial architecture">Gelir modelleri ve finansal mimari</li>
-                        <li data-tr="Operasyonel süreç analizi ve optimizasyon" data-en="Operational process analysis and optimization">Operasyonel süreç analizi ve optimizasyon</li>
-                        <li data-tr="İş ortaklıkları ve ağ yönetimi" data-en="Partnerships and network management">İş ortaklıkları ve ağ yönetimi</li>
+                        <li data-tr="Hedef pazar araştırması ve alıcı bulma" data-en="Target market research and buyer finding">Hedef pazar araştırması ve alıcı bulma</li>
+                        <li data-tr="İhracat dokümantasyonu ve gümrük işlemleri" data-en="Export documentation and customs procedures">İhracat dokümantasyonu ve gümrük işlemleri</li>
+                        <li data-tr="İhracat teşvikleri ve devlet destekleri" data-en="Export incentives and government supports">İhracat teşvikleri ve devlet destekleri</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <span class="service-icon">📥</span>
+                    <h4 data-tr="İthalat Yönetimi" data-en="Import Management">İthalat Yönetimi</h4>
+                    <ul>
+                        <li data-tr="Yurt dışı tedarikçi araştırması ve doğrulama" data-en="Overseas supplier research and verification">Yurt dışı tedarikçi araştırması ve doğrulama</li>
+                        <li data-tr="İthalat vergileri ve gümrük hesaplamaları" data-en="Import duties and customs calculations">İthalat vergileri ve gümrük hesaplamaları</li>
+                        <li data-tr="Kalite kontrol ve denetim organizasyonu" data-en="Quality control and inspection organization">Kalite kontrol ve denetim organizasyonu</li>
                     </ul>
                 </div>
 
                 <div class="service-card">
                     <span class="service-icon">💡</span>
-                    <h4 data-tr="Stratejik Danışmanlık & Büyüme" data-en="Strategic Consulting & Growth">Stratejik Danışmanlık & Büyüme</h4>
+                    <h4 data-tr="Stratejik Dış Ticaret Danışmanlığı" data-en="Strategic Foreign Trade Consulting">Stratejik Dış Ticaret Danışmanlığı</h4>
                     <ul>
-                        <li data-tr="Yeni pazarlara giriş stratejileri" data-en="New market entry strategies">Yeni pazarlara giriş stratejileri</li>
-                        <li data-tr="İş modeli geliştirme" data-en="Business model development">İş modeli geliştirme</li>
-                        <li data-tr="Küresel ölçeklenme ve risk yönetimi" data-en="Global scaling and risk management">Küresel ölçeklenme ve risk yönetimi</li>
-                    </ul>
-                </div>
-
-                <div class="service-card">
-                    <span class="service-icon">💻</span>
-                    <h4 data-tr="Dijital Dönüşüm & Teknoloji" data-en="Digital Transformation & Technology">Dijital Dönüşüm & Teknoloji</h4>
-                    <ul>
-                        <li data-tr="Modern dijital altyapı desteği" data-en="Modern digital infrastructure support">Modern dijital altyapı desteği</li>
-                        <li data-tr="Veri analitiği çözümleri" data-en="Data analytics solutions">Veri analitiği çözümleri</li>
-                        <li data-tr="Verimlilik ve otomasyon" data-en="Efficiency and automation">Verimlilik ve otomasyon</li>
+                        <li data-tr="Pazara giriş ve büyüme stratejileri" data-en="Market entry and growth strategies">Pazara giriş ve büyüme stratejileri</li>
+                        <li data-tr="Kurumsal dış ticaret yapılanması" data-en="Corporate foreign trade structuring">Kurumsal dış ticaret yapılanması</li>
+                        <li data-tr="Mevzuat, uyum ve risk yönetimi" data-en="Legislation, compliance and risk management">Mevzuat, uyum ve risk yönetimi</li>
                     </ul>
                 </div>
 
@@ -478,9 +484,9 @@
                     <span class="service-icon">⚙️</span>
                     <h4 data-tr="Operasyonel Mükemmellik" data-en="Operational Excellence">Operasyonel Mükemmellik</h4>
                     <ul>
-                        <li data-tr="Tedarik zinciri yönetimi" data-en="Supply chain management">Tedarik zinciri yönetimi</li>
-                        <li data-tr="Kurum içi süreç yönetimi" data-en="Internal process management">Kurum içi süreç yönetimi</li>
-                        <li data-tr="Sürdürülebilir yapı kurulumu" data-en="Sustainable structure setup">Sürdürülebilir yapı kurulumu</li>
+                        <li data-tr="Uçtan uca dış ticaret operasyon yönetimi" data-en="End-to-end foreign trade operation management">Uçtan uca dış ticaret operasyon yönetimi</li>
+                        <li data-tr="Kurum içi süreç ve tedarik zinciri yönetimi" data-en="Internal process and supply chain management">Kurum içi süreç ve tedarik zinciri yönetimi</li>
+                        <li data-tr="Sürdürülebilir dış ticaret yapısı kurulumu" data-en="Sustainable foreign trade structure setup">Sürdürülebilir dış ticaret yapısı kurulumu</li>
                     </ul>
                 </div>
             </div>
@@ -495,23 +501,23 @@
                 <div class="why-box">
                     <div class="why-icon">🌍</div>
                     <h4 data-tr="Global Bakış, Yerel Uzmanlık" data-en="Global Vision, Local Expertise">Global Bakış, Yerel Uzmanlık</h4>
-                    <p data-tr="Dünya trendlerini takip ederken, hedef pazarların dinamiklerine özel stratejiler üretiyoruz." 
-                       data-en="While following global trends, we produce strategies specific to the dynamics of target markets.">
-                       Dünya trendlerini takip ederken, hedef pazarların dinamiklerine özel stratejiler üretiyoruz.</p>
+                    <p data-tr="Dünya trendlerini takip ederken, hedef pazarların dinamiklerine özel dış ticaret stratejileri üretiyoruz." 
+                       data-en="While following global trends, we produce foreign trade strategies specific to the dynamics of target markets.">
+                       Dünya trendlerini takip ederken, hedef pazarların dinamiklerine özel dış ticaret stratejileri üretiyoruz.</p>
                 </div>
                 <div class="why-box">
                     <div class="why-icon">✂️</div>
                     <h4 data-tr="Terzi Usulü Yaklaşım" data-en="Tailor-Made Approach">Terzi Usulü Yaklaşım</h4>
-                    <p data-tr="Her markanın ihtiyacı benzersizdir. Standart şablonlar yerine kurumunuza özel çözümler tasarlıyoruz." 
-                       data-en="Every brand's needs are unique. Instead of standard templates, we design custom solutions for your organization.">
-                       Her markanın ihtiyacı benzersizdir. Standart şablonlar yerine kurumunuza özel çözümler tasarlıyoruz.</p>
+                    <p data-tr="Her markanın ihtiyacı benzersizdir. Standart şablonlar yerine kurumunuza özel dış ticaret çözümleri tasarlıyoruz." 
+                       data-en="Every brand's needs are unique. Instead of standard templates, we design custom foreign trade solutions for your organization.">
+                       Her markanın ihtiyacı benzersizdir. Standart şablonlar yerine kurumunuza özel dış ticaret çözümleri tasarlıyoruz.</p>
                 </div>
                 <div class="why-box">
                     <div class="why-icon">🤝</div>
                     <h4 data-tr="Uçtan Uca Destek" data-en="End-to-End Support">Uçtan Uca Destek</h4>
-                    <p data-tr="Fikir aşamasından operasyonel uygulamaya ve sonrasına kadar tüm süreçte aktif rol alıyoruz." 
-                       data-en="We take an active role throughout the entire process, from the idea stage to operational implementation and beyond.">
-                       Fikir aşamasından operasyonel uygulamaya ve sonrasına kadar tüm süreçte aktif rol alıyoruz.</p>
+                    <p data-tr="Fikir aşamasından operasyonel uygulamaya ve tahsilata kadar tüm dış ticaret süreçlerinde aktif rol alıyoruz." 
+                       data-en="We take an active role in all foreign trade processes, from the idea stage to operational implementation and collection.">
+                       Fikir aşamasından operasyonel uygulamaya ve tahsilata kadar tüm dış ticaret süreçlerinde aktif rol alıyoruz.</p>
                 </div>
             </div>
         </div>
@@ -522,9 +528,9 @@
         <div class="container">
             <h2 class="section-title" data-tr="Birlikte Büyümeye Hazır mısınız?" data-en="Ready to Grow Together?">Birlikte Büyümeye Hazır mısınız?</h2>
             <p class="section-subtitle" 
-               data-tr="Projenizi konuşmak, sorularınızı yanıtlamak veya küresel hedeflerinize uygun stratejiler geliştirmek için bizimle iletişime geçin." 
-               data-en="Contact us to discuss your project, answer your questions, or develop strategies tailored to your global goals.">
-               Projenizi konuşmak, sorularınızı yanıtlamak veya küresel hedeflerinize uygun stratejiler geliştirmek için bizimle iletişime geçin.
+               data-tr="Dış ticaret projenizi konuşmak, sorularınızı yanıtlamak veya küresel hedeflerinize uygun stratejiler geliştirmek için bizimle iletişime geçin." 
+               data-en="Contact us to discuss your foreign trade project, answer your questions, or develop strategies tailored to your global goals.">
+               Dış ticaret projenizi konuşmak, sorularınızı yanıtlamak veya küresel hedeflerinize uygun stratejiler geliştirmek için bizimle iletişime geçin.
             </p>
 
             <div class="contact-wrapper">
@@ -595,7 +601,7 @@
             <div class="footer-col">
                 <img src="krico%20logo.png" alt="Krico Global & Partners Logo" class="footer-logo">
                 <p data-tr="Lifting Your Business..." data-en="Lifting Your Business...">Lifting Your Business...</p>
-                <p data-tr="25 yılı aşkın deneyim, 40+ ülkede güvenilir çözüm ortağınız." data-en="25+ years of experience, your trusted solution partner in 40+ countries.">25 yılı aşkın deneyim, 40+ ülkede güvenilir çözüm ortağınız.</p>
+                <p data-tr="25 yılı aşkın deneyim, 40+ ülkede güvenilir dış ticaret çözüm ortağınız." data-en="25+ years of experience, your trusted foreign trade solution partner in 40+ countries.">25 yılı aşkın deneyim, 40+ ülkede güvenilir dış ticaret çözüm ortağınız.</p>
             </div>
             <div class="footer-col">
                 <h5 data-tr="Hızlı Erişim" data-en="Quick Links">Hızlı Erişim</h5>
