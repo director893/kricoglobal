@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KricoGlobal | Lifting Your Business</title>
+    <title>Krico Global & Partners | Lifting Your Business</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -13,114 +13,195 @@
         /* ---------- HEADER ---------- */
         header { background: #15466C; color: white; padding: 15px 40px; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
         nav { display: flex; justify-content: space-between; align-items: center; max-width: 1300px; margin: 0 auto; }
-        .logo img { height: 55px; vertical-align: middle; background: white; padding: 5px 10px; border-radius: 5px; }
-        nav ul { display: flex; list-style: none; gap: 28px; align-items: center; }
-        nav ul a { color: #e0e8f0; text-decoration: none; font-weight: 600; font-size: 14px; text-transform: uppercase; letter-spacing: 0.5px; transition: color 0.3s; }
+        .logo img { height: 50px; vertical-align: middle; background: white; padding: 5px 10px; border-radius: 5px; }
+        nav ul { display: flex; list-style: none; gap: 25px; align-items: center; }
+        nav ul a { color: #e0e8f0; text-decoration: none; font-weight: 600; font-size: 13px; text-transform: uppercase; letter-spacing: 0.5px; transition: color 0.3s; }
         nav ul a:hover { color: #2B7BB9; }
         .lang-btn { background: #2B7BB9; border: none; color: white; padding: 8px 16px; border-radius: 5px; cursor: pointer; font-weight: bold; font-size: 13px; font-family: inherit; transition: background 0.3s; }
         .lang-btn:hover { background: #1a5c8a; }
 
         /* ---------- HERO ---------- */
-        .hero { background: linear-gradient(rgba(21,70,108,0.9), rgba(21,70,108,0.9)), url('container%20port.jpg'); 
-                background-size: cover; background-position: center; color: white; padding: 140px 20px; text-align: center; }
-        .hero h1 { font-size: 52px; font-weight: 800; margin-bottom: 25px; line-height: 1.15; max-width: 950px; margin-left: auto; margin-right: auto; letter-spacing: -1px; }
-        .hero p { font-size: 20px; font-weight: 400; max-width: 800px; margin: 0 auto 40px; color: #dbe6f0; }
+        .hero { background: linear-gradient(rgba(21,70,108,0.85), rgba(21,70,108,0.85)), url('container%20port.jpg'); 
+                background-size: cover; background-position: center; color: white; padding: 120px 20px; text-align: center; }
+        .hero .brand-name { font-size: 54px; font-weight: 800; letter-spacing: -1.5px; margin-bottom: 15px; line-height: 1.1; }
+        .hero .slogan { font-size: 24px; font-weight: 500; color: #5AA9E6; margin-bottom: 30px; font-style: italic; letter-spacing: 1px; }
+        .hero .description { font-size: 18px; font-weight: 400; max-width: 800px; margin: 0 auto 40px; color: #dbe6f0; }
         .hero-buttons { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; }
-        .btn-primary { background: #2B7BB9; color: white; padding: 16px 40px; text-decoration: none; border-radius: 6px; font-weight: 700; display: inline-block; transition: all 0.3s; font-family: inherit; }
+        .btn-primary { background: #2B7BB9; color: white; padding: 15px 35px; text-decoration: none; border-radius: 6px; font-weight: 700; display: inline-block; transition: all 0.3s; font-family: inherit; font-size: 15px; }
         .btn-primary:hover { background: #1a5c8a; transform: translateY(-2px); box-shadow: 0 8px 20px rgba(43,123,185,0.4); }
-        .btn-outline { background: transparent; color: white; padding: 16px 40px; text-decoration: none; border-radius: 6px; font-weight: 700; display: inline-block; border: 2px solid white; transition: all 0.3s; font-family: inherit; }
+        .btn-outline { background: transparent; color: white; padding: 15px 35px; text-decoration: none; border-radius: 6px; font-weight: 700; display: inline-block; border: 2px solid white; transition: all 0.3s; font-family: inherit; font-size: 15px; }
         .btn-outline:hover { background: white; color: #15466C; }
 
         /* ---------- SECTIONS ---------- */
-        section { padding: 90px 20px; }
+        section { padding: 80px 20px; }
         .container { max-width: 1200px; margin: 0 auto; }
-        .section-title { font-size: 38px; color: #15466C; margin-bottom: 20px; text-align: center; font-weight: 800; letter-spacing: -0.5px; }
+        .section-title { font-size: 36px; color: #15466C; margin-bottom: 20px; text-align: center; font-weight: 800; letter-spacing: -0.5px; }
         .section-title::after { content: ''; display: block; width: 70px; height: 4px; background: #2B7BB9; margin: 18px auto 0; border-radius: 2px; }
-        .section-subtitle { text-align: center; color: #666; font-size: 17px; max-width: 800px; margin: 30px auto 0; font-weight: 500; }
+        .section-subtitle { text-align: center; color: #666; font-size: 16px; max-width: 800px; margin: 30px auto 0; font-weight: 500; }
 
         /* ---------- STATS ---------- */
-        .stats-section { background: #15466C; color: white; padding: 70px 20px; }
-        .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px; max-width: 1200px; margin: 0 auto; text-align: center; }
-        .stat-box h3 { font-size: 48px; color: #2B7BB9; margin-bottom: 10px; font-weight: 800; }
-        .stat-box p { font-size: 15px; color: #c8d4e0; font-weight: 500; }
+        .stats-section { background: #15466C; color: white; padding: 60px 20px; }
+        .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 30px; max-width: 1200px; margin: 0 auto; text-align: center; }
+        .stat-box h3 { font-size: 42px; color: #5AA9E6; margin-bottom: 8px; font-weight: 800; }
+        .stat-box p { font-size: 14px; color: #c8d4e0; font-weight: 500; }
 
         /* ---------- ABOUT ---------- */
         #hakkimizda { background: #F4F7FA; }
-        .about-text { max-width: 950px; margin: 30px auto 0; text-align: center; font-size: 17px; color: #555; font-weight: 500; }
-        .mv-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 60px; }
+        .about-text { max-width: 950px; margin: 30px auto 0; text-align: center; font-size: 16px; color: #555; font-weight: 500; }
+        .mv-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-top: 60px; }
         .mv-box { background: white; padding: 40px 30px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.06); border-left: 5px solid #2B7BB9; }
-        .mv-box h4 { color: #15466C; font-size: 20px; margin-bottom: 15px; font-weight: 700; }
-        .mv-box p { color: #666; font-size: 15px; }
+        .mv-box h4 { color: #15466C; font-size: 19px; margin-bottom: 15px; font-weight: 700; }
+        .mv-box p { color: #666; font-size: 14px; }
+
+        /* ---------- FEATURE ROWS (Resim + Metin) ---------- */
+        .features-section { background: white; padding: 80px 20px; }
+        .feature-row { display: flex; align-items: center; gap: 50px; margin-bottom: 80px; max-width: 1200px; margin-left: auto; margin-right: auto; }
+        .feature-row:last-child { margin-bottom: 0; }
+        .feature-row.reverse { flex-direction: row-reverse; }
+        .feature-image { flex: 1; min-width: 0; }
+        .feature-image img { width: 100%; height: 380px; object-fit: cover; border-radius: 15px; box-shadow: 0 15px 40px rgba(21,70,108,0.15); transition: transform 0.4s; display: block; }
+        .feature-image img:hover { transform: scale(1.02); }
+        .feature-content { flex: 1; min-width: 0; }
+        .feature-content .badge { display: inline-block; background: #2B7BB9; color: white; padding: 6px 16px; border-radius: 20px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 18px; }
+        .feature-content h3 { color: #15466C; font-size: 30px; font-weight: 800; margin-bottom: 18px; line-height: 1.2; }
+        .feature-content p { color: #555; font-size: 15px; margin-bottom: 18px; font-weight: 500; }
+        .feature-content ul { list-style: none; padding: 0; }
+        .feature-content ul li { color: #555; padding: 7px 0 7px 28px; position: relative; font-size: 14px; font-weight: 500; }
+        .feature-content ul li::before { content: '✓'; position: absolute; left: 0; color: #2B7BB9; font-weight: bold; font-size: 15px; }
 
         /* ---------- SERVICES ---------- */
-        #hizmetler { background: white; }
-        .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; margin-top: 60px; }
-        .service-card { background: #F4F7FA; padding: 45px 35px; border-radius: 12px; transition: all 0.4s; border-bottom: 4px solid transparent; }
-        .service-card:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(21,70,108,0.12); border-bottom-color: #2B7BB9; background: white; }
-        .service-icon { font-size: 40px; margin-bottom: 20px; display: block; }
-        .service-card h4 { font-size: 20px; color: #15466C; margin-bottom: 15px; font-weight: 700; }
+        #hizmetler { background: #F4F7FA; }
+        .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; margin-top: 60px; }
+        .service-card { background: white; padding: 40px 30px; border-radius: 12px; transition: all 0.4s; border-bottom: 4px solid transparent; }
+        .service-card:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(21,70,108,0.12); border-bottom-color: #2B7BB9; }
+        .service-icon { font-size: 36px; margin-bottom: 18px; display: block; }
+        .service-card h4 { font-size: 18px; color: #15466C; margin-bottom: 15px; font-weight: 700; }
         .service-card ul { list-style: none; padding: 0; }
-        .service-card ul li { color: #555; padding: 6px 0 6px 25px; position: relative; font-size: 14px; font-weight: 500; }
+        .service-card ul li { color: #555; padding: 6px 0 6px 25px; position: relative; font-size: 13px; font-weight: 500; }
         .service-card ul li::before { content: '✓'; position: absolute; left: 0; color: #2B7BB9; font-weight: bold; }
 
         /* ---------- WHY US ---------- */
-        #nedenbiz { background: #F4F7FA; }
-        .why-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 60px; }
-        .why-box { background: white; padding: 45px 35px; border-radius: 12px; text-align: center; box-shadow: 0 4px 20px rgba(0,0,0,0.06); transition: transform 0.3s; }
+        #nedenbiz { background: white; }
+        .why-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-top: 60px; }
+        .why-box { background: #F4F7FA; padding: 40px 30px; border-radius: 12px; text-align: center; box-shadow: 0 4px 20px rgba(0,0,0,0.06); transition: transform 0.3s; }
         .why-box:hover { transform: translateY(-8px); }
-        .why-icon { width: 70px; height: 70px; background: #2B7BB9; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 25px; color: white; font-size: 32px; }
-        .why-box h4 { color: #15466C; font-size: 20px; margin-bottom: 15px; font-weight: 700; }
-        .why-box p { color: #666; font-size: 15px; }
-
-        /* ---------- GALLERY ---------- */
-        #galeri { background: #15466C; color: white; }
-        #galeri .section-title { color: white; }
-        #galeri .section-title::after { background: #2B7BB9; }
-        .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 15px; margin-top: 50px; }
-        .gallery img { width: 100%; height: 250px; object-fit: cover; border-radius: 10px; transition: transform 0.4s; cursor: pointer; }
-        .gallery img:hover { transform: scale(1.04); box-shadow: 0 10px 30px rgba(43,123,185,0.3); }
+        .why-icon { width: 65px; height: 65px; background: #2B7BB9; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 22px; color: white; font-size: 28px; }
+        .why-box h4 { color: #15466C; font-size: 18px; margin-bottom: 15px; font-weight: 700; }
+        .why-box p { color: #666; font-size: 14px; }
 
         /* ---------- CONTACT ---------- */
-        #iletisim { background: white; }
+        #iletisim { background: #F4F7FA; }
         .contact-wrapper { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; margin-top: 60px; }
         .contact-info-box h4 { color: #15466C; font-size: 22px; margin-bottom: 15px; font-weight: 700; }
-        .contact-info-box > p { color: #666; margin-bottom: 35px; }
-        .info-item { display: flex; align-items: flex-start; gap: 20px; margin-bottom: 25px; padding: 20px; background: #F4F7FA; border-radius: 10px; transition: background 0.3s; }
+        .contact-info-box > p { color: #666; margin-bottom: 30px; font-size: 15px; }
+        .info-item { display: flex; align-items: flex-start; gap: 18px; margin-bottom: 20px; padding: 18px; background: white; border-radius: 10px; transition: background 0.3s; }
         .info-item:hover { background: #e6eff7; }
-        .info-icon { width: 50px; height: 50px; background: #2B7BB9; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 20px; flex-shrink: 0; }
-        .info-item h5 { color: #15466C; font-size: 15px; margin-bottom: 5px; font-weight: 700; }
-        .info-item p, .info-item a { color: #666; font-size: 14px; text-decoration: none; font-weight: 500; }
+        .info-icon { width: 45px; height: 45px; background: #2B7BB9; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 18px; flex-shrink: 0; }
+        .info-item h5 { color: #15466C; font-size: 14px; margin-bottom: 5px; font-weight: 700; }
+        .info-item p, .info-item a { color: #666; font-size: 14px; text-decoration: none; font-weight: 500; word-break: break-word; }
         .info-item a:hover { color: #2B7BB9; }
 
-        .contact-form { background: #F4F7FA; padding: 40px; border-radius: 12px; }
+        .contact-form { background: white; padding: 40px; border-radius: 12px; }
         .contact-form h4 { color: #15466C; font-size: 22px; margin-bottom: 25px; font-weight: 700; }
         .form-group { margin-bottom: 18px; }
-        .form-group label { display: block; color: #15466C; font-weight: 600; font-size: 13px; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+        .form-group label { display: block; color: #15466C; font-weight: 600; font-size: 12px; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
         .form-group input, .form-group textarea { width: 100%; padding: 13px 16px; border: 2px solid #dce4ec; border-radius: 8px; font-family: inherit; font-size: 15px; transition: border-color 0.3s; background: white; }
         .form-group input:focus, .form-group textarea:focus { outline: none; border-color: #2B7BB9; }
         .form-group textarea { resize: vertical; min-height: 100px; }
-        .form-submit { background: #2B7BB9; color: white; padding: 15px 40px; border: none; border-radius: 8px; font-weight: 700; font-size: 15px; cursor: pointer; width: 100%; transition: background 0.3s; font-family: inherit; text-transform: uppercase; letter-spacing: 1px; }
+        .form-submit { background: #2B7BB9; color: white; padding: 15px 40px; border: none; border-radius: 8px; font-weight: 700; font-size: 14px; cursor: pointer; width: 100%; transition: background 0.3s; font-family: inherit; text-transform: uppercase; letter-spacing: 1px; }
         .form-submit:hover { background: #1a5c8a; }
 
         /* ---------- FOOTER ---------- */
         footer { background: #15466C; color: #c8d4e0; padding: 50px 20px 30px; }
-        .footer-content { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; }
-        .footer-col h5 { color: white; font-size: 16px; margin-bottom: 20px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; }
+        .footer-content { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 40px; }
+        .footer-col h5 { color: white; font-size: 15px; margin-bottom: 20px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; }
         .footer-col p, .footer-col a { color: #97a7bb; font-size: 14px; text-decoration: none; display: block; margin-bottom: 10px; transition: color 0.3s; font-weight: 500; }
-        .footer-col a:hover { color: #2B7BB9; }
-        .footer-logo { height: 60px; margin-bottom: 15px; background: white; padding: 5px 10px; border-radius: 5px; }
+        .footer-col a:hover { color: #5AA9E6; }
+        .footer-logo { height: 55px; margin-bottom: 15px; background: white; padding: 5px 10px; border-radius: 5px; display: inline-block; }
         .footer-bottom { max-width: 1200px; margin: 40px auto 0; padding-top: 25px; border-top: 1px solid #1e4f73; text-align: center; color: #6b7d94; font-size: 13px; font-weight: 500; }
 
-        /* ---------- RESPONSIVE ---------- */
-        @media (max-width: 900px) {
-            nav ul { display: none; }
-            .hero h1 { font-size: 34px; }
-            .hero p { font-size: 17px; }
-            .section-title { font-size: 28px; }
-            .contact-wrapper { grid-template-columns: 1fr; gap: 30px; }
-            .contact-form { padding: 30px 20px; }
-            section { padding: 60px 20px; }
-            .hero { padding: 90px 20px; }
+        /* ---------- RESPONSIVE (TABLET) ---------- */
+        @media (max-width: 1024px) {
+            header { padding: 15px 25px; }
+            nav ul { gap: 18px; }
+            nav ul a { font-size: 12px; }
+            .hero .brand-name { font-size: 42px; }
+            .hero .slogan { font-size: 20px; }
+            .feature-row { gap: 35px; }
+            .feature-content h3 { font-size: 26px; }
+            .feature-image img { height: 320px; }
+        }
+
+        /* ---------- RESPONSIVE (MOBILE) ---------- */
+        @media (max-width: 768px) {
+            header { padding: 12px 20px; }
+            nav { flex-direction: column; gap: 12px; }
+            nav ul { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; padding: 0; }
+            nav ul a { font-size: 11px; }
+            .logo img { height: 40px; }
+            .lang-btn { padding: 6px 12px; font-size: 11px; }
+
+            .hero { padding: 80px 20px; }
+            .hero .brand-name { font-size: 30px; letter-spacing: -0.5px; }
+            .hero .slogan { font-size: 17px; margin-bottom: 20px; }
+            .hero .description { font-size: 14px; margin-bottom: 30px; }
+            .btn-primary, .btn-outline { padding: 13px 25px; font-size: 13px; }
+
+            section { padding: 55px 18px; }
+            .section-title { font-size: 24px; }
+            .section-title::after { width: 50px; }
+            .section-subtitle { font-size: 14px; }
+
+            .stats-section { padding: 45px 20px; }
+            .stats { gap: 20px; }
+            .stat-box h3 { font-size: 32px; }
+            .stat-box p { font-size: 12px; }
+
+            .about-text { font-size: 14px; }
+            .mv-grid { gap: 20px; margin-top: 40px; }
+            .mv-box { padding: 30px 22px; }
+            .mv-box h4 { font-size: 17px; }
+            .mv-box p { font-size: 13px; }
+
+            .feature-row, .feature-row.reverse { flex-direction: column; gap: 25px; margin-bottom: 55px; }
+            .feature-image img { height: 240px; border-radius: 12px; }
+            .feature-content h3 { font-size: 22px; margin-bottom: 12px; }
+            .feature-content p { font-size: 14px; margin-bottom: 15px; }
+            .feature-content ul li { font-size: 13px; padding: 5px 0 5px 24px; }
+            .feature-content .badge { font-size: 10px; padding: 5px 12px; margin-bottom: 12px; }
+
+            .services { gap: 20px; margin-top: 40px; }
+            .service-card { padding: 30px 22px; }
+            .service-card h4 { font-size: 16px; }
+            .service-card ul li { font-size: 12px; }
+            .service-icon { font-size: 30px; }
+
+            .why-grid { gap: 20px; margin-top: 40px; }
+            .why-box { padding: 30px 22px; }
+            .why-box h4 { font-size: 16px; }
+            .why-box p { font-size: 13px; }
+
+            .contact-wrapper { grid-template-columns: 1fr; gap: 25px; margin-top: 40px; }
+            .contact-form { padding: 28px 20px; }
+            .contact-form h4, .contact-info-box h4 { font-size: 18px; }
+            .info-item { padding: 15px; gap: 14px; }
+            .info-icon { width: 40px; height: 40px; font-size: 16px; }
+            .form-group input, .form-group textarea { padding: 11px 14px; font-size: 14px; }
+
+            footer { padding: 40px 20px 25px; }
+            .footer-content { gap: 30px; }
+            .footer-col h5 { font-size: 14px; margin-bottom: 14px; }
+            .footer-col p, .footer-col a { font-size: 13px; }
+            .footer-logo { height: 45px; }
+            .footer-bottom { margin-top: 30px; padding-top: 20px; font-size: 12px; }
+        }
+
+        /* ---------- EXTRA SMALL ---------- */
+        @media (max-width: 400px) {
+            .hero .brand-name { font-size: 24px; }
+            .hero .slogan { font-size: 15px; }
+            nav ul a { font-size: 10px; }
+            .section-title { font-size: 21px; }
         }
     </style>
 </head>
@@ -129,12 +210,12 @@
     <!-- HEADER -->
     <header>
         <nav>
-            <a href="#" class="logo"><img src="krico%20logo.png" alt="KricoGlobal Logo"></a>
+            <a href="#" class="logo"><img src="krico%20logo.png" alt="Krico Global & Partners Logo"></a>
             <ul>
                 <li><a href="#hakkimizda" data-tr="Hakkımızda" data-en="About">Hakkımızda</a></li>
+                <li><a href="#faaliyetler" data-tr="Faaliyetler" data-en="Operations">Faaliyetler</a></li>
                 <li><a href="#hizmetler" data-tr="Hizmetler" data-en="Services">Hizmetler</a></li>
                 <li><a href="#nedenbiz" data-tr="Neden Biz?" data-en="Why Us?">Neden Biz?</a></li>
-                <li><a href="#galeri" data-tr="Galeri" data-en="Gallery">Galeri</a></li>
                 <li><a href="#iletisim" data-tr="İletişim" data-en="Contact">İletişim</a></li>
                 <li><button class="lang-btn" id="langBtn" onclick="toggleLanguage()">EN</button></li>
             </ul>
@@ -143,16 +224,15 @@
 
     <!-- HERO -->
     <div class="hero">
-        <h1 data-tr="Küresel Pazarlarda Güçlü Geleceğinizi İnşa Edin" 
-            data-en="Building Your Strong Future in Global Markets">
-            Küresel Pazarlarda Güçlü Geleceğinizi İnşa Edin
-        </h1>
-        <p data-tr="KricoGlobal; yenilikçi stratejiler, uçtan uca danışmanlık ve sürdürülebilir çözümlerle markanızı dünya standartlarına taşıyor. Lifting Your Business..." 
-           data-en="KricoGlobal elevates your brand to world standards with innovative strategies, end-to-end consulting and sustainable solutions. Lifting Your Business...">
-           KricoGlobal; yenilikçi stratejiler, uçtan uca danışmanlık ve sürdürülebilir çözümlerle markanızı dünya standartlarına taşıyor. Lifting Your Business...
+        <div class="brand-name">Krico Global & Partners</div>
+        <div class="slogan">Lifting Your Business...</div>
+        <p class="description" 
+           data-tr="25 yılı aşkın süredir, 40'tan fazla ülkede sınır ötesi ticaret, lojistik ve stratejik danışmanlık çözümleri sunuyoruz." 
+           data-en="For over 25 years, we have been providing cross-border trade, logistics and strategic consulting solutions in more than 40 countries.">
+           25 yılı aşkın süredir, 40'tan fazla ülkede sınır ötesi ticaret, lojistik ve stratejik danışmanlık çözümleri sunuyoruz.
         </p>
         <div class="hero-buttons">
-            <a href="#hizmetler" class="btn-primary" data-tr="Çözümlerimizi Keşfedin" data-en="Explore Our Solutions">Çözümlerimizi Keşfedin</a>
+            <a href="#faaliyetler" class="btn-primary" data-tr="Faaliyetlerimiz" data-en="Our Operations">Faaliyetlerimiz</a>
             <a href="#iletisim" class="btn-outline" data-tr="İletişime Geçin" data-en="Get in Touch">İletişime Geçin</a>
         </div>
     </div>
@@ -186,9 +266,9 @@
                 Vizyonunuzu Küresel Başarıya Dönüştürüyoruz
             </h2>
             <p class="about-text" 
-               data-tr="KricoGlobal, hızla değişen küresel pazar dinamiklerinde kurumların ve markaların ihtiyaç duyduğu stratejik rehberliği sunar. 25 yılı aşkın süredir sınır ötesi (cross-border) ticaret ve danışmanlık alanında faaliyet gösteriyor, 40'tan fazla ülkede iş ortaklarımıza değer katıyoruz. Deneyimli uzman kadromuz, teknoloji odaklı yaklaşımımız ve geniş hizmet ağımızla, operasyonlarınızı büyütmek ve sürdürülebilir rekabet avantajı sağlamak için yanınızdayız." 
-               data-en="KricoGlobal provides the strategic guidance that institutions and brands need in rapidly changing global market dynamics. We have been operating in cross-border trade and consulting for over 25 years, adding value to our partners in more than 40 countries. With our experienced expert team, technology-driven approach, and extensive service network, we are by your side to grow your operations and provide sustainable competitive advantage.">
-               KricoGlobal, hızla değişen küresel pazar dinamiklerinde kurumların ve markaların ihtiyaç duyduğu stratejik rehberliği sunar. 25 yılı aşkın süredir sınır ötesi (cross-border) ticaret ve danışmanlık alanında faaliyet gösteriyor, 40'tan fazla ülkede iş ortaklarımıza değer katıyoruz. Deneyimli uzman kadromuz, teknoloji odaklı yaklaşımımız ve geniş hizmet ağımızla, operasyonlarınızı büyütmek ve sürdürülebilir rekabet avantajı sağlamak için yanınızdayız.
+               data-tr="Krico Global & Partners, hızla değişen küresel pazar dinamiklerinde kurumların ve markaların ihtiyaç duyduğu stratejik rehberliği sunar. 25 yılı aşkın süredir sınır ötesi (cross-border) ticaret, lojistik ve danışmanlık alanında faaliyet gösteriyor, 40'tan fazla ülkede iş ortaklarımıza değer katıyoruz. Deneyimli uzman kadromuz, teknoloji odaklı yaklaşımımız ve geniş hizmet ağımızla, operasyonlarınızı büyütmek ve sürdürülebilir rekabet avantajı sağlamak için yanınızdayız." 
+               data-en="Krico Global & Partners provides the strategic guidance that institutions and brands need in rapidly changing global market dynamics. We have been operating in cross-border trade, logistics and consulting for over 25 years, adding value to our partners in more than 40 countries. With our experienced expert team, technology-driven approach, and extensive service network, we are by your side to grow your operations and provide sustainable competitive advantage.">
+               Krico Global & Partners, hızla değişen küresel pazar dinamiklerinde kurumların ve markaların ihtiyaç duyduğu stratejik rehberliği sunar. 25 yılı aşkın süredir sınır ötesi (cross-border) ticaret, lojistik ve danışmanlık alanında faaliyet gösteriyor, 40'tan fazla ülkede iş ortaklarımıza değer katıyoruz. Deneyimli uzman kadromuz, teknoloji odaklı yaklaşımımız ve geniş hizmet ağımızla, operasyonlarınızı büyütmek ve sürdürülebilir rekabet avantajı sağlamak için yanınızdayız.
             </p>
 
             <div class="mv-grid">
@@ -213,6 +293,128 @@
             </div>
         </div>
     </section>
+
+    <!-- FAALİYETLER (ZİKZAK DÜZEN) -->
+    <div class="features-section" id="faaliyetler">
+        <div class="container">
+            <h2 class="section-title" data-tr="Faaliyetlerimiz ve Uzmanlık Alanlarımız" data-en="Our Operations & Areas of Expertise">Faaliyetlerimiz ve Uzmanlık Alanlarımız</h2>
+
+            <!-- 1. Liman -->
+            <div class="feature-row">
+                <div class="feature-image">
+                    <img src="container%20port.jpg" alt="Liman Operasyonları">
+                </div>
+                <div class="feature-content">
+                    <span class="badge" data-tr="Liman" data-en="Port">Liman</span>
+                    <h3 data-tr="Liman ve Konteyner Operasyonları" data-en="Port and Container Operations">Liman ve Konteyner Operasyonları</h3>
+                    <p data-tr="Dünyanın önde gelen limanlarında konteyner elleçleme, yükleme ve boşaltma süreçlerini profesyonel ekibimizle yönetiyoruz." 
+                       data-en="We manage container handling, loading and unloading processes in the world's leading ports with our professional team.">
+                       Dünyanın önde gelen limanlarında konteyner elleçleme, yükleme ve boşaltma süreçlerini profesyonel ekibimizle yönetiyoruz.</p>
+                    <ul>
+                        <li data-tr="Uluslararası liman ağı ve iş ortaklıkları" data-en="International port network and partnerships">Uluslararası liman ağı ve iş ortaklıkları</li>
+                        <li data-tr="Hızlı yükleme ve boşaltma operasyonları" data-en="Fast loading and unloading operations">Hızlı yükleme ve boşaltma operasyonları</li>
+                        <li data-tr="Gümrük ve dokümantasyon desteği" data-en="Customs and documentation support">Gümrük ve dokümantasyon desteği</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 2. Deniz Taşımacılığı -->
+            <div class="feature-row reverse">
+                <div class="feature-image">
+                    <img src="container%20ship.jpg" alt="Deniz Taşımacılığı">
+                </div>
+                <div class="feature-content">
+                    <span class="badge" data-tr="Deniz" data-en="Sea">Deniz</span>
+                    <h3 data-tr="Deniz Taşımacılığı" data-en="Sea Freight">Deniz Taşımacılığı</h3>
+                    <p data-tr="FCL ve LCL konteyner taşımacılığı ile küresel limanlara kesintisiz, ekonomik ve güvenli çözümler sunuyoruz." 
+                       data-en="We offer uninterrupted, economical and safe solutions to global ports with FCL and LCL container shipping.">
+                       FCL ve LCL konteyner taşımacılığı ile küresel limanlara kesintisiz, ekonomik ve güvenli çözümler sunuyoruz.</p>
+                    <ul>
+                        <li data-tr="Tam konteyner (FCL) ve kısmi yük (LCL)" data-en="Full container (FCL) and less than container (LCL)">Tam konteyner (FCL) ve kısmi yük (LCL)</li>
+                        <li data-tr="Reefer ve özel yük taşımacılığı" data-en="Reefer and special cargo transportation">Reefer ve özel yük taşımacılığı</li>
+                        <li data-tr="Küresel hatlar ve düzenli seferler" data-en="Global lines and regular sailings">Küresel hatlar ve düzenli seferler</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 3. Demiryolu -->
+            <div class="feature-row">
+                <div class="feature-image">
+                    <img src="train1.jpg" alt="Demiryolu Taşımacılığı">
+                </div>
+                <div class="feature-content">
+                    <span class="badge" data-tr="Demiryolu" data-en="Rail">Demiryolu</span>
+                    <h3 data-tr="Demiryolu Taşımacılığı" data-en="Rail Freight">Demiryolu Taşımacılığı</h3>
+                    <p data-tr="Asya-Avrupa hattında hızlı, güvenli ve çevre dostu demiryolu lojistik hizmetleriyle tedarik zincirinizi güçlendiriyoruz." 
+                       data-en="We strengthen your supply chain with fast, safe and eco-friendly rail logistics services on the Asia-Europe route.">
+                       Asya-Avrupa hattında hızlı, güvenli ve çevre dostu demiryolu lojistik hizmetleriyle tedarik zincirinizi güçlendiriyoruz.</p>
+                    <ul>
+                        <li data-tr="Trans-Avrupa ve Orta Koridor hatları" data-en="Trans-Europe and Middle Corridor lines">Trans-Avrupa ve Orta Koridor hatları</li>
+                        <li data-tr="Konteyner ve dökme yük trenleri" data-en="Container and bulk cargo trains">Konteyner ve dökme yük trenleri</li>
+                        <li data-tr="Sınır geçiş ve gümrük işlemleri" data-en="Border crossing and customs procedures">Sınır geçiş ve gümrük işlemleri</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 4. Yük Gemileri -->
+            <div class="feature-row reverse">
+                <div class="feature-image">
+                    <img src="ship3.jpg" alt="Yük Gemisi Operasyonları">
+                </div>
+                <div class="feature-content">
+                    <span class="badge" data-tr="Gemi" data-en="Vessel">Gemi</span>
+                    <h3 data-tr="Gemi Kiralama & Operasyonları" data-en="Ship Chartering & Operations">Gemi Kiralama & Operasyonları</h3>
+                    <p data-tr="Proje kargoları ve büyük hacimli yükler için gemi kiralama ve operasyon yönetimi hizmetleri sunuyoruz." 
+                       data-en="We provide ship chartering and operation management services for project cargo and large volume shipments.">
+                       Proje kargoları ve büyük hacimli yükler için gemi kiralama ve operasyon yönetimi hizmetleri sunuyoruz.</p>
+                    <ul>
+                        <li data-tr="Voyage ve time charter seçenekleri" data-en="Voyage and time charter options">Voyage ve time charter seçenekleri</li>
+                        <li data-tr="Proje ve ağır yük taşımacılığı" data-en="Project and heavy lift transportation">Proje ve ağır yük taşımacılığı</li>
+                        <li data-tr="Liman acente ve operasyon desteği" data-en="Port agency and operation support">Liman acente ve operasyon desteği</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 5. Tren Lojistiği -->
+            <div class="feature-row">
+                <div class="feature-image">
+                    <img src="train2.jpg" alt="Tren Lojistiği">
+                </div>
+                <div class="feature-content">
+                    <span class="badge" data-tr="Kombine" data-en="Combined">Kombine</span>
+                    <h3 data-tr="Kombine Taşımacılık" data-en="Combined Transportation">Kombine Taşımacılık</h3>
+                    <p data-tr="Deniz, demiryolu ve kara taşımacılığını birleştirerek en verimli ve ekonomik çözümleri sunuyoruz." 
+                       data-en="We offer the most efficient and economical solutions by combining sea, rail and road transportation.">
+                       Deniz, demiryolu ve kara taşımacılığını birleştirerek en verimli ve ekonomik çözümleri sunuyoruz.</p>
+                    <ul>
+                        <li data-tr="Multimodal taşıma çözümleri" data-en="Multimodal transport solutions">Multimodal taşıma çözümleri</li>
+                        <li data-tr="Kapıdan kapıya teslimat" data-en="Door-to-door delivery">Kapıdan kapıya teslimat</li>
+                        <li data-tr="Uçtan uca takip ve raporlama" data-en="End-to-end tracking and reporting">Uçtan uca takip ve raporlama</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 6. Global Ticaret Ağı -->
+            <div class="feature-row reverse">
+                <div class="feature-image">
+                    <img src="trade%20map.webp" alt="Global Ticaret Ağı">
+                </div>
+                <div class="feature-content">
+                    <span class="badge" data-tr="Global" data-en="Global">Global</span>
+                    <h3 data-tr="Global Ticaret Ağı" data-en="Global Trade Network">Global Ticaret Ağı</h3>
+                    <p data-tr="40'tan fazla ülkede geniş iş ortaklıklarımız ve güçlü lojistik ağımızla sınır ötesi ticaretinizi kolaylaştırıyoruz." 
+                       data-en="We facilitate your cross-border trade with our extensive partnerships and strong logistics network in more than 40 countries.">
+                       40'tan fazla ülkede geniş iş ortaklıklarımız ve güçlü lojistik ağımızla sınır ötesi ticaretinizi kolaylaştırıyoruz.</p>
+                    <ul>
+                        <li data-tr="Küresel iş ortaklığı ağı" data-en="Global partnership network">Küresel iş ortaklığı ağı</li>
+                        <li data-tr="Bölgesel pazar uzmanlığı" data-en="Regional market expertise">Bölgesel pazar uzmanlığı</li>
+                        <li data-tr="Yerel operasyonel destek" data-en="Local operational support">Yerel operasyonel destek</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
 
     <!-- HİZMETLER -->
     <section id="hizmetler">
@@ -288,7 +490,7 @@
     <!-- NEDEN BİZ -->
     <section id="nedenbiz">
         <div class="container">
-            <h2 class="section-title" data-tr="Neden KricoGlobal?" data-en="Why KricoGlobal?">Neden KricoGlobal?</h2>
+            <h2 class="section-title" data-tr="Neden Krico Global & Partners?" data-en="Why Krico Global & Partners?">Neden Krico Global & Partners?</h2>
             <div class="why-grid">
                 <div class="why-box">
                     <div class="why-icon">🌍</div>
@@ -311,24 +513,6 @@
                        data-en="We take an active role throughout the entire process, from the idea stage to operational implementation and beyond.">
                        Fikir aşamasından operasyonel uygulamaya ve sonrasına kadar tüm süreçte aktif rol alıyoruz.</p>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- GALERİ -->
-    <section id="galeri">
-        <div class="container">
-            <h2 class="section-title" data-tr="Faaliyetlerimizden Kareler" data-en="Moments from Our Operations">Faaliyetlerimizden Kareler</h2>
-            <div class="gallery">
-                <img src="container%20port.jpg" alt="Konteyner Limanı">
-                <img src="container%20ship.jpg" alt="Konteyner Gemisi">
-                <img src="container%20ship%202.jpg" alt="Yük Gemisi">
-                <img src="ship3.jpg" alt="Gemi Taşımacılığı">
-                <img src="train1.jpg" alt="Demiryolu Taşımacılığı">
-                <img src="train%202.jpg" alt="Tren Lojistiği">
-                <img src="train2.jpg" alt="Yük Treni">
-                <img src="trade%20map.webp" alt="Global Ticaret Ağı">
-                <img src="map.jpg" alt="Ticaret Haritası">
             </div>
         </div>
     </section>
@@ -409,15 +593,15 @@
     <footer>
         <div class="footer-content">
             <div class="footer-col">
-                <img src="krico%20logo.png" alt="KricoGlobal Logo" class="footer-logo">
+                <img src="krico%20logo.png" alt="Krico Global & Partners Logo" class="footer-logo">
                 <p data-tr="Lifting Your Business..." data-en="Lifting Your Business...">Lifting Your Business...</p>
                 <p data-tr="25 yılı aşkın deneyim, 40+ ülkede güvenilir çözüm ortağınız." data-en="25+ years of experience, your trusted solution partner in 40+ countries.">25 yılı aşkın deneyim, 40+ ülkede güvenilir çözüm ortağınız.</p>
             </div>
             <div class="footer-col">
                 <h5 data-tr="Hızlı Erişim" data-en="Quick Links">Hızlı Erişim</h5>
                 <a href="#hakkimizda" data-tr="Hakkımızda" data-en="About">Hakkımızda</a>
+                <a href="#faaliyetler" data-tr="Faaliyetler" data-en="Operations">Faaliyetler</a>
                 <a href="#hizmetler" data-tr="Hizmetler" data-en="Services">Hizmetler</a>
-                <a href="#nedenbiz" data-tr="Neden Biz?" data-en="Why Us?">Neden Biz?</a>
                 <a href="#iletisim" data-tr="İletişim" data-en="Contact">İletişim</a>
             </div>
             <div class="footer-col">
@@ -428,7 +612,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 KricoGlobal & Partners. <span data-tr="Tüm hakları saklıdır." data-en="All rights reserved.">Tüm hakları saklıdır.</span></p>
+            <p>&copy; 2026 Krico Global & Partners. <span data-tr="Tüm hakları saklıdır." data-en="All rights reserved.">Tüm hakları saklıdır.</span></p>
         </div>
     </footer>
 
