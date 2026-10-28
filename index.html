@@ -21,6 +21,20 @@
         html[dir="rtl"] .info-item { text-align: right; }
         html[dir="rtl"] .hero, html[dir="rtl"] .section-title, html[dir="rtl"] .about-text, html[dir="rtl"] .section-subtitle { text-align: center; }
 
+        /* ---------- BİYOTEKNOLOJİ ---------- */
+        #biotech { background: #15466C; }
+        #biotech .section-title { color: white; }
+        #biotech .section-title::after { background: #5AA9E6; }
+        #biotech .section-subtitle { color: #c8d4e0; }
+        .biotech-head { text-align: center; margin-bottom: 14px; }
+        .biotech-head .badge { display: inline-block; background: #2B7BB9; color: white; padding: 6px 16px; border-radius: 20px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; }
+        .biotech-chips { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 30px; }
+        .biotech-chips .chip { border: 1px solid rgba(255,255,255,0.35); color: white; padding: 8px 16px; border-radius: 20px; font-size: 13px; font-weight: 600; }
+        #biotech .services { margin-top: 45px; }
+        .biotech-cta { text-align: center; margin-top: 50px; }
+        #biotech .btn-primary { background: white; color: #15466C; }
+        #biotech .btn-primary:hover { background: #e0e8f0; }
+
         /* ---------- HEADER ---------- */
         header { background: #15466C; color: white; padding: 18px 40px; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
         nav { display: flex; justify-content: space-between; align-items: center; max-width: 1400px; margin: 0 auto; gap: 20px; }
@@ -231,6 +245,7 @@
             <a href="#" class="logo"><img src="krico%20logo.png" alt="Krico Global & Partners Logo"></a>
             <ul>
                 <li><a href="#hakkimizda" data-tr="Hakkımızda" data-en="About" data-de="Über uns" data-ar="من نحن" data-zh="关于我们">Hakkımızda</a></li>
+                <li><a href="#biotech" data-tr="Biyoteknoloji" data-en="Biotech" data-de="Biotech" data-ar="التقنية الحيوية" data-zh="生物技术">Biyoteknoloji</a></li>
                 <li><a href="#faaliyetler" data-tr="Faaliyetler" data-en="Operations" data-de="Tätigkeiten" data-ar="عملياتنا" data-zh="业务范围">Faaliyetler</a></li>
                 <li><a href="#hizmetler" data-tr="Hizmetler" data-en="Services" data-de="Dienstleistungen" data-ar="خدماتنا" data-zh="服务">Hizmetler</a></li>
                 <li><a href="#nedenbiz" data-tr="Neden Biz?" data-en="Why Us?" data-de="Warum wir?" data-ar="لماذا نحن؟" data-zh="为什么选择我们？">Neden Biz?</a></li>
@@ -326,6 +341,79 @@
                        Şeffaflık & Güven, İnovasyon ve Mükemmeliyetçilik. Tüm dış ticaret süreçlerimizde açık iletişim kurar, modern çözümler geliştirir ve kaliteden ödün vermeden sonuç odaklı çalışırız.</p>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- BİYOTEKNOLOJİ -->
+    <section id="biotech">
+        <div class="container">
+            <div class="biotech-head"><span class="badge" data-tr="Biyoteknoloji &amp; Tanı" data-en="Biotech &amp; Diagnostics" data-de="Biotech &amp; Diagnostik" data-ar="التقنية الحيوية والتشخيص" data-zh="生物技术与诊断">Biyoteknoloji &amp; Tanı</span></div>
+            <h2 class="section-title" data-tr="Biyoteknoloji ve Tanı Çözümleri" data-en="Biotechnology &amp; Diagnostic Solutions" data-de="Biotechnologie- &amp; Diagnostiklösungen" data-ar="حلول التقنية الحيوية والتشخيص" data-zh="生物技术与诊断解决方案">Biyoteknoloji ve Tanı Çözümleri</h2>
+            <p class="section-subtitle" data-tr="Uluslararası sertifikalı üreticilerin hızlı tanı testlerini, laboratuvar sistemlerini ve güvenlik testlerini Türkiye&#x27;ye ve bölge pazarlarına ulaştırıyoruz. Distribütörler, hastaneler, laboratuvarlar, eczaneler ve kamu kurumları için yüksek hacimli tedarik sağlıyoruz." data-en="We bring rapid diagnostic tests, laboratory systems and safety tests from internationally certified manufacturers to Türkiye and regional markets, supplying distributors, hospitals, laboratories, pharmacies and public institutions at high volume." data-de="Wir bringen Schnelltests, Laborsysteme und Sicherheitstests international zertifizierter Hersteller in die Türkei und regionale Märkte und beliefern Distributoren, Krankenhäuser, Labore, Apotheken und öffentliche Einrichtungen in großen Mengen." data-ar="نوفّر اختبارات التشخيص السريع وأنظمة المختبرات واختبارات السلامة من مصنّعين حاصلين على شهادات دولية إلى تركيا والأسواق الإقليمية، ونورّد بكميات كبيرة للموزعين والمستشفيات والمختبرات والصيدليات والمؤسسات العامة." data-zh="我们将国际认证制造商的快速诊断检测、实验室系统和安全检测产品引入土耳其及周边市场，为经销商、医院、实验室、药房和公共机构提供大批量供应。">Uluslararası sertifikalı üreticilerin hızlı tanı testlerini, laboratuvar sistemlerini ve güvenlik testlerini Türkiye&#x27;ye ve bölge pazarlarına ulaştırıyoruz. Distribütörler, hastaneler, laboratuvarlar, eczaneler ve kamu kurumları için yüksek hacimli tedarik sağlıyoruz.</p>
+            <div class="biotech-chips">
+                <span class="chip" data-tr="700+ Ürün Çeşidi" data-en="700+ Products" data-de="700+ Produkte" data-ar="أكثر من 700 منتج" data-zh="700+种产品">700+ Ürün Çeşidi</span>
+                <span class="chip" data-tr="CE &amp; FDA Onaylı Ürünler" data-en="CE &amp; FDA Approved Products" data-de="CE- &amp; FDA-zugelassene Produkte" data-ar="منتجات معتمدة CE وFDA" data-zh="CE和FDA认证产品">CE &amp; FDA Onaylı Ürünler</span>
+                <span class="chip" data-tr="TİTCK / ÜTS Kayıtlı" data-en="TİTCK / ÜTS Registered (Türkiye)" data-de="TİTCK / ÜTS registriert (Türkei)" data-ar="مسجلة لدى TİTCK / ÜTS (تركيا)" data-zh="土耳其TİTCK / ÜTS注册">TİTCK / ÜTS Kayıtlı</span>
+                <span class="chip" data-tr="OEM &amp; Private Label" data-en="OEM &amp; Private Label" data-de="OEM &amp; Private Label" data-ar="التصنيع لعلامتك الخاصة OEM" data-zh="OEM与贴牌生产">OEM &amp; Private Label</span>
+            </div>
+            <div class="services">
+                <div class="service-card">
+                    <span class="service-icon">🧪</span>
+                    <h4 data-tr="Hızlı Tanı Testleri (POCT)" data-en="Rapid Diagnostic Tests (POCT)" data-de="Schnelltests (POCT)" data-ar="اختبارات التشخيص السريع (POCT)" data-zh="快速诊断检测（POCT）">Hızlı Tanı Testleri (POCT)</h4>
+                    <ul>
+                        <li data-tr="Enfeksiyon hastalıkları testleri" data-en="Infectious disease tests" data-de="Tests auf Infektionskrankheiten" data-ar="اختبارات الأمراض المعدية" data-zh="传染病检测">Enfeksiyon hastalıkları testleri</li>
+                        <li data-tr="Kardiyak ve inflamasyon belirteçleri" data-en="Cardiac and inflammation markers" data-de="Herz- und Entzündungsmarker" data-ar="مؤشرات القلب والالتهاب" data-zh="心脏和炎症标志物">Kardiyak ve inflamasyon belirteçleri</li>
+                        <li data-tr="Gebelik ve doğurganlık testleri (hCG, LH)" data-en="Pregnancy and fertility tests (hCG, LH)" data-de="Schwangerschafts- und Fruchtbarkeitstests (hCG, LH)" data-ar="اختبارات الحمل والخصوبة (hCG، LH)" data-zh="妊娠和排卵检测（hCG、LH）">Gebelik ve doğurganlık testleri (hCG, LH)</li>
+                        <li data-tr="Madde kullanımı tarama panelleri" data-en="Drugs-of-abuse screening panels" data-de="Drogenscreening-Panels" data-ar="لوحات الكشف عن المخدرات" data-zh="毒品筛查检测板">Madde kullanımı tarama panelleri</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <span class="service-icon">🔬</span>
+                    <h4 data-tr="Laboratuvar &amp; FIA Sistemleri" data-en="Laboratory &amp; FIA Systems" data-de="Labor- &amp; FIA-Systeme" data-ar="أنظمة المختبرات وFIA" data-zh="实验室与荧光免疫分析系统">Laboratuvar &amp; FIA Sistemleri</h4>
+                    <ul>
+                        <li data-tr="Floresan immünoassay (FIA) analizörleri" data-en="Fluorescence immunoassay (FIA) analyzers" data-de="Fluoreszenz-Immunoassay-Analysegeräte (FIA)" data-ar="أجهزة تحليل المناعة الفلورية (FIA)" data-zh="荧光免疫分析仪（FIA）">Floresan immünoassay (FIA) analizörleri</li>
+                        <li data-tr="Kantitatif test kartuşları" data-en="Quantitative test cartridges" data-de="Quantitative Testkartuschen" data-ar="خراطيش اختبار كمية" data-zh="定量检测试剂卡">Kantitatif test kartuşları</li>
+                        <li data-tr="IVD reaktifleri ve sarf malzemeleri" data-en="IVD reagents and consumables" data-de="IVD-Reagenzien und Verbrauchsmaterialien" data-ar="كواشف ومستهلكات التشخيص المخبري" data-zh="体外诊断试剂及耗材">IVD reaktifleri ve sarf malzemeleri</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <span class="service-icon">💊</span>
+                    <h4 data-tr="Eczane &amp; OTC Ürünleri" data-en="Pharmacy &amp; OTC Products" data-de="Apotheken- &amp; OTC-Produkte" data-ar="منتجات الصيدليات والمنتجات دون وصفة" data-zh="药房与非处方产品">Eczane &amp; OTC Ürünleri</h4>
+                    <ul>
+                        <li data-tr="Evde kullanıma uygun self-test ürünleri" data-en="Self-test products for home use" data-de="Selbsttests für die Anwendung zu Hause" data-ar="اختبارات ذاتية للاستخدام المنزلي" data-zh="家用自测产品">Evde kullanıma uygun self-test ürünleri</li>
+                        <li data-tr="Eczane ve eczane zincirleri için toplu tedarik" data-en="Bulk supply for pharmacies and pharmacy chains" data-de="Großmengenbelieferung für Apotheken und Apothekenketten" data-ar="توريد بالجملة للصيدليات وسلاسل الصيدليات" data-zh="为药房及连锁药房批量供货">Eczane ve eczane zincirleri için toplu tedarik</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <span class="service-icon">🛡️</span>
+                    <h4 data-tr="İçki Güvenliği Testleri" data-en="Drink Safety Tests" data-de="Getränke-Sicherheitstests" data-ar="اختبارات سلامة المشروبات" data-zh="饮品安全检测">İçki Güvenliği Testleri</h4>
+                    <ul>
+                        <li data-tr="İçeceğe katılan madde tespit şeritleri" data-en="Drink-spiking detection strips" data-de="Teststreifen zum Nachweis von K.-o.-Tropfen" data-ar="شرائط كشف المواد المضافة إلى المشروبات" data-zh="饮料下药检测试纸">İçeceğe katılan madde tespit şeritleri</li>
+                        <li data-tr="Anahtarlık ve kart formatında taşınabilir testler" data-en="Portable keychain and card formats" data-de="Tragbare Formate als Schlüsselanhänger und Karte" data-ar="اختبارات محمولة بصيغة ميدالية وبطاقة" data-zh="钥匙扣和卡片式便携检测">Anahtarlık ve kart formatında taşınabilir testler</li>
+                        <li data-tr="GHB, ketamin ve diğer maddeler için çoklu paneller" data-en="Multi-drug panels for GHB, ketamine and more" data-de="Multi-Panels für GHB, Ketamin und weitere Substanzen" data-ar="لوحات متعددة لـ GHB والكيتامين ومواد أخرى" data-zh="GHB、氯胺酮等多项联检板">GHB, ketamin ve diğer maddeler için çoklu paneller</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <span class="service-icon">🏷️</span>
+                    <h4 data-tr="OEM &amp; Private Label" data-en="OEM &amp; Private Label" data-de="OEM &amp; Private Label" data-ar="التصنيع لعلامتك الخاصة" data-zh="OEM与贴牌生产">OEM &amp; Private Label</h4>
+                    <ul>
+                        <li data-tr="Kendi markanızla üretim" data-en="Manufacturing under your own brand" data-de="Herstellung unter Ihrer eigenen Marke" data-ar="التصنيع تحت علامتك التجارية" data-zh="以您的品牌生产">Kendi markanızla üretim</li>
+                        <li data-tr="Ambalaj ve etiket özelleştirme" data-en="Packaging and label customization" data-de="Individuelle Verpackung und Etikettierung" data-ar="تخصيص العبوات والملصقات" data-zh="包装和标签定制">Ambalaj ve etiket özelleştirme</li>
+                        <li data-tr="Dağıtım ve ihale projeleri için toplu üretim" data-en="Volume production for distribution and tenders" data-de="Großserien für Distribution und Ausschreibungen" data-ar="إنتاج بكميات كبيرة للتوزيع والمناقصات" data-zh="面向分销和招标项目的批量生产">Dağıtım ve ihale projeleri için toplu üretim</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <span class="service-icon">🚢</span>
+                    <h4 data-tr="Tedarik &amp; Lojistik" data-en="Supply &amp; Logistics" data-de="Beschaffung &amp; Logistik" data-ar="التوريد والخدمات اللوجستية" data-zh="供应与物流">Tedarik &amp; Lojistik</h4>
+                    <ul>
+                        <li data-tr="Üreticiden hedef ülkeye doğrudan sevkiyat" data-en="Direct shipment from manufacturer to destination" data-de="Direktversand vom Hersteller ins Zielland" data-ar="شحن مباشر من المصنّع إلى بلد الوجهة" data-zh="从制造商直接发货至目的国">Üreticiden hedef ülkeye doğrudan sevkiyat</li>
+                        <li data-tr="Yüksek hacimde rekabetçi fiyatlandırma" data-en="Competitive pricing at high volume" data-de="Wettbewerbsfähige Preise bei großen Mengen" data-ar="أسعار تنافسية للكميات الكبيرة" data-zh="大批量具竞争力价格">Yüksek hacimde rekabetçi fiyatlandırma</li>
+                        <li data-tr="Sertifika ve ihracat dokümantasyonu desteği" data-en="Certificate and export documentation support" data-de="Unterstützung bei Zertifikaten und Exportdokumenten" data-ar="دعم الشهادات ووثائق التصدير" data-zh="证书与出口文件支持">Sertifika ve ihracat dokümantasyonu desteği</li>
+                        <li data-tr="Satış sonrası destek" data-en="After-sales support" data-de="After-Sales-Support" data-ar="دعم ما بعد البيع" data-zh="售后支持">Satış sonrası destek</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="biotech-cta"><a class="btn-primary" href="#iletisim" data-tr="Ürün Kataloğu ve Teklif İsteyin" data-en="Request Catalogue &amp; Quotation" data-de="Katalog &amp; Angebot anfordern" data-ar="اطلب الكتالوج وعرض السعر" data-zh="索取产品目录及报价">Ürün Kataloğu ve Teklif İsteyin</a></div>
         </div>
     </section>
 
@@ -607,7 +695,10 @@
 
                 <div class="contact-form">
                     <h4 data-tr="Bize Mesaj Gönderin" data-en="Send Us a Message" data-de="Senden Sie uns eine Nachricht" data-ar="أرسل لنا رسالة" data-zh="给我们发送消息">Bize Mesaj Gönderin</h4>
-                    <form action="mailto:sales@kricoglobal.com" method="post" enctype="text/plain">
+                    <form action="https://formsubmit.co/sales@kricoglobal.com" method="POST">
+                        <input type="hidden" name="_subject" value="kricoglobal.com - Yeni iletişim formu mesajı">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
                         <div class="form-group">
                             <label data-tr="Adınız Soyadınız" data-en="Your Name" data-de="Ihr Name" data-ar="اسمك" data-zh="您的姓名">Adınız Soyadınız</label>
                             <input type="text" name="name" required>
@@ -646,6 +737,7 @@
             <div class="footer-col">
                 <h5 data-tr="Hızlı Erişim" data-en="Quick Links" data-de="Schnellzugriff" data-ar="روابط سريعة" data-zh="快速链接">Hızlı Erişim</h5>
                 <a href="#hakkimizda" data-tr="Hakkımızda" data-en="About" data-de="Über uns" data-ar="من نحن" data-zh="关于我们">Hakkımızda</a>
+                <a href="#biotech" data-tr="Biyoteknoloji" data-en="Biotech" data-de="Biotech" data-ar="التقنية الحيوية" data-zh="生物技术">Biyoteknoloji</a>
                 <a href="#faaliyetler" data-tr="Faaliyetler" data-en="Operations" data-de="Tätigkeiten" data-ar="عملياتنا" data-zh="业务范围">Faaliyetler</a>
                 <a href="#hizmetler" data-tr="Hizmetler" data-en="Services" data-de="Dienstleistungen" data-ar="خدماتنا" data-zh="服务">Hizmetler</a>
                 <a href="#iletisim" data-tr="İletişim" data-en="Contact" data-de="Kontakt" data-ar="اتصل بنا" data-zh="联系我们">İletişim</a>
