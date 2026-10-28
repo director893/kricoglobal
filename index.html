@@ -35,6 +35,70 @@
         #biotech .btn-primary { background: white; color: #15466C; }
         #biotech .btn-primary:hover { background: #e0e8f0; }
 
+        /* ---------- İKONLAR ---------- */
+        .ico { width: 1em; height: 1em; display: block; }
+        .service-card .service-icon { margin-bottom: 18px; width: 56px; height: 56px; border-radius: 12px; background: #e6eff7; color: #2B7BB9; display: flex; align-items: center; justify-content: center; font-size: 28px; }
+        .service-card:hover .service-icon { background: #2B7BB9; color: white; }
+        .service-card .service-icon { transition: background 0.3s, color 0.3s; }
+        .why-icon .ico { width: 30px; height: 30px; }
+        .info-icon .ico { width: 20px; height: 20px; }
+        .mv-icon { width: 46px; height: 46px; border-radius: 50%; background: #e6eff7; color: #2B7BB9; display: flex; align-items: center; justify-content: center; font-size: 24px; margin-bottom: 14px; }
+        .f-ico { display: flex !important; align-items: center; gap: 8px; }
+        .f-ico .ico { width: 15px; height: 15px; flex-shrink: 0; }
+
+        /* ---------- HERO HARİTA ---------- */
+        .hero { position: relative; overflow: hidden; }
+        .hero > *:not(.hero-map) { position: relative; z-index: 1; }
+        .hero-map { position: absolute; inset: 0; z-index: 0; pointer-events: none; }
+        .hero-routes { position: absolute; inset: 0; width: 100%; height: 100%; }
+        .hero-routes .route { fill: none; stroke: #5AA9E6; stroke-width: 1.4; stroke-linecap: round; stroke-dasharray: 1; stroke-dashoffset: 1; opacity: 0.75; animation: drawRoute 2.2s ease-out forwards; }
+        .hero-routes .mover { fill: white; opacity: 0.9; }
+        .hero-routes .city { fill: #5AA9E6; }
+        .hero-routes .city.hub { fill: white; }
+        .hero-routes .pulse { fill: none; stroke: white; stroke-width: 1; transform-origin: 507px 113px; animation: pulse 2.4s ease-out infinite; }
+        @keyframes drawRoute { to { stroke-dashoffset: 0; } }
+        @keyframes pulse { 0% { transform: scale(1); opacity: 0.9; } 100% { transform: scale(3.2); opacity: 0; } }
+
+        /* ---------- SÜREÇ ---------- */
+        #surec { background: #15466C; }
+        #surec .section-title { color: white; }
+        #surec .section-title::after { background: #5AA9E6; }
+        #surec .section-subtitle { color: #c8d4e0; }
+        .process { display: grid; grid-template-columns: repeat(5, 1fr); gap: 24px; margin-top: 60px; position: relative; }
+        .process::before { content: ''; position: absolute; top: 36px; left: 10%; right: 10%; height: 2px; background: repeating-linear-gradient(90deg, #5AA9E6 0 8px, transparent 8px 16px); opacity: 0.5; }
+        .process-step { text-align: center; position: relative; }
+        .step-icon { width: 72px; height: 72px; margin: 0 auto 20px; border-radius: 50%; background: white; color: #2B7BB9; display: flex; align-items: center; justify-content: center; font-size: 30px; position: relative; box-shadow: 0 0 0 6px rgba(90,169,230,0.25); }
+        .step-no { position: absolute; top: -4px; right: -4px; width: 26px; height: 26px; border-radius: 50%; background: #2B7BB9; color: white; font-size: 12px; font-weight: 800; display: flex; align-items: center; justify-content: center; border: 2px solid #15466C; }
+        .process-step h4 { color: white; font-size: 16px; font-weight: 700; margin-bottom: 8px; }
+        .process-step p { color: #c8d4e0; font-size: 13px; }
+        @media (max-width: 900px) {
+            .process { grid-template-columns: 1fr; gap: 0; max-width: 460px; margin-left: auto; margin-right: auto; }
+            .process::before { top: 36px; bottom: 36px; left: 35px; right: auto; width: 2px; height: auto; background: repeating-linear-gradient(180deg, #5AA9E6 0 8px, transparent 8px 16px); }
+            .process-step { display: grid; grid-template-columns: 72px 1fr; column-gap: 18px; text-align: left; padding-bottom: 26px; }
+            .step-icon { grid-row: span 2; margin: 0; }
+            .process-step h4 { margin: 10px 0 4px; }
+            html[dir="rtl"] .process-step { text-align: right; }
+            html[dir="rtl"] .process::before { left: auto; right: 35px; }
+        }
+
+        /* ---------- WHATSAPP ---------- */
+        .wa-float { position: fixed; right: 20px; bottom: 20px; z-index: 999; display: flex; align-items: center; gap: 10px; background: #2B7BB9; color: white; text-decoration: none; padding: 12px 18px 12px 14px; border-radius: 30px; font-weight: 700; font-size: 14px; box-shadow: 0 8px 24px rgba(21,70,108,0.35); transition: background 0.3s, transform 0.3s; }
+        .wa-float:hover { background: #15466C; transform: translateY(-2px); }
+        .wa-float .ico { width: 24px; height: 24px; }
+        html[dir="rtl"] .wa-float { right: auto; left: 20px; }
+        @media (max-width: 600px) {
+            .wa-float { padding: 14px; right: 16px; bottom: 16px; }
+            .wa-float span { display: none; }
+        }
+
+        /* ---------- KAYDIRMA ANİMASYONLARI ---------- */
+        .js-anim .reveal { opacity: 0; transform: translateY(26px); transition: opacity 0.7s ease, transform 0.7s ease; }
+        .js-anim .reveal.in { opacity: 1; transform: none; }
+        @media (prefers-reduced-motion: reduce) {
+            .hero-routes .route { animation: none; stroke-dashoffset: 0; }
+            .hero-routes .pulse, .hero-routes .mover { display: none; }
+        }
+
         /* ---------- HEADER ---------- */
         header { background: #15466C; color: white; padding: 18px 40px; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
         nav { display: flex; justify-content: space-between; align-items: center; max-width: 1400px; margin: 0 auto; gap: 20px; }
@@ -270,6 +334,9 @@
 
     <!-- HERO -->
     <div class="hero">
+        <div class="hero-map" aria-hidden="true">
+            <svg class="hero-routes" viewBox="0 0 900 450" preserveAspectRatio="xMidYMid slice"><path id="rt0" class="route" d="M726 155 Q616 72 507 113" pathLength="1" style="animation-delay:0.00s"/><path id="rt1" class="route" d="M507 113 Q480 132 452 218" pathLength="1" style="animation-delay:0.45s"/><path id="rt2" class="route" d="M507 113 Q550 109 592 160" pathLength="1" style="animation-delay:0.90s"/><path id="rt3" class="route" d="M507 113 Q488 90 468 92" pathLength="1" style="animation-delay:1.35s"/><path id="rt4" class="route" d="M507 113 Q534 134 560 222" pathLength="1" style="animation-delay:1.80s"/><path id="rt5" class="route" d="M726 155 Q589 108 452 218" pathLength="1" style="animation-delay:2.25s"/><path id="rt6" class="route" d="M612 108 Q560 81 507 113" pathLength="1" style="animation-delay:2.70s"/><circle class="mover" r="2.2"><animateMotion dur="3.2s" begin="1.40s" repeatCount="indefinite"><mpath href="#rt0"/></animateMotion></circle><circle class="mover" r="2.2"><animateMotion dur="3.8s" begin="1.85s" repeatCount="indefinite"><mpath href="#rt1"/></animateMotion></circle><circle class="mover" r="2.2"><animateMotion dur="4.4s" begin="2.30s" repeatCount="indefinite"><mpath href="#rt2"/></animateMotion></circle><circle class="mover" r="2.2"><animateMotion dur="3.2s" begin="2.75s" repeatCount="indefinite"><mpath href="#rt3"/></animateMotion></circle><circle class="mover" r="2.2"><animateMotion dur="3.8s" begin="3.20s" repeatCount="indefinite"><mpath href="#rt4"/></animateMotion></circle><circle class="mover" r="2.2"><animateMotion dur="4.4s" begin="3.65s" repeatCount="indefinite"><mpath href="#rt5"/></animateMotion></circle><circle class="mover" r="2.2"><animateMotion dur="3.2s" begin="4.10s" repeatCount="indefinite"><mpath href="#rt6"/></animateMotion></circle><circle class="city hub" cx="507" cy="113" r="4"/><circle class="city" cx="726" cy="155" r="2.8"/><circle class="city" cx="592" cy="160" r="2.8"/><circle class="city" cx="452" cy="218" r="2.8"/><circle class="city" cx="468" cy="92" r="2.8"/><circle class="city" cx="560" cy="222" r="2.8"/><circle class="city" cx="612" cy="108" r="2.8"/><circle class="pulse" cx="507" cy="113" r="5"/></svg>
+        </div>
         <div class="brand-name">Krico Global & Partners</div>
         <div class="slogan">Lifting Your Business...</div>
         <p class="description" 
@@ -321,7 +388,8 @@
 
             <div class="mv-grid">
                 <div class="mv-box">
-                    <h4 data-tr="🎯 Misyonumuz" data-en="🎯 Our Mission" data-de="🎯 Unsere Mission" data-ar="🎯 مهمتنا" data-zh="🎯 我们的使命">🎯 Misyonumuz</h4>
+                    <span class="mv-icon"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></span>
+                    <h4 data-tr="Misyonumuz" data-en="Our Mission" data-de="Unsere Mission" data-ar="مهمتنا" data-zh="我们的使命">Misyonumuz</h4>
                     <p data-tr="Müşterilerimizin küresel ölçekte dış ticaret rekabet edebilirliklerini artırmak, inovatif yaklaşımlarla cross trade ve ihracat-ithalat süreçlerini dönüştürmek ve değer yaratan stratejiler geliştirmek." 
                        data-en="To increase our clients' global foreign trade competitiveness, transform their cross trade and export-import processes with innovative approaches, and develop value-creating strategies."
                        data-de="Die globale Außenhandelswettbewerbsfähigkeit unserer Kunden zu steigern, ihre Cross-Trade- und Export-Import-Prozesse mit innovativen Ansätzen zu transformieren und wertschöpfende Strategien zu entwickeln."
@@ -330,7 +398,8 @@
                        Müşterilerimizin küresel ölçekte dış ticaret rekabet edebilirliklerini artırmak, inovatif yaklaşımlarla cross trade ve ihracat-ithalat süreçlerini dönüştürmek ve değer yaratan stratejiler geliştirmek.</p>
                 </div>
                 <div class="mv-box">
-                    <h4 data-tr="🚀 Vizyonumuz" data-en="🚀 Our Vision" data-de="🚀 Unsere Vision" data-ar="🚀 رؤيتنا" data-zh="🚀 我们的愿景">🚀 Vizyonumuz</h4>
+                    <span class="mv-icon"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></span>
+                    <h4 data-tr="Vizyonumuz" data-en="Our Vision" data-de="Unsere Vision" data-ar="رؤيتنا" data-zh="我们的愿景">Vizyonumuz</h4>
                     <p data-tr="Uluslararası pazarlarda güvenilirlik, inovasyon ve sürdürülebilirlik ilkeleriyle tanınan lider bir global dış ticaret ve danışmanlık markası olmak." 
                        data-en="To be a leading global foreign trade and consulting brand recognized for reliability, innovation and sustainability principles in international markets."
                        data-de="Eine führende globale Außenhandels- und Beratungsmarke zu sein, die für Zuverlässigkeit, Innovation und Nachhaltigkeit auf internationalen Märkten bekannt ist."
@@ -339,7 +408,8 @@
                        Uluslararası pazarlarda güvenilirlik, inovasyon ve sürdürülebilirlik ilkeleriyle tanınan lider bir global dış ticaret ve danışmanlık markası olmak.</p>
                 </div>
                 <div class="mv-box">
-                    <h4 data-tr="💎 Değerlerimiz" data-en="💎 Our Values" data-de="💎 Unsere Werte" data-ar="💎 قيمنا" data-zh="💎 我们的价值观">💎 Değerlerimiz</h4>
+                    <span class="mv-icon"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h12l4 6-10 12L2 9Z"/><path d="M2 9h20"/><path d="M10 3 8 9l4 12 4-12-2-6"/></svg></span>
+                    <h4 data-tr="Değerlerimiz" data-en="Our Values" data-de="Unsere Werte" data-ar="قيمنا" data-zh="我们的价值观">Değerlerimiz</h4>
                     <p data-tr="Şeffaflık & Güven, İnovasyon ve Mükemmeliyetçilik. Tüm dış ticaret süreçlerimizde açık iletişim kurar, modern çözümler geliştirir ve kaliteden ödün vermeden sonuç odaklı çalışırız." 
                        data-en="Transparency & Trust, Innovation, and Excellence. We communicate openly in all our foreign trade processes, develop modern solutions, and work result-oriented without compromising quality."
                        data-de="Transparenz & Vertrauen, Innovation und Exzellenz. Wir kommunizieren offen in allen unseren Außenhandelsprozessen, entwickeln moderne Lösungen und arbeiten ergebnisorientiert, ohne Kompromisse bei der Qualität einzugehen."
@@ -365,7 +435,7 @@
             </div>
             <div class="services">
                 <div class="service-card">
-                    <span class="service-icon">🧪</span>
+                    <span class="service-icon"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.5 2v17.5a2.5 2.5 0 0 1-5 0V2"/><path d="M8.5 2h7"/><path d="M14.5 16h-5"/></svg></span>
                     <h4 data-tr="Hızlı Tanı Testleri (POCT)" data-en="Rapid Diagnostic Tests (POCT)" data-de="Schnelltests (POCT)" data-ar="اختبارات التشخيص السريع (POCT)" data-zh="快速诊断检测（POCT）">Hızlı Tanı Testleri (POCT)</h4>
                     <ul>
                         <li data-tr="Enfeksiyon hastalıkları testleri" data-en="Infectious disease tests" data-de="Tests auf Infektionskrankheiten" data-ar="اختبارات الأمراض المعدية" data-zh="传染病检测">Enfeksiyon hastalıkları testleri</li>
@@ -375,7 +445,7 @@
                     </ul>
                 </div>
                 <div class="service-card">
-                    <span class="service-icon">🔬</span>
+                    <span class="service-icon"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18h8"/><path d="M3 22h18"/><path d="M14 22a7 7 0 1 0 0-14h-1"/><path d="M9 14h2"/><path d="M9 12a2 2 0 0 1-2-2V6h6v4a2 2 0 0 1-2 2Z"/><path d="M12 6V3a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v3"/></svg></span>
                     <h4 data-tr="Laboratuvar &amp; FIA Sistemleri" data-en="Laboratory &amp; FIA Systems" data-de="Labor- &amp; FIA-Systeme" data-ar="أنظمة المختبرات وFIA" data-zh="实验室与荧光免疫分析系统">Laboratuvar &amp; FIA Sistemleri</h4>
                     <ul>
                         <li data-tr="Floresan immünoassay (FIA) analizörleri" data-en="Fluorescence immunoassay (FIA) analyzers" data-de="Fluoreszenz-Immunoassay-Analysegeräte (FIA)" data-ar="أجهزة تحليل المناعة الفلورية (FIA)" data-zh="荧光免疫分析仪（FIA）">Floresan immünoassay (FIA) analizörleri</li>
@@ -384,7 +454,7 @@
                     </ul>
                 </div>
                 <div class="service-card">
-                    <span class="service-icon">💊</span>
+                    <span class="service-icon"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m10.5 20.5 10-10a4.95 4.95 0 1 0-7-7l-10 10a4.95 4.95 0 1 0 7 7Z"/><path d="m8.5 8.5 7 7"/></svg></span>
                     <h4 data-tr="Eczane &amp; OTC Ürünleri" data-en="Pharmacy &amp; OTC Products" data-de="Apotheken- &amp; OTC-Produkte" data-ar="منتجات الصيدليات والمنتجات دون وصفة" data-zh="药房与非处方产品">Eczane &amp; OTC Ürünleri</h4>
                     <ul>
                         <li data-tr="Evde kullanıma uygun self-test ürünleri" data-en="Self-test products for home use" data-de="Selbsttests für die Anwendung zu Hause" data-ar="اختبارات ذاتية للاستخدام المنزلي" data-zh="家用自测产品">Evde kullanıma uygun self-test ürünleri</li>
@@ -392,7 +462,7 @@
                     </ul>
                 </div>
                 <div class="service-card">
-                    <span class="service-icon">🛡️</span>
+                    <span class="service-icon"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></span>
                     <h4 data-tr="İçki Güvenliği Testleri" data-en="Drink Safety Tests" data-de="Getränke-Sicherheitstests" data-ar="اختبارات سلامة المشروبات" data-zh="饮品安全检测">İçki Güvenliği Testleri</h4>
                     <ul>
                         <li data-tr="İçeceğe katılan madde tespit şeritleri" data-en="Drink-spiking detection strips" data-de="Teststreifen zum Nachweis von K.-o.-Tropfen" data-ar="شرائط كشف المواد المضافة إلى المشروبات" data-zh="饮料下药检测试纸">İçeceğe katılan madde tespit şeritleri</li>
@@ -401,7 +471,7 @@
                     </ul>
                 </div>
                 <div class="service-card">
-                    <span class="service-icon">🏷️</span>
+                    <span class="service-icon"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12.6 2.6A2 2 0 0 0 11.2 2H4a2 2 0 0 0-2 2v7.2a2 2 0 0 0 .6 1.4l8.7 8.7a2.4 2.4 0 0 0 3.4 0l6.6-6.6a2.4 2.4 0 0 0 0-3.4z"/><circle cx="7.5" cy="7.5" r="1"/></svg></span>
                     <h4 data-tr="OEM &amp; Private Label" data-en="OEM &amp; Private Label" data-de="OEM &amp; Private Label" data-ar="التصنيع لعلامتك الخاصة" data-zh="OEM与贴牌生产">OEM &amp; Private Label</h4>
                     <ul>
                         <li data-tr="Kendi markanızla üretim" data-en="Manufacturing under your own brand" data-de="Herstellung unter Ihrer eigenen Marke" data-ar="التصنيع تحت علامتك التجارية" data-zh="以您的品牌生产">Kendi markanızla üretim</li>
@@ -410,7 +480,7 @@
                     </ul>
                 </div>
                 <div class="service-card">
-                    <span class="service-icon">🚢</span>
+                    <span class="service-icon"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 21c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1 .6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/><path d="M19.4 20A11.6 11.6 0 0 0 21 14l-9-4-9 4c0 2.9.9 5.3 2.8 7.8"/><path d="M19 13V7a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v6"/><path d="M12 10v4"/><path d="M12 2v3"/></svg></span>
                     <h4 data-tr="Tedarik &amp; Lojistik" data-en="Supply &amp; Logistics" data-de="Beschaffung &amp; Logistik" data-ar="التوريد والخدمات اللوجستية" data-zh="供应与物流">Tedarik &amp; Lojistik</h4>
                     <ul>
                         <li data-tr="Üreticiden hedef ülkeye doğrudan sevkiyat" data-en="Direct shipment from manufacturer to destination" data-de="Direktversand vom Hersteller ins Zielland" data-ar="شحن مباشر من المصنّع إلى بلد الوجهة" data-zh="从制造商直接发货至目的国">Üreticiden hedef ülkeye doğrudan sevkiyat</li>
@@ -556,7 +626,7 @@
 
             <div class="services">
                 <div class="service-card">
-                    <span class="service-icon">🌐</span>
+                    <span class="service-icon"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></span>
                     <h4 data-tr="Uluslararası Pazara Giriş" data-en="International Market Entry" data-de="Internationaler Markteintritt" data-ar="دخول السوق الدولية" data-zh="国际市场进入">Uluslararası Pazara Giriş</h4>
                     <ul>
                         <li data-tr="Pazar araştırması ve hedef kitle analizi" data-en="Market research and target audience analysis" data-de="Marktforschung und Zielgruppenanalyse" data-ar="أبحاث السوق وتحليل الجمهور المستهدف" data-zh="市场调研和目标受众分析">Pazar araştırması ve hedef kitle analizi</li>
@@ -566,7 +636,7 @@
                 </div>
 
                 <div class="service-card">
-                    <span class="service-icon">🤝</span>
+                    <span class="service-icon"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m11 17 2 2a1 1 0 1 0 3-3"/><path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.9-3.9a3 3 0 0 0-4.2 0l-.9.9a1 1 0 1 1-3-3l2.8-2.8a5.8 5.8 0 0 1 7.1-.9l.5.3a2 2 0 0 0 1.4.3L21 4"/><path d="m21 3 1 11h-2"/><path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3"/><path d="M3 4h8"/></svg></span>
                     <h4 data-tr="Cross Trade & Üçüncü Ülke Ticareti" data-en="Cross Trade & Third-Country Trade" data-de="Cross Trade & Drittlandhandel" data-ar="التجارة العابرة والتجارة بين دول ثالثة" data-zh="转口贸易与第三国贸易">Cross Trade & Üçüncü Ülke Ticareti</h4>
                     <ul>
                         <li data-tr="Üçüncü ülke ticareti operasyon yönetimi" data-en="Third-country trade operation management" data-de="Drittlandhandels-Operationsmanagement" data-ar="إدارة عمليات التجارة بين دول ثالثة" data-zh="第三国贸易业务管理">Üçüncü ülke ticareti operasyon yönetimi</li>
@@ -576,7 +646,7 @@
                 </div>
 
                 <div class="service-card">
-                    <span class="service-icon">📤</span>
+                    <span class="service-icon"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg></span>
                     <h4 data-tr="İhracat Yönetimi" data-en="Export Management" data-de="Exportmanagement" data-ar="إدارة التصدير" data-zh="出口管理">İhracat Yönetimi</h4>
                     <ul>
                         <li data-tr="Hedef pazar araştırması ve alıcı bulma" data-en="Target market research and buyer finding" data-de="Zielmarktforschung und Käuferfindung" data-ar="أبحاث السوق المستهدف وإيجاد المشترين" data-zh="目标市场调研和买家寻找">Hedef pazar araştırması ve alıcı bulma</li>
@@ -586,7 +656,7 @@
                 </div>
 
                 <div class="service-card">
-                    <span class="service-icon">📥</span>
+                    <span class="service-icon"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 3 10 14"/><path d="M10 8v6h6"/><path d="M14 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-9"/></svg></span>
                     <h4 data-tr="İthalat Yönetimi" data-en="Import Management" data-de="Importmanagement" data-ar="إدارة الاستيراد" data-zh="进口管理">İthalat Yönetimi</h4>
                     <ul>
                         <li data-tr="Yurt dışı tedarikçi araştırması ve doğrulama" data-en="Overseas supplier research and verification" data-de="Recherche und Verifizierung ausländischer Lieferanten" data-ar="البحث عن الموردين الأجانب والتحقق منهم" data-zh="海外供应商调研与验证">Yurt dışı tedarikçi araştırması ve doğrulama</li>
@@ -596,7 +666,7 @@
                 </div>
 
                 <div class="service-card">
-                    <span class="service-icon">💡</span>
+                    <span class="service-icon"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg></span>
                     <h4 data-tr="Stratejik Dış Ticaret Danışmanlığı" data-en="Strategic Foreign Trade Consulting" data-de="Strategische Außenhandelsberatung" data-ar="استشارات التجارة الخارجية الاستراتيجية" data-zh="战略外贸咨询">Stratejik Dış Ticaret Danışmanlığı</h4>
                     <ul>
                         <li data-tr="Pazara giriş ve büyüme stratejileri" data-en="Market entry and growth strategies" data-de="Markteintritts- und Wachstumsstrategien" data-ar="استراتيجيات دخول السوق والنمو" data-zh="市场进入和增长战略">Pazara giriş ve büyüme stratejileri</li>
@@ -606,7 +676,7 @@
                 </div>
 
                 <div class="service-card">
-                    <span class="service-icon">⚙️</span>
+                    <span class="service-icon"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 21v-7"/><path d="M4 10V3"/><path d="M12 21v-9"/><path d="M12 8V3"/><path d="M20 21v-5"/><path d="M20 12V3"/><path d="M2 14h4"/><path d="M10 8h4"/><path d="M18 16h4"/></svg></span>
                     <h4 data-tr="Operasyonel Mükemmellik" data-en="Operational Excellence" data-de="Operative Exzellenz" data-ar="التميز التشغيلي" data-zh="运营卓越">Operasyonel Mükemmellik</h4>
                     <ul>
                         <li data-tr="Uçtan uca dış ticaret operasyon yönetimi" data-en="End-to-end foreign trade operation management" data-de="End-to-End-Außenhandelsmanagement" data-ar="إدارة عمليات التجارة الخارجية من البداية للنهاية" data-zh="端到端外贸业务管理">Uçtan uca dış ticaret operasyon yönetimi</li>
@@ -624,7 +694,7 @@
             <h2 class="section-title" data-tr="Neden Krico Global & Partners?" data-en="Why Krico Global & Partners?" data-de="Warum Krico Global & Partners?" data-ar="لماذا Krico Global & Partners؟" data-zh="为什么选择 Krico Global & Partners？">Neden Krico Global & Partners?</h2>
             <div class="why-grid">
                 <div class="why-box">
-                    <div class="why-icon">🌍</div>
+                    <div class="why-icon"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
                     <h4 data-tr="Global Bakış, Yerel Uzmanlık" data-en="Global Vision, Local Expertise" data-de="Globale Vision, lokale Expertise" data-ar="رؤية عالمية وخبرة محلية" data-zh="全球视野，本地专长">Global Bakış, Yerel Uzmanlık</h4>
                     <p data-tr="Dünya trendlerini takip ederken, hedef pazarların dinamiklerine özel dış ticaret stratejileri üretiyoruz." 
                        data-en="While following global trends, we produce foreign trade strategies specific to the dynamics of target markets."
@@ -634,7 +704,7 @@
                        Dünya trendlerini takip ederken, hedef pazarların dinamiklerine özel dış ticaret stratejileri üretiyoruz.</p>
                 </div>
                 <div class="why-box">
-                    <div class="why-icon">✂️</div>
+                    <div class="why-icon"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.1 15.9"/><path d="M14.5 14.5 20 20"/><path d="M8.1 8.1 12 12"/></svg></div>
                     <h4 data-tr="Terzi Usulü Yaklaşım" data-en="Tailor-Made Approach" data-de="Maßgeschneiderter Ansatz" data-ar="نهج مخصص" data-zh="量身定制的方法">Terzi Usulü Yaklaşım</h4>
                     <p data-tr="Her markanın ihtiyacı benzersizdir. Standart şablonlar yerine kurumunuza özel dış ticaret çözümleri tasarlıyoruz." 
                        data-en="Every brand's needs are unique. Instead of standard templates, we design custom foreign trade solutions for your organization."
@@ -644,7 +714,7 @@
                        Her markanın ihtiyacı benzersizdir. Standart şablonlar yerine kurumunuza özel dış ticaret çözümleri tasarlıyoruz.</p>
                 </div>
                 <div class="why-box">
-                    <div class="why-icon">🤝</div>
+                    <div class="why-icon"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m11 17 2 2a1 1 0 1 0 3-3"/><path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.9-3.9a3 3 0 0 0-4.2 0l-.9.9a1 1 0 1 1-3-3l2.8-2.8a5.8 5.8 0 0 1 7.1-.9l.5.3a2 2 0 0 0 1.4.3L21 4"/><path d="m21 3 1 11h-2"/><path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3"/><path d="M3 4h8"/></svg></div>
                     <h4 data-tr="Uçtan Uca Destek" data-en="End-to-End Support" data-de="End-to-End-Unterstützung" data-ar="دعم من البداية للنهاية" data-zh="端到端支持">Uçtan Uca Destek</h4>
                     <p data-tr="Fikir aşamasından operasyonel uygulamaya ve tahsilata kadar tüm dış ticaret süreçlerinde aktif rol alıyoruz." 
                        data-en="We take an active role in all foreign trade processes, from the idea stage to operational implementation and collection."
@@ -652,6 +722,41 @@
                        data-ar="نلعب دورًا نشطًا في جميع عمليات التجارة الخارجية، من مرحلة الفكرة إلى التنفيذ التشغيلي والتحصيل."
                        data-zh="我们在所有外贸流程中积极发挥作用，从创意阶段到运营实施和收款。">
                        Fikir aşamasından operasyonel uygulamaya ve tahsilata kadar tüm dış ticaret süreçlerinde aktif rol alıyoruz.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SÜREÇ -->
+    <section id="surec">
+        <div class="container">
+            <h2 class="section-title" data-tr="Nasıl Çalışıyoruz?" data-en="How We Work" data-de="So arbeiten wir" data-ar="كيف نعمل" data-zh="我们的工作流程">Nasıl Çalışıyoruz?</h2>
+            <p class="section-subtitle" data-tr="Talebinizden teslimata kadar her adımı tek bir ekip yönetir." data-en="One team manages every step, from your request to delivery." data-de="Ein Team steuert jeden Schritt – von Ihrer Anfrage bis zur Lieferung." data-ar="فريق واحد يدير كل خطوة، من طلبك حتى التسليم." data-zh="从需求到交付，由同一团队全程负责。">Talebinizden teslimata kadar her adımı tek bir ekip yönetir.</p>
+            <div class="process">
+                <div class="process-step">
+                    <div class="step-icon"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="2" width="8" height="4" rx="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="M9 12h6"/><path d="M9 16h6"/></svg><span class="step-no">1</span></div>
+                    <h4 data-tr="Talep &amp; Analiz" data-en="Request &amp; Analysis" data-de="Anfrage &amp; Analyse" data-ar="الطلب والتحليل" data-zh="需求与分析">Talep & Analiz</h4>
+                    <p data-tr="İhtiyacınızı, hedef pazarınızı ve hacmi birlikte netleştiririz." data-en="We define your needs, target market and volumes together." data-de="Wir klären gemeinsam Bedarf, Zielmarkt und Mengen." data-ar="نحدد معًا احتياجاتك وسوقك المستهدف والكميات." data-zh="我们与您共同明确需求、目标市场和采购量。">İhtiyacınızı, hedef pazarınızı ve hacmi birlikte netleştiririz.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-icon"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg><span class="step-no">2</span></div>
+                    <h4 data-tr="Tedarikçi Eşleştirme" data-en="Supplier Matching" data-de="Lieferantenauswahl" data-ar="مطابقة المورّدين" data-zh="供应商匹配">Tedarikçi Eşleştirme</h4>
+                    <p data-tr="Doğrulanmış üretici ağımızdan en uygun tedarikçiyi belirleriz." data-en="We select the best-fit supplier from our verified manufacturer network." data-de="Wir wählen den passenden Lieferanten aus unserem geprüften Herstellernetz." data-ar="نختار المورّد الأنسب من شبكة المصنّعين المعتمدين لدينا." data-zh="我们从经过验证的制造商网络中挑选最合适的供应商。">Doğrulanmış üretici ağımızdan en uygun tedarikçiyi belirleriz.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-icon"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m7.5 4.3 9 5.1"/><path d="M21 16V8a2 2 0 0 0-1-1.7l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.7l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><path d="M3.3 7 12 12l8.7-5"/><path d="M12 22V12"/></svg><span class="step-no">3</span></div>
+                    <h4 data-tr="Numune &amp; Teklif" data-en="Samples &amp; Quotation" data-de="Muster &amp; Angebot" data-ar="العينات وعرض السعر" data-zh="样品与报价">Numune & Teklif</h4>
+                    <p data-tr="Numune, proforma ve teknik dokümanları onayınıza sunarız." data-en="We present samples, proforma and technical documents for your approval." data-de="Wir legen Muster, Proforma und technische Unterlagen zur Freigabe vor." data-ar="نقدّم العينات والفاتورة المبدئية والوثائق الفنية لموافقتك." data-zh="我们提供样品、形式发票和技术文件供您确认。">Numune, proforma ve teknik dokümanları onayınıza sunarız.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-icon"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M17 18h1"/><path d="M12 18h1"/><path d="M7 18h1"/></svg><span class="step-no">4</span></div>
+                    <h4 data-tr="Üretim &amp; Kalite" data-en="Production &amp; Quality" data-de="Produktion &amp; Qualität" data-ar="الإنتاج والجودة" data-zh="生产与质检">Üretim & Kalite</h4>
+                    <p data-tr="Üretimi takip eder, sevkiyat öncesi kalite kontrolünü organize ederiz." data-en="We follow production and organise pre-shipment quality control." data-de="Wir begleiten die Produktion und organisieren die Qualitätskontrolle vor dem Versand." data-ar="نتابع الإنتاج وننظّم فحص الجودة قبل الشحن." data-zh="我们跟进生产并安排出货前质检。">Üretimi takip eder, sevkiyat öncesi kalite kontrolünü organize ederiz.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-icon"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/><path d="M15 18H9"/><path d="M19 18h2a1 1 0 0 0 1-1v-3.7a1 1 0 0 0-.2-.6l-3.5-4.3a1 1 0 0 0-.8-.4H14"/><circle cx="17" cy="18" r="2"/><circle cx="7" cy="18" r="2"/></svg><span class="step-no">5</span></div>
+                    <h4 data-tr="Sevkiyat &amp; Teslimat" data-en="Shipping &amp; Delivery" data-de="Versand &amp; Lieferung" data-ar="الشحن والتسليم" data-zh="运输与交付">Sevkiyat & Teslimat</h4>
+                    <p data-tr="Lojistik, gümrük ve evrakları yönetir, teslimata kadar takip ederiz." data-en="We manage logistics, customs and documents through to delivery." data-de="Wir steuern Logistik, Zoll und Dokumente bis zur Lieferung." data-ar="ندير الخدمات اللوجستية والجمارك والوثائق حتى التسليم." data-zh="我们负责物流、清关和单证，全程跟踪至交付。">Lojistik, gümrük ve evrakları yönetir, teslimata kadar takip ederiz.</p>
                 </div>
             </div>
         </div>
@@ -676,7 +781,7 @@
                     <p data-tr="Bize aşağıdaki kanallardan ulaşabilirsiniz." data-en="You can reach us through the channels below." data-de="Sie können uns über die folgenden Kanäle erreichen." data-ar="يمكنك الوصول إلينا عبر القنوات أدناه." data-zh="您可以通过以下渠道联系我们。">Bize aşağıdaki kanallardan ulaşabilirsiniz.</p>
 
                     <div class="info-item">
-                        <div class="info-icon">📞</div>
+                        <div class="info-icon"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.9.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg></div>
                         <div>
                             <h5 data-tr="Telefon" data-en="Phone" data-de="Telefon" data-ar="الهاتف" data-zh="电话">Telefon</h5>
                             <a href="tel:+905359785642">+90 535 978 56 42</a>
@@ -684,7 +789,7 @@
                     </div>
 
                     <div class="info-item">
-                        <div class="info-icon">✉️</div>
+                        <div class="info-icon"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-9 5.7a2 2 0 0 1-2 0L2 7"/></svg></div>
                         <div>
                             <h5 data-tr="E-posta" data-en="Email" data-de="E-Mail" data-ar="البريد الإلكتروني" data-zh="电子邮件">E-posta</h5>
                             <a href="mailto:sales@kricoglobal.com">sales@kricoglobal.com</a>
@@ -692,7 +797,7 @@
                     </div>
 
                     <div class="info-item">
-                        <div class="info-icon">📍</div>
+                        <div class="info-icon"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></div>
                         <div>
                             <h5 data-tr="Adres" data-en="Address" data-de="Adresse" data-ar="العنوان" data-zh="地址">Adres</h5>
                             <p>Tarihi Rumeli Han, Şehit Muhtar Mah.<br>İstiklal Caddesi No: 48, Beyoğlu<br>Kat: 3, İstanbul / Turkey</p>
@@ -755,15 +860,20 @@
             </div>
             <div class="footer-col">
                 <h5 data-tr="İletişim" data-en="Contact" data-de="Kontakt" data-ar="اتصل بنا" data-zh="联系我们">İletişim</h5>
-                <a href="tel:+905359785642">📞 +90 535 978 56 42</a>
-                <a href="mailto:sales@kricoglobal.com">✉️ sales@kricoglobal.com</a>
-                <p>📍 Beyoğlu, İstanbul / Turkey</p>
+                <a href="tel:+905359785642" class="f-ico"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.9.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg> +90 535 978 56 42</a>
+                <a href="mailto:sales@kricoglobal.com" class="f-ico"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-9 5.7a2 2 0 0 1-2 0L2 7"/></svg> sales@kricoglobal.com</a>
+                <p class="f-ico"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg> Beyoğlu, İstanbul / Turkey</p>
             </div>
         </div>
         <div class="footer-bottom">
             <p>&copy; 2026 Krico Global & Partners. <span data-tr="Tüm hakları saklıdır." data-en="All rights reserved." data-de="Alle Rechte vorbehalten." data-ar="جميع الحقوق محفوظة." data-zh="版权所有。">Tüm hakları saklıdır.</span> · <a href="kvkk.html" class="footer-legal" data-tr="KVKK Aydınlatma Metni" data-en="Privacy Notice" data-de="Datenschutz" data-ar="الخصوصية" data-zh="隐私声明">KVKK Aydınlatma Metni</a></p>
         </div>
     </footer>
+
+    <!-- WHATSAPP -->
+    <a href="https://wa.me/905359785642" class="wa-float" target="_blank" rel="noopener" aria-label="WhatsApp">
+        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21l1.7-5A9 9 0 1 1 8 19.3z"/><path d="M9.5 8.5c0 3 2.5 5.5 5.5 5.5l1-1.5-2-1-1 .8a3.5 3.5 0 0 1-2-2l.8-1-1-2z"/></svg><span data-tr="WhatsApp ile yazın" data-en="Chat on WhatsApp" data-de="Per WhatsApp schreiben" data-ar="تواصل عبر واتساب" data-zh="通过WhatsApp联系">WhatsApp ile yazın</span>
+    </a>
 
     <!-- DİL DEĞİŞTİRME SCRIPT -->
     <script>
@@ -792,6 +902,62 @@
             const activeBtn = document.getElementById('btn-' + lang);
             if (activeBtn) activeBtn.classList.add('active');
         }
+    </script>
+
+    <!-- ANİMASYON SCRIPT -->
+    <script>
+    (function () {
+        var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        if (reduce || !('IntersectionObserver' in window)) return;
+        document.documentElement.classList.add('js-anim');
+
+        // Kartlar ve bloklar sırayla belirsin
+        var groups = ['.mv-grid', '#biotech .services', '#hizmetler .services', '.why-grid', '.process', '.contact-info-box', '.biotech-chips'];
+        var targets = [];
+        groups.forEach(function (sel) {
+            document.querySelectorAll(sel).forEach(function (g) {
+                Array.prototype.forEach.call(g.children, function (el, i) {
+                    el.classList.add('reveal');
+                    el.style.transitionDelay = (i % 6) * 90 + 'ms';
+                    targets.push(el);
+                });
+            });
+        });
+        document.querySelectorAll('.feature-row').forEach(function (el) { el.classList.add('reveal'); targets.push(el); });
+
+        var io = new IntersectionObserver(function (entries) {
+            entries.forEach(function (e) {
+                if (!e.isIntersecting) return;
+                var el = e.target;
+                el.classList.add('in');
+                io.unobserve(el);
+                // Animasyon bitince hover efektlerine karışmasın
+                setTimeout(function () { el.classList.remove('reveal', 'in'); el.style.transitionDelay = ''; }, 1400);
+            });
+        }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+        targets.forEach(function (el) { io.observe(el); });
+
+        // Rakamlar sayarak artsın
+        var stats = document.querySelectorAll('.stat-box h3');
+        var so = new IntersectionObserver(function (entries) {
+            entries.forEach(function (e) {
+                if (!e.isIntersecting) return;
+                var el = e.target, txt = el.textContent.trim();
+                var m = txt.match(/^(\D*)(\d+)(\D*)$/);
+                so.unobserve(el);
+                if (!m) return;
+                var pre = m[1], end = parseInt(m[2], 10), suf = m[3], t0 = null, dur = 1600;
+                function step(ts) {
+                    if (!t0) t0 = ts;
+                    var p = Math.min((ts - t0) / dur, 1), v = Math.round(end * (1 - Math.pow(1 - p, 3)));
+                    el.textContent = pre + v + suf;
+                    if (p < 1) requestAnimationFrame(step); else el.textContent = txt;
+                }
+                requestAnimationFrame(step);
+            });
+        }, { threshold: 0.5 });
+        stats.forEach(function (el) { so.observe(el); });
+    })();
     </script>
 
 </body>
