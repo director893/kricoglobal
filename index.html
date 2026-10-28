@@ -120,7 +120,7 @@
         /* ---------- YÖNETİM ---------- */
         .leader-card { display: flex; gap: 30px; align-items: center; background: white; border-radius: 12px; padding: 36px 40px; margin-top: 30px; box-shadow: 0 4px 20px rgba(0,0,0,0.06); border-left: 5px solid #2B7BB9; }
         html[dir="rtl"] .leader-card { border-left: none; border-right: 5px solid #2B7BB9; text-align: right; }
-        .leader-avatar { width: 96px; height: 96px; flex-shrink: 0; border-radius: 50%; background: #15466C; color: white; font-size: 32px; font-weight: 800; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 0 6px #e6eff7; }
+        .leader-avatar { width: 130px; height: 130px; flex-shrink: 0; border-radius: 50%; object-fit: cover; background: #e6eff7; box-shadow: 0 0 0 6px #e6eff7; }
         .leader-label { display: inline-block; background: #e6eff7; color: #2B7BB9; padding: 4px 12px; border-radius: 20px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px; }
         .leader-body h3 { color: #15466C; font-size: 22px; font-weight: 800; }
         .leader-role { color: #2B7BB9; font-weight: 600; font-size: 14px; margin-bottom: 10px; }
@@ -131,7 +131,7 @@
         @media (max-width: 600px) {
             .leader-card { flex-direction: column; text-align: center; padding: 30px 22px; gap: 18px; }
             html[dir="rtl"] .leader-card { text-align: center; }
-            .leader-avatar { width: 80px; height: 80px; font-size: 26px; }
+            .leader-avatar { width: 110px; height: 110px; }
         }
 
         /* ---------- HEADER ---------- */
@@ -342,7 +342,7 @@
             .lang-switcher button { padding: 4px 6px; font-size: 9px; }
         }
     </style>
-    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "Krico Global & Partners", "url": "https://kricoglobal.com/", "logo": "https://kricoglobal.com/krico-logo.jpg", "image": "https://kricoglobal.com/og-image.jpg", "slogan": "Lifting Your Business...", "email": "sales@kricoglobal.com", "telephone": "+90 535 978 56 42", "address": {"@type": "PostalAddress", "streetAddress": "Tarihi Rumeli Han, Şehit Muhtar Mah., İstiklal Caddesi No: 48, Kat: 3", "addressLocality": "Beyoğlu", "addressRegion": "İstanbul", "addressCountry": "TR"}, "employee": {"@type": "Person", "name": "Burak Çubukçuoğlu", "jobTitle": "Managing Director", "sameAs": "https://www.linkedin.com/in/burak-cubukcuoglu-134a682"}}</script>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "Krico Global & Partners", "url": "https://kricoglobal.com/", "logo": "https://kricoglobal.com/krico-logo.jpg", "image": "https://kricoglobal.com/og-image.jpg", "slogan": "Lifting Your Business...", "email": "sales@kricoglobal.com", "telephone": "+90 535 978 56 42", "address": {"@type": "PostalAddress", "streetAddress": "Tarihi Rumeli Han, Şehit Muhtar Mah., İstiklal Caddesi No: 48, Kat: 3", "addressLocality": "Beyoğlu", "addressRegion": "İstanbul", "addressCountry": "TR"}, "employee": {"@type": "Person", "name": "Burak Çubukçuoğlu", "jobTitle": "Managing Director", "image": "https://kricoglobal.com/burak-cubukcuoglu.jpg", "sameAs": "https://www.linkedin.com/in/burak-cubukcuoglu-134a682"}}</script>
 </head>
 <body>
 
@@ -455,7 +455,7 @@
                 </div>
             </div>
             <div class="leader-card">
-                <div class="leader-avatar" aria-hidden="true">BÇ</div>
+                <img class="leader-avatar" src="burak-cubukcuoglu.jpg" alt="Burak Çubukçuoğlu" width="130" height="130" loading="lazy">
                 <div class="leader-body">
                     <span class="leader-label" data-tr="Yönetim" data-en="Leadership" data-de="Geschäftsführung" data-ar="القيادة" data-zh="管理团队">Yönetim</span>
                     <h3>Burak Çubukçuoğlu</h3>
