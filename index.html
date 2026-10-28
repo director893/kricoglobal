@@ -137,6 +137,11 @@
         .form-group input, .form-group textarea { width: 100%; padding: 13px 16px; border: 2px solid #dce4ec; border-radius: 8px; font-family: inherit; font-size: 15px; transition: border-color 0.3s; background: white; }
         .form-group input:focus, .form-group textarea:focus { outline: none; border-color: #2B7BB9; }
         .form-group textarea { resize: vertical; min-height: 100px; }
+        .form-consent { margin: 4px 0 20px; font-size: 12px; color: #555; line-height: 1.5; }
+        .form-consent p { margin-bottom: 10px; }
+        .form-consent a { color: #2B7BB9; font-weight: 600; }
+        .form-consent label { display: flex; gap: 10px; align-items: flex-start; cursor: pointer; }
+        .form-consent input { margin-top: 2px; width: 16px; height: 16px; flex-shrink: 0; accent-color: #2B7BB9; }
         .form-submit { background: #2B7BB9; color: white; padding: 15px 40px; border: none; border-radius: 8px; font-weight: 700; font-size: 14px; cursor: pointer; width: 100%; transition: background 0.3s; font-family: inherit; text-transform: uppercase; letter-spacing: 1px; }
         .form-submit:hover { background: #1a5c8a; }
 
@@ -147,6 +152,8 @@
         .footer-col p, .footer-col a { color: #97a7bb; font-size: 14px; text-decoration: none; display: block; margin-bottom: 10px; transition: color 0.3s; font-weight: 500; }
         .footer-col a:hover { color: #5AA9E6; }
         .footer-logo { height: 100px; margin-bottom: 15px; background: white; padding: 6px 14px; border-radius: 6px; display: inline-block; }
+        .footer-legal { color: #97a7bb; text-decoration: none; }
+        .footer-legal:hover { color: #5AA9E6; }
         .footer-bottom { max-width: 1200px; margin: 40px auto 0; padding-top: 25px; border-top: 1px solid #1e4f73; text-align: center; color: #6b7d94; font-size: 13px; font-weight: 500; }
 
         /* ---------- RESPONSIVE (TABLET) ---------- */
@@ -719,6 +726,10 @@
                             <label data-tr="Mesajınız" data-en="Your Message" data-de="Ihre Nachricht" data-ar="رسالتك" data-zh="您的留言">Mesajınız</label>
                             <textarea name="message" required></textarea>
                         </div>
+                        <div class="form-consent">
+                            <p><span data-tr="Kişisel verileriniz KVKK Aydınlatma Metni kapsamında işlenir." data-en="Your personal data is processed in line with our Privacy Notice." data-de="Ihre personenbezogenen Daten werden gemäß unserer Datenschutzerklärung verarbeitet." data-ar="تتم معالجة بياناتك الشخصية وفقًا لإشعار الخصوصية الخاص بنا." data-zh="您的个人数据将按照我们的隐私声明进行处理。">Kişisel verileriniz KVKK Aydınlatma Metni kapsamında işlenir.</span> <a href="kvkk.html" target="_blank" rel="noopener" data-tr="Aydınlatma Metni&#x27;ni okuyun" data-en="Read the Privacy Notice" data-de="Datenschutzerklärung lesen" data-ar="اقرأ إشعار الخصوصية" data-zh="阅读隐私声明">Aydınlatma Metni'ni okuyun</a></p>
+                            <label><input type="checkbox" name="Yurt disi aktarim acik riza" value="Evet" required> <span data-tr="Mesajımın yanıtlanabilmesi için kişisel verilerimin yurt dışındaki form ve e-posta hizmet sağlayıcılarına aktarılmasına açık rıza veriyorum." data-en="I explicitly consent to my personal data being transferred to form and email service providers abroad so that my message can be answered." data-de="Ich willige ausdrücklich ein, dass meine personenbezogenen Daten zur Beantwortung meiner Nachricht an Formular- und E-Mail-Dienstleister im Ausland übermittelt werden." data-ar="أوافق صراحةً على نقل بياناتي الشخصية إلى مزودي خدمات النماذج والبريد الإلكتروني خارج تركيا للرد على رسالتي." data-zh="我明确同意将我的个人数据传输至境外的表单和电子邮件服务提供商，以便答复我的留言。">Mesajımın yanıtlanabilmesi için kişisel verilerimin yurt dışındaki form ve e-posta hizmet sağlayıcılarına aktarılmasına açık rıza veriyorum.</span></label>
+                        </div>
                         <button type="submit" class="form-submit" data-tr="Mesajı Gönder" data-en="Send Message" data-de="Nachricht senden" data-ar="إرسال الرسالة" data-zh="发送消息">Mesajı Gönder</button>
                     </form>
                 </div>
@@ -750,7 +761,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 Krico Global & Partners. <span data-tr="Tüm hakları saklıdır." data-en="All rights reserved." data-de="Alle Rechte vorbehalten." data-ar="جميع الحقوق محفوظة." data-zh="版权所有。">Tüm hakları saklıdır.</span></p>
+            <p>&copy; 2026 Krico Global & Partners. <span data-tr="Tüm hakları saklıdır." data-en="All rights reserved." data-de="Alle Rechte vorbehalten." data-ar="جميع الحقوق محفوظة." data-zh="版权所有。">Tüm hakları saklıdır.</span> · <a href="kvkk.html" class="footer-legal" data-tr="KVKK Aydınlatma Metni" data-en="Privacy Notice" data-de="Datenschutz" data-ar="الخصوصية" data-zh="隐私声明">KVKK Aydınlatma Metni</a></p>
         </div>
     </footer>
 
