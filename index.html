@@ -134,6 +134,43 @@
             .leader-avatar { width: 88px; height: 88px; }
         }
 
+
+        /* ---------- DEPARTMANLAR ---------- */
+        #departmanlar { background: #15466C; }
+        #departmanlar .section-title { color: white; }
+        #departmanlar .section-title::after { background: #5AA9E6; }
+        #departmanlar .section-subtitle { color: #c8d4e0; }
+        .dept-card p { color: #666; font-size: 13.5px; margin-bottom: 18px; }
+        .dept-mail { display: inline-flex; align-items: center; gap: 8px; color: #2B7BB9; font-weight: 700; font-size: 13px; text-decoration: none; word-break: break-all; }
+        .dept-mail .ico { width: 16px; height: 16px; flex-shrink: 0; }
+        .dept-mail:hover { color: #15466C; }
+        .partner-net { margin-top: 60px; text-align: center; }
+        .partner-net h3 { color: white; font-size: 22px; font-weight: 800; margin-bottom: 10px; }
+        .partner-net > p { color: #c8d4e0; font-size: 14px; max-width: 760px; margin: 0 auto; }
+
+        /* ---------- KARİYER ---------- */
+        #kariyer { background: white; }
+        .career-box { display: grid; grid-template-columns: 1.4fr 1fr; gap: 40px; align-items: center; background: #F4F7FA; border-radius: 12px; padding: 44px 40px; margin-top: 50px; border-left: 5px solid #2B7BB9; }
+        html[dir="rtl"] .career-box { border-left: none; border-right: 5px solid #2B7BB9; text-align: right; }
+        .career-box p { color: #555; font-size: 15px; font-weight: 500; margin-bottom: 18px; }
+        .career-areas { display: flex; flex-wrap: wrap; gap: 10px; }
+        .career-areas span { background: white; color: #15466C; border: 1px solid #dce4ec; padding: 7px 14px; border-radius: 20px; font-size: 13px; font-weight: 600; }
+        .career-cta { text-align: center; }
+        .career-cta small { display: block; color: #666; font-size: 13px; margin-top: 12px; }
+        @media (max-width: 768px) {
+            .career-box { grid-template-columns: 1fr; padding: 30px 22px; gap: 25px; margin-top: 35px; }
+            .partner-net { margin-top: 40px; }
+            .partner-net h3 { font-size: 18px; }
+        }
+
+        /* ---------- DEPARTMAN E-POSTALARI ---------- */
+        .dept-list { list-style: none; padding: 0; margin-top: 4px; }
+        .dept-list li { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; padding: 5px 0; border-bottom: 1px dashed #dce4ec; font-size: 13px; }
+        .dept-list li:last-child { border-bottom: none; }
+        .dept-list li span { color: #15466C; font-weight: 600; }
+        .form-group select { width: 100%; padding: 13px 16px; border: 2px solid #dce4ec; border-radius: 8px; font-family: inherit; font-size: 15px; background: white; color: #333; transition: border-color 0.3s; }
+        .form-group select:focus { outline: none; border-color: #2B7BB9; }
+
         /* ---------- HEADER ---------- */
         header { background: #15466C; color: white; padding: 18px 40px; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
         nav { display: flex; justify-content: space-between; align-items: center; max-width: 1400px; margin: 0 auto; gap: 20px; }
@@ -342,7 +379,7 @@
             .lang-switcher button { padding: 4px 6px; font-size: 9px; }
         }
     </style>
-    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "Krico Global & Partners", "url": "https://kricoglobal.com/", "logo": "https://kricoglobal.com/krico-logo.jpg", "image": "https://kricoglobal.com/og-image.jpg", "slogan": "Lifting Your Business...", "email": "sales@kricoglobal.com", "telephone": "+90 535 978 56 42", "address": {"@type": "PostalAddress", "streetAddress": "Tarihi Rumeli Han, Şehit Muhtar Mah., İstiklal Caddesi No: 48, Kat: 3", "addressLocality": "Beyoğlu", "addressRegion": "İstanbul", "addressCountry": "TR"}, "employee": {"@type": "Person", "name": "Burak Çubukçuoğlu", "jobTitle": "Managing Director", "image": "https://kricoglobal.com/burak-cubukcuoglu.jpg", "sameAs": "https://www.linkedin.com/in/burak-cubukcuoglu-134a682"}}</script>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "Krico Global & Partners", "url": "https://kricoglobal.com/", "logo": "https://kricoglobal.com/krico-logo.jpg", "image": "https://kricoglobal.com/og-image.jpg", "slogan": "Lifting Your Business...", "email": "sales@kricoglobal.com", "telephone": "+90 535 978 56 42", "contactPoint": [{"@type": "ContactPoint", "contactType": "customer service", "email": "info@kricoglobal.com", "availableLanguage": ["Turkish", "English"]}, {"@type": "ContactPoint", "contactType": "sales", "email": "sales@kricoglobal.com", "availableLanguage": ["Turkish", "English"]}, {"@type": "ContactPoint", "contactType": "technical support", "email": "biotech@kricoglobal.com", "availableLanguage": ["Turkish", "English"]}, {"@type": "ContactPoint", "contactType": "customer support", "email": "support@kricoglobal.com", "availableLanguage": ["Turkish", "English"]}, {"@type": "ContactPoint", "contactType": "billing support", "email": "finance@kricoglobal.com", "availableLanguage": ["Turkish", "English"]}], "address": {"@type": "PostalAddress", "streetAddress": "Tarihi Rumeli Han, Şehit Muhtar Mah., İstiklal Caddesi No: 48, Kat: 3", "addressLocality": "Beyoğlu", "addressRegion": "İstanbul", "addressCountry": "TR"}, "employee": {"@type": "Person", "name": "Burak Çubukçuoğlu", "jobTitle": "Managing Director", "image": "https://kricoglobal.com/burak-cubukcuoglu.jpg", "sameAs": "https://www.linkedin.com/in/burak-cubukcuoglu-134a682"}}</script>
 </head>
 <body>
 
@@ -355,6 +392,7 @@
                 <li><a href="#biotech" data-tr="Biyoteknoloji" data-en="Biotech" data-de="Biotech" data-ar="التقنية الحيوية" data-zh="生物技术">Biyoteknoloji</a></li>
                 <li><a href="#faaliyetler" data-tr="Faaliyetler" data-en="Operations" data-de="Tätigkeiten" data-ar="عملياتنا" data-zh="业务范围">Faaliyetler</a></li>
                 <li><a href="#hizmetler" data-tr="Hizmetler" data-en="Services" data-de="Dienstleistungen" data-ar="خدماتنا" data-zh="服务">Hizmetler</a></li>
+                <li><a href="#departmanlar" data-tr="Departmanlar" data-en="Departments" data-de="Abteilungen" data-ar="الأقسام" data-zh="部门">Departmanlar</a></li>
                 <li><a href="#nedenbiz" data-tr="Neden Biz?" data-en="Why Us?" data-de="Warum wir?" data-ar="لماذا نحن؟" data-zh="为什么选择我们？">Neden Biz?</a></li>
                 <li><a href="#iletisim" data-tr="İletişim" data-en="Contact" data-de="Kontakt" data-ar="اتصل بنا" data-zh="联系我们">İletişim</a></li>
             </ul>
@@ -376,12 +414,12 @@
         <div class="brand-name">Krico Global & Partners</div>
         <div class="slogan">Lifting Your Business...</div>
         <p class="description" 
-           data-tr="25 yılı aşkın süredir, 40'tan fazla ülkede uluslararası cross trade, ihracat-ithalat ve uçtan uca dış ticaret danışmanlığı çözümleri sunuyoruz." 
-           data-en="For over 25 years, we have been providing international cross trade, export-import and end-to-end foreign trade consulting solutions in more than 40 countries."
-           data-de="Seit über 25 Jahren bieten wir internationale Cross-Trade-, Export-Import- und End-to-End-Außenhandelsberatungslösungen in mehr als 40 Ländern an."
-           data-ar="منذ أكثر من 25 عامًا، نقدم حلول التجارة العابرة للحدود الدولية والاستيراد والتصدير والاستشارات الشاملة للتجارة الخارجية في أكثر من 40 دولة."
-           data-zh="25年多来，我们一直在40多个国家提供国际转口贸易、进出口和端到端外贸咨询服务。">
-           25 yılı aşkın süredir, 40'tan fazla ülkede uluslararası cross trade, ihracat-ithalat ve uçtan uca dış ticaret danışmanlığı çözümleri sunuyoruz.
+           data-tr="25 yılı aşkın ekip deneyimiyle, 40'tan fazla ülkede uluslararası cross trade, ihracat-ithalat ve uçtan uca dış ticaret danışmanlığı çözümleri sunuyoruz." 
+           data-en="With over 25 years of combined team experience, we provide international cross trade, export-import and end-to-end foreign trade consulting solutions in more than 40 countries."
+           data-de="Mit über 25 Jahren gebündelter Teamerfahrung bieten wir internationale Cross-Trade-, Export-Import- und End-to-End-Außenhandelsberatungslösungen in mehr als 40 Ländern an."
+           data-ar="بخبرة فريق تتجاوز 25 عامًا، نقدم حلول التجارة العابرة للحدود الدولية والاستيراد والتصدير والاستشارات الشاملة للتجارة الخارجية في أكثر من 40 دولة."
+           data-zh="凭借团队25年以上的综合经验，我们在40多个国家提供国际转口贸易、进出口和端到端外贸咨询服务。">
+           25 yılı aşkın ekip deneyimiyle, 40'tan fazla ülkede uluslararası cross trade, ihracat-ithalat ve uçtan uca dış ticaret danışmanlığı çözümleri sunuyoruz.
         </p>
         <div class="hero-buttons">
             <a href="#faaliyetler" class="btn-primary" data-tr="Faaliyetlerimiz" data-en="Our Operations" data-de="Unsere Tätigkeiten" data-ar="عملياتنا" data-zh="我们的业务">Faaliyetlerimiz</a>
@@ -394,15 +432,15 @@
         <div class="stats">
             <div class="stat-box">
                 <h3>25+</h3>
-                <p data-tr="Yıllık Deneyim" data-en="Years of Experience" data-de="Jahre Erfahrung" data-ar="سنوات الخبرة" data-zh="年经验">Yıllık Deneyim</p>
+                <p data-tr="Yıllık Ekip Deneyimi" data-en="Years of Team Experience" data-de="Jahre Teamerfahrung" data-ar="سنوات خبرة الفريق" data-zh="年团队经验">Yıllık Ekip Deneyimi</p>
             </div>
             <div class="stat-box">
                 <h3>40+</h3>
                 <p data-tr="Ülkede Faaliyet" data-en="Countries Served" data-de="Bediente Länder" data-ar="دولة نخدمها" data-zh="服务国家">Ülkede Faaliyet</p>
             </div>
             <div class="stat-box">
-                <h3>%98</h3>
-                <p data-tr="Müşteri Memnuniyeti" data-en="Client Satisfaction" data-de="Kundenzufriedenheit" data-ar="رضا العملاء" data-zh="客户满意度">Müşteri Memnuniyeti</p>
+                <h3>700+</h3>
+                <p data-tr="Ürün Çeşidi" data-en="Product Types" data-de="Produkttypen" data-ar="نوع منتج" data-zh="种产品">Ürün Çeşidi</p>
             </div>
         </div>
     </div>
@@ -414,12 +452,12 @@
                 Vizyonunuzu Küresel Başarıya Dönüştürüyoruz
             </h2>
             <p class="about-text" 
-               data-tr="Krico Global & Partners, hızla değişen küresel pazar dinamiklerinde kurumların ve markaların ihtiyaç duyduğu stratejik dış ticaret rehberliğini sunar. 25 yılı aşkın süredir uluslararası cross trade, ihracat-ithalat, uçtan uca dış ticaret operasyonları ve danışmanlık alanında faaliyet gösteriyor, 40'tan fazla ülkede iş ortaklarımıza değer katıyoruz. Deneyimli uzman kadromuz, teknoloji odaklı yaklaşımımız ve geniş global ağımızla, dış ticaret operasyonlarınızı büyütmek ve sürdürülebilir rekabet avantajı sağlamak için yanınızdayız." 
-               data-en="Krico Global & Partners provides the strategic foreign trade guidance that institutions and brands need in rapidly changing global market dynamics. For over 25 years, we have been operating in international cross trade, export-import, end-to-end foreign trade operations and consulting, adding value to our partners in more than 40 countries. With our experienced expert team, technology-driven approach and extensive global network, we are by your side to grow your foreign trade operations and provide sustainable competitive advantage."
-               data-de="Krico Global & Partners bietet die strategische Außenhandelsberatung, die Institutionen und Marken in sich schnell verändernden globalen Marktdynamiken benötigen. Seit über 25 Jahren sind wir im internationalen Cross-Trade, Export-Import, End-to-End-Außenhandelsoperationen und in der Beratung tätig und schaffen Mehrwert für unsere Partner in mehr als 40 Ländern."
-               data-ar="تقدم Krico Global & Partners التوجيه الاستراتيجي للتجارة الخارجية الذي تحتاجه المؤسسات والعلامات التجارية في ديناميكيات السوق العالمية سريعة التغير. منذ أكثر من 25 عامًا، نعمل في التجارة العابرة للحدود الدولية والاستيراد والتصدير وعمليات التجارة الخارجية الشاملة والاستشارات."
-               data-zh="Krico Global & Partners为快速变化的全球市场动态中的机构和品牌提供战略外贸指导。25年多来，我们一直从事国际转口贸易、进出口、端到端外贸业务和咨询，为40多个国家的合作伙伴创造价值。">
-               Krico Global & Partners, hızla değişen küresel pazar dinamiklerinde kurumların ve markaların ihtiyaç duyduğu stratejik dış ticaret rehberliğini sunar. 25 yılı aşkın süredir uluslararası cross trade, ihracat-ithalat, uçtan uca dış ticaret operasyonları ve danışmanlık alanında faaliyet gösteriyor, 40'tan fazla ülkede iş ortaklarımıza değer katıyoruz.
+               data-tr="Krico Global & Partners, hızla değişen küresel pazar dinamiklerinde kurumların ve markaların ihtiyaç duyduğu stratejik dış ticaret rehberliğini sunar. Ekibimizin 25 yılı aşkın deneyimiyle uluslararası cross trade, ihracat-ithalat, uçtan uca dış ticaret operasyonları ve danışmanlık alanında faaliyet gösteriyor, 40'tan fazla ülkede iş ortaklarımıza değer katıyoruz. Deneyimli uzman kadromuz, teknoloji odaklı yaklaşımımız ve geniş global ağımızla, dış ticaret operasyonlarınızı büyütmek ve sürdürülebilir rekabet avantajı sağlamak için yanınızdayız." 
+               data-en="Krico Global & Partners provides the strategic foreign trade guidance that institutions and brands need in rapidly changing global market dynamics. Drawing on over 25 years of team experience, we operate in international cross trade, export-import, end-to-end foreign trade operations and consulting, adding value to our partners in more than 40 countries. With our experienced expert team, technology-driven approach and extensive global network, we are by your side to grow your foreign trade operations and provide sustainable competitive advantage."
+               data-de="Krico Global & Partners bietet die strategische Außenhandelsberatung, die Institutionen und Marken in sich schnell verändernden globalen Marktdynamiken benötigen. Mit über 25 Jahren Teamerfahrung sind wir im internationalen Cross-Trade, Export-Import, End-to-End-Außenhandelsoperationen und in der Beratung tätig und schaffen Mehrwert für unsere Partner in mehr als 40 Ländern."
+               data-ar="تقدم Krico Global & Partners التوجيه الاستراتيجي للتجارة الخارجية الذي تحتاجه المؤسسات والعلامات التجارية في ديناميكيات السوق العالمية سريعة التغير. بخبرة فريق تتجاوز 25 عامًا، نعمل في التجارة العابرة للحدود الدولية والاستيراد والتصدير وعمليات التجارة الخارجية الشاملة والاستشارات."
+               data-zh="Krico Global & Partners为快速变化的全球市场动态中的机构和品牌提供战略外贸指导。凭借团队25年以上的经验，我们从事国际转口贸易、进出口、端到端外贸业务和咨询，为40多个国家的合作伙伴创造价值。">
+               Krico Global & Partners, hızla değişen küresel pazar dinamiklerinde kurumların ve markaların ihtiyaç duyduğu stratejik dış ticaret rehberliğini sunar. Ekibimizin 25 yılı aşkın deneyimiyle uluslararası cross trade, ihracat-ithalat, uçtan uca dış ticaret operasyonları ve danışmanlık alanında faaliyet gösteriyor, 40'tan fazla ülkede iş ortaklarımıza değer katıyoruz.
             </p>
 
             <div class="mv-grid">
@@ -724,6 +762,66 @@
         </div>
     </section>
 
+    <!-- DEPARTMANLAR -->
+    <section id="departmanlar">
+        <div class="container">
+            <h2 class="section-title" data-tr="Departmanlarımız" data-en="Our Departments" data-de="Unsere Abteilungen" data-ar="أقسامنا" data-zh="我们的部门">Departmanlarımız</h2>
+            <p class="section-subtitle" data-tr="Her talep, alanında uzman ilgili birime yönlendirilir ve tek bir proje koordinasyonu altında yürütülür." data-en="Every request is routed to the relevant specialist department and run under a single project coordination." data-de="Jede Anfrage wird an die zuständige Fachabteilung weitergeleitet und unter einer zentralen Projektkoordination abgewickelt." data-ar="يتم توجيه كل طلب إلى القسم المتخصص المعني ويُدار تحت تنسيق موحّد للمشروع." data-zh="每项需求都会转交相应的专业部门，并在统一的项目协调下执行。">Her talep, alanında uzman ilgili birime yönlendirilir ve tek bir proje koordinasyonu altında yürütülür.</p>
+            <div class="services">
+                <div class="service-card dept-card">
+                    <span class="service-icon"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 3h6"/><path d="M10 3v6.5L4.5 19a1.5 1.5 0 0 0 1.3 2h12.4a1.5 1.5 0 0 0 1.3-2L14 9.5V3"/><path d="M7 15h10"/></svg></span>
+                    <h4 data-tr="Biyoteknoloji &amp; Tanı Ürünleri" data-en="Biotech &amp; Diagnostics" data-de="Biotech &amp; Diagnostik" data-ar="التقنية الحيوية ومنتجات التشخيص" data-zh="生物技术与诊断产品">Biyoteknoloji & Tanı Ürünleri</h4>
+                    <p data-tr="Hızlı tanı testleri, FIA sistemleri ve OTC ürünlerinde ürün seçimi, teknik doküman ve teklif süreçlerini yürütür." data-en="Handles product selection, technical documentation and quotations for rapid tests, FIA systems and OTC products." data-de="Verantwortet Produktauswahl, technische Unterlagen und Angebote für Schnelltests, FIA-Systeme und OTC-Produkte." data-ar="يتولى اختيار المنتجات والوثائق الفنية وعروض الأسعار للاختبارات السريعة وأنظمة FIA ومنتجات OTC." data-zh="负责快速检测、FIA系统和OTC产品的选型、技术文件及报价。">Hızlı tanı testleri, FIA sistemleri ve OTC ürünlerinde ürün seçimi, teknik doküman ve teklif süreçlerini yürütür.</p>
+                    <a class="dept-mail" href="mailto:biotech@kricoglobal.com"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-9 5.7a2 2 0 0 1-2 0L2 7"/></svg>biotech@kricoglobal.com</a>
+                </div>
+                <div class="service-card dept-card">
+                    <span class="service-icon"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></span>
+                    <h4 data-tr="Dış Ticaret Operasyonları" data-en="Foreign Trade Operations" data-de="Außenhandelsoperationen" data-ar="عمليات التجارة الخارجية" data-zh="外贸业务部">Dış Ticaret Operasyonları</h4>
+                    <p data-tr="Cross trade, ihracat ve ithalat projelerini sözleşmeden sevkiyata kadar planlar ve yürütür." data-en="Plans and executes cross trade, export and import projects from contract to shipment." data-de="Plant und steuert Cross-Trade-, Export- und Importprojekte vom Vertrag bis zum Versand." data-ar="يخطط وينفذ مشاريع التجارة العابرة والتصدير والاستيراد من العقد حتى الشحن." data-zh="负责转口贸易、出口和进口项目从签约到发货的规划与执行。">Cross trade, ihracat ve ithalat projelerini sözleşmeden sevkiyata kadar planlar ve yürütür.</p>
+                    <a class="dept-mail" href="mailto:export@kricoglobal.com"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-9 5.7a2 2 0 0 1-2 0L2 7"/></svg>export@kricoglobal.com</a>
+                </div>
+                <div class="service-card dept-card">
+                    <span class="service-icon"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/><path d="M15 18H9"/><path d="M19 18h2a1 1 0 0 0 1-1v-3.7a1 1 0 0 0-.2-.6l-3.5-4.3a1 1 0 0 0-.8-.4H14"/><circle cx="17" cy="18" r="2"/><circle cx="7" cy="18" r="2"/></svg></span>
+                    <h4 data-tr="Lojistik &amp; Gümrük" data-en="Logistics &amp; Customs" data-de="Logistik &amp; Zoll" data-ar="الخدمات اللوجستية والجمارك" data-zh="物流与清关">Lojistik & Gümrük</h4>
+                    <p data-tr="Navlun, sigorta, gümrük ve evrak koordinasyonunu yönetir; sevkiyatları teslimata kadar takip eder." data-en="Coordinates freight, insurance, customs and documents, tracking every shipment through to delivery." data-de="Koordiniert Fracht, Versicherung, Zoll und Dokumente und verfolgt jede Sendung bis zur Lieferung." data-ar="ينسق الشحن والتأمين والجمارك والوثائق ويتابع كل شحنة حتى التسليم." data-zh="协调运费、保险、清关和单证，全程跟踪每批货物直至交付。">Navlun, sigorta, gümrük ve evrak koordinasyonunu yönetir; sevkiyatları teslimata kadar takip eder.</p>
+                    <a class="dept-mail" href="mailto:logistics@kricoglobal.com"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-9 5.7a2 2 0 0 1-2 0L2 7"/></svg>logistics@kricoglobal.com</a>
+                </div>
+                <div class="service-card dept-card">
+                    <span class="service-icon"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></span>
+                    <h4 data-tr="Ruhsat &amp; Regülasyon" data-en="Regulatory Affairs" data-de="Zulassung &amp; Regulierung" data-ar="الشؤون التنظيمية والتراخيص" data-zh="注册与法规事务">Ruhsat & Regülasyon</h4>
+                    <p data-tr="CE/FDA belge kontrolü, TİTCK/ÜTS kayıt süreçleri ve ihracat uyum dokümantasyonunu yönetir." data-en="Manages CE/FDA document checks, TİTCK/ÜTS registrations and export compliance documentation." data-de="Verantwortet CE/FDA-Dokumentenprüfung, TİTCK/ÜTS-Registrierungen und Export-Compliance-Unterlagen." data-ar="يدير التحقق من وثائق CE/FDA وتسجيلات TİTCK/ÜTS ووثائق الامتثال للتصدير." data-zh="负责CE/FDA文件审核、TİTCK/ÜTS注册及出口合规文件。">CE/FDA belge kontrolü, TİTCK/ÜTS kayıt süreçleri ve ihracat uyum dokümantasyonunu yönetir.</p>
+                    <a class="dept-mail" href="mailto:regulatory@kricoglobal.com"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-9 5.7a2 2 0 0 1-2 0L2 7"/></svg>regulatory@kricoglobal.com</a>
+                </div>
+                <div class="service-card dept-card">
+                    <span class="service-icon"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/><path d="M6 15h4"/></svg></span>
+                    <h4 data-tr="Finans &amp; Ödeme Yönetimi" data-en="Finance &amp; Payments" data-de="Finanzen &amp; Zahlungen" data-ar="المالية وإدارة المدفوعات" data-zh="财务与支付">Finans & Ödeme Yönetimi</h4>
+                    <p data-tr="Akreditif (L/C), ödeme planları, tahsilat ve kur riski süreçlerini yönetir." data-en="Manages letters of credit (L/C), payment terms, collections and currency risk." data-de="Verantwortet Akkreditive (L/C), Zahlungsbedingungen, Inkasso und Währungsrisiken." data-ar="يدير الاعتمادات المستندية وشروط الدفع والتحصيل ومخاطر العملات." data-zh="负责信用证、付款条件、收款及汇率风险管理。">Akreditif (L/C), ödeme planları, tahsilat ve kur riski süreçlerini yönetir.</p>
+                    <a class="dept-mail" href="mailto:finance@kricoglobal.com"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-9 5.7a2 2 0 0 1-2 0L2 7"/></svg>finance@kricoglobal.com</a>
+                </div>
+                <div class="service-card dept-card">
+                    <span class="service-icon"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3z"/><path d="M3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg></span>
+                    <h4 data-tr="Müşteri İlişkileri &amp; Satış Sonrası" data-en="Customer Success &amp; After-Sales" data-de="Kundenbetreuung &amp; After-Sales" data-ar="علاقات العملاء وخدمة ما بعد البيع" data-zh="客户关系与售后服务">Müşteri İlişkileri & Satış Sonrası</h4>
+                    <p data-tr="Sipariş takibi, numune talepleri ve satış sonrası destek taleplerini karşılar." data-en="Handles order tracking, sample requests and after-sales support." data-de="Betreut Auftragsverfolgung, Musteranfragen und After-Sales-Support." data-ar="يتولى متابعة الطلبات وطلبات العينات ودعم ما بعد البيع." data-zh="负责订单跟踪、样品申请及售后支持。">Sipariş takibi, numune talepleri ve satış sonrası destek taleplerini karşılar.</p>
+                    <a class="dept-mail" href="mailto:support@kricoglobal.com"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-9 5.7a2 2 0 0 1-2 0L2 7"/></svg>support@kricoglobal.com</a>
+                </div>
+            </div>
+
+            <div class="partner-net">
+                <h3 data-tr="Çözüm Ortaklığı Ağımız" data-en="Our Partner Network" data-de="Unser Partnernetzwerk" data-ar="شبكة شركائنا" data-zh="我们的合作伙伴网络">Çözüm Ortaklığı Ağımız</h3>
+                <p data-tr="&amp; Partners adımızın karşılığı: operasyonlarımızı, her alanda uzman ve doğrulanmış çözüm ortaklarımızla birlikte yürütüyoruz." data-en="The &amp; Partners in our name: we run our operations together with verified, specialist partners in every field." data-de="Das &amp; Partners in unserem Namen: Wir arbeiten in jedem Bereich mit geprüften, spezialisierten Partnern zusammen." data-ar="معنى &amp; Partners في اسمنا: ننفذ عملياتنا مع شركاء متخصصين وموثوقين في كل مجال." data-zh="我们名称中的&amp; Partners：我们与各领域经过验证的专业合作伙伴共同开展业务。">&amp; Partners adımızın karşılığı: operasyonlarımızı, her alanda uzman ve doğrulanmış çözüm ortaklarımızla birlikte yürütüyoruz.</p>
+                <div class="biotech-chips partner-chips">
+                    <span class="chip" data-tr="Lisanslı gümrük müşavirleri" data-en="Licensed customs brokers" data-de="Lizenzierte Zollagenten" data-ar="مخلّصون جمركيون مرخّصون" data-zh="持牌报关行">Lisanslı gümrük müşavirleri</span>
+                    <span class="chip" data-tr="Uluslararası lojistik ve navlun firmaları" data-en="International logistics &amp; freight forwarders" data-de="Internationale Logistik- &amp; Speditionsfirmen" data-ar="شركات لوجستية وشحن دولية" data-zh="国际物流与货代公司">Uluslararası lojistik ve navlun firmaları</span>
+                    <span class="chip" data-tr="Kargo sigortası" data-en="Cargo insurance" data-de="Transportversicherung" data-ar="تأمين الشحنات" data-zh="货物保险">Kargo sigortası</span>
+                    <span class="chip" data-tr="Bankacılık &amp; akreditif çözüm ortakları" data-en="Banking &amp; L/C partners" data-de="Banken- &amp; Akkreditivpartner" data-ar="شركاء مصرفيون والاعتمادات المستندية" data-zh="银行与信用证合作伙伴">Bankacılık & akreditif çözüm ortakları</span>
+                    <span class="chip" data-tr="Bağımsız kalite kontrol ve gözetim" data-en="Independent inspection &amp; QC" data-de="Unabhängige Qualitätskontrolle" data-ar="فحص وجودة مستقلة" data-zh="独立质检与监装">Bağımsız kalite kontrol ve gözetim</span>
+                    <span class="chip" data-tr="Sertifikalı üretici ağı" data-en="Certified manufacturer network" data-de="Zertifiziertes Herstellernetzwerk" data-ar="شبكة مصنّعين معتمدين" data-zh="认证制造商网络">Sertifikalı üretici ağı</span>
+                    <span class="chip" data-tr="Hukuk &amp; mali müşavirlik" data-en="Legal &amp; accounting advisors" data-de="Rechts- &amp; Steuerberatung" data-ar="مستشارون قانونيون وماليون" data-zh="法律与财务顾问">Hukuk & mali müşavirlik</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- NEDEN BİZ -->
     <section id="nedenbiz">
         <div class="container">
@@ -767,7 +865,7 @@
     <section id="surec">
         <div class="container">
             <h2 class="section-title" data-tr="Nasıl Çalışıyoruz?" data-en="How We Work" data-de="So arbeiten wir" data-ar="كيف نعمل" data-zh="我们的工作流程">Nasıl Çalışıyoruz?</h2>
-            <p class="section-subtitle" data-tr="Talebinizden teslimata kadar her adımı tek bir ekip yönetir." data-en="One team manages every step, from your request to delivery." data-de="Ein Team steuert jeden Schritt – von Ihrer Anfrage bis zur Lieferung." data-ar="فريق واحد يدير كل خطوة، من طلبك حتى التسليم." data-zh="从需求到交付，由同一团队全程负责。">Talebinizden teslimata kadar her adımı tek bir ekip yönetir.</p>
+            <p class="section-subtitle" data-tr="Talebinizden teslimata kadar her adımı ilgili uzman birimlerimiz, tek bir proje koordinasyonu altında yönetir." data-en="From your request to delivery, our specialist departments manage every step under a single project coordination." data-de="Von Ihrer Anfrage bis zur Lieferung steuern unsere Fachabteilungen jeden Schritt unter einer zentralen Projektkoordination." data-ar="من طلبك حتى التسليم، تدير أقسامنا المتخصصة كل خطوة تحت تنسيق موحّد للمشروع." data-zh="从需求到交付，我们的专业部门在统一的项目协调下管理每一个环节。">Talebinizden teslimata kadar her adımı ilgili uzman birimlerimiz, tek bir proje koordinasyonu altında yönetir.</p>
             <div class="process">
                 <div class="process-step">
                     <div class="step-icon"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="2" width="8" height="4" rx="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="M9 12h6"/><path d="M9 16h6"/></svg><span class="step-no">1</span></div>
@@ -793,6 +891,29 @@
                     <div class="step-icon"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/><path d="M15 18H9"/><path d="M19 18h2a1 1 0 0 0 1-1v-3.7a1 1 0 0 0-.2-.6l-3.5-4.3a1 1 0 0 0-.8-.4H14"/><circle cx="17" cy="18" r="2"/><circle cx="7" cy="18" r="2"/></svg><span class="step-no">5</span></div>
                     <h4 data-tr="Sevkiyat &amp; Teslimat" data-en="Shipping &amp; Delivery" data-de="Versand &amp; Lieferung" data-ar="الشحن والتسليم" data-zh="运输与交付">Sevkiyat & Teslimat</h4>
                     <p data-tr="Lojistik, gümrük ve evrakları yönetir, teslimata kadar takip ederiz." data-en="We manage logistics, customs and documents through to delivery." data-de="Wir steuern Logistik, Zoll und Dokumente bis zur Lieferung." data-ar="ندير الخدمات اللوجستية والجمارك والوثائق حتى التسليم." data-zh="我们负责物流、清关和单证，全程跟踪至交付。">Lojistik, gümrük ve evrakları yönetir, teslimata kadar takip ederiz.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KARİYER -->
+    <section id="kariyer">
+        <div class="container">
+            <h2 class="section-title" data-tr="Kariyer: Ekibimize Katılın" data-en="Careers: Join Our Team" data-de="Karriere: Werden Sie Teil unseres Teams" data-ar="الوظائف: انضم إلى فريقنا" data-zh="职业发展：加入我们">Kariyer: Ekibimize Katılın</h2>
+            <div class="career-box">
+                <div>
+                    <p data-tr="Dış ticaret, medikal satış, lojistik ve regülasyon alanlarında birlikte çalışabileceğimiz profesyonellerin ve stajyer adaylarının başvurularını her zaman değerlendiriyoruz." data-en="We always welcome applications from professionals and internship candidates in foreign trade, medical sales, logistics and regulatory affairs." data-de="Wir freuen uns jederzeit über Bewerbungen von Fachkräften und Praktikanten aus Außenhandel, Medizinvertrieb, Logistik und Regulierung." data-ar="نرحب دائمًا بطلبات المهنيين والمتدربين في مجالات التجارة الخارجية والمبيعات الطبية واللوجستيات والشؤون التنظيمية." data-zh="我们始终欢迎外贸、医疗销售、物流及法规领域的专业人士和实习生申请。">Dış ticaret, medikal satış, lojistik ve regülasyon alanlarında birlikte çalışabileceğimiz profesyonellerin ve stajyer adaylarının başvurularını her zaman değerlendiriyoruz.</p>
+                    <div class="career-areas">
+                        <span data-tr="Dış ticaret operasyonları" data-en="Foreign trade operations" data-de="Außenhandelsoperationen" data-ar="عمليات التجارة الخارجية" data-zh="外贸业务">Dış ticaret operasyonları</span>
+                        <span data-tr="Medikal &amp; biyoteknoloji satışı" data-en="Medical &amp; biotech sales" data-de="Medizin- &amp; Biotech-Vertrieb" data-ar="مبيعات طبية وتقنية حيوية" data-zh="医疗与生物技术销售">Medikal & biyoteknoloji satışı</span>
+                        <span data-tr="Lojistik &amp; gümrük" data-en="Logistics &amp; customs" data-de="Logistik &amp; Zoll" data-ar="اللوجستيات والجمارك" data-zh="物流与清关">Lojistik & gümrük</span>
+                        <span data-tr="Regülasyon &amp; kalite" data-en="Regulatory &amp; quality" data-de="Regulierung &amp; Qualität" data-ar="الشؤون التنظيمية والجودة" data-zh="法规与质量">Regülasyon & kalite</span>
+                        <span data-tr="Staj programı" data-en="Internship programme" data-de="Praktikumsprogramm" data-ar="برنامج التدريب" data-zh="实习项目">Staj programı</span>
+                    </div>
+                </div>
+                <div class="career-cta">
+                    <a href="mailto:careers@kricoglobal.com?subject=Genel%20Ba%C5%9Fvuru%20%2F%20General%20Application" class="btn-primary" data-tr="Genel Başvuru Gönder" data-en="Send General Application" data-de="Initiativbewerbung senden" data-ar="أرسل طلبًا عامًا" data-zh="提交通用申请">Genel Başvuru Gönder</a>
+                    <small>careers@kricoglobal.com</small>
                 </div>
             </div>
         </div>
@@ -839,11 +960,29 @@
                             <p>Tarihi Rumeli Han, Şehit Muhtar Mah.<br>İstiklal Caddesi No: 48, Beyoğlu<br>Kat: 3, İstanbul / Turkey</p>
                         </div>
                     </div>
+
+                    <div class="info-item">
+                        <div class="info-icon"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg></div>
+                        <div style="flex:1;min-width:0">
+                            <h5 data-tr="Departman E-postaları" data-en="Department Emails" data-de="Abteilungs-E-Mails" data-ar="البريد الإلكتروني للأقسام" data-zh="部门邮箱">Departman E-postaları</h5>
+                            <ul class="dept-list">
+                                <li><span data-tr="Genel" data-en="General" data-de="Allgemein" data-ar="عام" data-zh="综合咨询">Genel</span><a href="mailto:info@kricoglobal.com">info@kricoglobal.com</a></li>
+                                <li><span data-tr="Satış &amp; Teklif" data-en="Sales &amp; Quotes" data-de="Vertrieb &amp; Angebote" data-ar="المبيعات وعروض الأسعار" data-zh="销售与报价">Satış & Teklif</span><a href="mailto:sales@kricoglobal.com">sales@kricoglobal.com</a></li>
+                                <li><span data-tr="Biyoteknoloji" data-en="Biotech" data-de="Biotech" data-ar="التقنية الحيوية" data-zh="生物技术">Biyoteknoloji</span><a href="mailto:biotech@kricoglobal.com">biotech@kricoglobal.com</a></li>
+                                <li><span data-tr="Dış Ticaret Op." data-en="Trade Operations" data-de="Handelsoperationen" data-ar="عمليات التجارة" data-zh="外贸业务">Dış Ticaret Op.</span><a href="mailto:export@kricoglobal.com">export@kricoglobal.com</a></li>
+                                <li><span data-tr="Lojistik" data-en="Logistics" data-de="Logistik" data-ar="اللوجستيات" data-zh="物流">Lojistik</span><a href="mailto:logistics@kricoglobal.com">logistics@kricoglobal.com</a></li>
+                                <li><span data-tr="Regülasyon" data-en="Regulatory" data-de="Regulierung" data-ar="الشؤون التنظيمية" data-zh="法规事务">Regülasyon</span><a href="mailto:regulatory@kricoglobal.com">regulatory@kricoglobal.com</a></li>
+                                <li><span data-tr="Finans" data-en="Finance" data-de="Finanzen" data-ar="المالية" data-zh="财务">Finans</span><a href="mailto:finance@kricoglobal.com">finance@kricoglobal.com</a></li>
+                                <li><span data-tr="Satış Sonrası" data-en="After-Sales" data-de="After-Sales" data-ar="ما بعد البيع" data-zh="售后">Satış Sonrası</span><a href="mailto:support@kricoglobal.com">support@kricoglobal.com</a></li>
+                                <li><span data-tr="Kariyer" data-en="Careers" data-de="Karriere" data-ar="الوظائف" data-zh="招聘">Kariyer</span><a href="mailto:careers@kricoglobal.com">careers@kricoglobal.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="contact-form">
                     <h4 data-tr="Bize Mesaj Gönderin" data-en="Send Us a Message" data-de="Senden Sie uns eine Nachricht" data-ar="أرسل لنا رسالة" data-zh="给我们发送消息">Bize Mesaj Gönderin</h4>
-                    <form action="https://formsubmit.co/sales@kricoglobal.com" method="POST">
+                    <form id="contact-form" action="https://formsubmit.co/sales@kricoglobal.com" method="POST">
                         <input type="hidden" name="_subject" value="kricoglobal.com - Yeni iletişim formu mesajı">
                         <input type="hidden" name="_template" value="table">
                         <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
@@ -858,6 +997,20 @@
                         <div class="form-group">
                             <label data-tr="Şirket / Kurum Adı" data-en="Company / Organization" data-de="Unternehmen / Organisation" data-ar="الشركة / المؤسسة" data-zh="公司 / 机构">Şirket / Kurum Adı</label>
                             <input type="text" name="company">
+                        </div>
+                        <div class="form-group">
+                            <label for="f-dept" data-tr="İlgili Departman" data-en="Department" data-de="Abteilung" data-ar="القسم المعني" data-zh="相关部门">İlgili Departman</label>
+                            <select id="f-dept" name="department">
+                                <option value="general" data-tr="Genel Bilgi" data-en="General Enquiry" data-de="Allgemeine Anfrage" data-ar="استفسار عام" data-zh="一般咨询">Genel Bilgi</option>
+                                <option value="sales" data-tr="Satış &amp; Teklif" data-en="Sales &amp; Quotation" data-de="Vertrieb &amp; Angebot" data-ar="المبيعات وعرض السعر" data-zh="销售与报价">Satış & Teklif</option>
+                                <option value="biotech" data-tr="Biyoteknoloji &amp; Tanı Ürünleri" data-en="Biotech &amp; Diagnostics" data-de="Biotech &amp; Diagnostik" data-ar="التقنية الحيوية والتشخيص" data-zh="生物技术与诊断">Biyoteknoloji & Tanı Ürünleri</option>
+                                <option value="export" data-tr="Dış Ticaret Operasyonları" data-en="Foreign Trade Operations" data-de="Außenhandelsoperationen" data-ar="عمليات التجارة الخارجية" data-zh="外贸业务">Dış Ticaret Operasyonları</option>
+                                <option value="logistics" data-tr="Lojistik &amp; Gümrük" data-en="Logistics &amp; Customs" data-de="Logistik &amp; Zoll" data-ar="اللوجستيات والجمارك" data-zh="物流与清关">Lojistik & Gümrük</option>
+                                <option value="regulatory" data-tr="Ruhsat &amp; Regülasyon" data-en="Regulatory Affairs" data-de="Zulassung &amp; Regulierung" data-ar="الشؤون التنظيمية" data-zh="注册与法规">Ruhsat & Regülasyon</option>
+                                <option value="finance" data-tr="Finans &amp; Ödeme" data-en="Finance &amp; Payments" data-de="Finanzen &amp; Zahlungen" data-ar="المالية والمدفوعات" data-zh="财务与支付">Finans & Ödeme</option>
+                                <option value="support" data-tr="Satış Sonrası Destek" data-en="After-Sales Support" data-de="After-Sales-Support" data-ar="دعم ما بعد البيع" data-zh="售后支持">Satış Sonrası Destek</option>
+                                <option value="careers" data-tr="Kariyer" data-en="Careers" data-de="Karriere" data-ar="الوظائف" data-zh="招聘">Kariyer</option>
+                            </select>
                         </div>
                         <div class="form-group">
                             <label data-tr="Konu" data-en="Subject" data-de="Betreff" data-ar="الموضوع" data-zh="主题">Konu</label>
@@ -903,7 +1056,19 @@
                 <a href="#biotech" data-tr="Biyoteknoloji" data-en="Biotech" data-de="Biotech" data-ar="التقنية الحيوية" data-zh="生物技术">Biyoteknoloji</a>
                 <a href="#faaliyetler" data-tr="Faaliyetler" data-en="Operations" data-de="Tätigkeiten" data-ar="عملياتنا" data-zh="业务范围">Faaliyetler</a>
                 <a href="#hizmetler" data-tr="Hizmetler" data-en="Services" data-de="Dienstleistungen" data-ar="خدماتنا" data-zh="服务">Hizmetler</a>
+                <a href="#departmanlar" data-tr="Departmanlar" data-en="Departments" data-de="Abteilungen" data-ar="الأقسام" data-zh="部门">Departmanlar</a>
+                <a href="#kariyer" data-tr="Kariyer" data-en="Careers" data-de="Karriere" data-ar="الوظائف" data-zh="招聘">Kariyer</a>
                 <a href="#iletisim" data-tr="İletişim" data-en="Contact" data-de="Kontakt" data-ar="اتصل بنا" data-zh="联系我们">İletişim</a>
+            </div>
+            <div class="footer-col">
+                <h5 data-tr="Departmanlar" data-en="Departments" data-de="Abteilungen" data-ar="الأقسام" data-zh="部门">Departmanlar</h5>
+                <a href="mailto:info@kricoglobal.com">info@kricoglobal.com</a>
+                <a href="mailto:biotech@kricoglobal.com">biotech@kricoglobal.com</a>
+                <a href="mailto:export@kricoglobal.com">export@kricoglobal.com</a>
+                <a href="mailto:logistics@kricoglobal.com">logistics@kricoglobal.com</a>
+                <a href="mailto:regulatory@kricoglobal.com">regulatory@kricoglobal.com</a>
+                <a href="mailto:finance@kricoglobal.com">finance@kricoglobal.com</a>
+                <a href="mailto:support@kricoglobal.com">support@kricoglobal.com</a>
             </div>
             <div class="footer-col">
                 <h5 data-tr="İletişim" data-en="Contact" data-de="Kontakt" data-ar="اتصل بنا" data-zh="联系我们">İletişim</h5>
@@ -952,6 +1117,19 @@
         }
     </script>
 
+    <!-- FORM: DEPARTMAN KONUSU -->
+    <script>
+    (function () {
+        var f = document.getElementById('contact-form');
+        if (!f) return;
+        f.addEventListener('submit', function () {
+            var sel = document.getElementById('f-dept');
+            var subj = f.querySelector('input[name="_subject"]');
+            if (sel && subj) subj.value = 'kricoglobal.com - [' + sel.options[sel.selectedIndex].text + '] Yeni iletişim formu mesajı';
+        });
+    })();
+    </script>
+
     <!-- ANİMASYON SCRIPT -->
     <script>
     (function () {
@@ -960,7 +1138,7 @@
         document.documentElement.classList.add('js-anim');
 
         // Kartlar ve bloklar sırayla belirsin
-        var groups = ['.mv-grid', '#biotech .services', '#hizmetler .services', '.why-grid', '.process', '.contact-info-box', '.biotech-chips'];
+        var groups = ['.mv-grid', '#biotech .services', '#hizmetler .services', '#departmanlar .services', '.career-areas', '.why-grid', '.process', '.contact-info-box', '.biotech-chips'];
         var targets = [];
         groups.forEach(function (sel) {
             document.querySelectorAll(sel).forEach(function (g) {
