@@ -73,7 +73,7 @@
         .hero-routes .mover { fill: white; opacity: 0.9; }
         .hero-routes .city { fill: #5AA9E6; }
         .hero-routes .city.hub { fill: white; }
-        .hero-routes .pulse { fill: none; stroke: white; stroke-width: 1; transform-origin: 507px 113px; animation: pulse 2.4s ease-out infinite; }
+        .hero-routes .pulse { fill: none; stroke: white; stroke-width: 1; transform-origin: 522px 147px; animation: pulse 2.4s ease-out infinite; }
         @keyframes drawRoute { to { stroke-dashoffset: 0; } }
         @keyframes pulse { 0% { transform: scale(1); opacity: 0.9; } 100% { transform: scale(3.2); opacity: 0; } }
 
@@ -175,13 +175,19 @@
         nav ul a { color: #e0e8f0; text-decoration: none; font-weight: 600; font-size: 13px; text-transform: uppercase; letter-spacing: 0.5px; transition: color 0.3s; }
         nav ul a:hover { color: #2B7BB9; }
 
+        .nav-toggle { display: none; background: transparent; border: 1px solid rgba(255,255,255,0.35); border-radius: 6px; width: 44px; height: 40px; padding: 0; cursor: pointer; flex-direction: column; justify-content: center; align-items: center; gap: 5px; }
+        .nav-toggle span { display: block; width: 22px; height: 2px; background: white; border-radius: 2px; transition: transform 0.3s, opacity 0.3s; }
+        nav.open .nav-toggle span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+        nav.open .nav-toggle span:nth-child(2) { opacity: 0; }
+        nav.open .nav-toggle span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
         .lang-switcher { display: flex; gap: 5px; background: rgba(255,255,255,0.1); padding: 4px; border-radius: 6px; }
         .lang-switcher button { background: transparent; border: none; color: white; padding: 6px 12px; border-radius: 4px; cursor: pointer; font-weight: bold; font-size: 12px; font-family: inherit; transition: all 0.3s; }
         .lang-switcher button:hover { background: rgba(43,123,185,0.6); }
         .lang-switcher button.active { background: #2B7BB9; }
 
         /* ---------- HERO ---------- */
-        .hero { background: linear-gradient(rgba(21,70,108,0.85), rgba(21,70,108,0.85)), url('trade%20map.webp'); 
+        .hero { background: #15466C url('world-map.svg') center / cover no-repeat;
                 background-size: cover; background-position: center; color: white; padding: 140px 20px; text-align: center; }
         .hero .brand-name { font-size: 56px; font-weight: 800; letter-spacing: -1.5px; margin-bottom: 15px; line-height: 1.1; }
         .hero .slogan { font-size: 24px; font-weight: 500; color: #5AA9E6; margin-bottom: 30px; font-style: italic; letter-spacing: 1px; }
@@ -305,10 +311,13 @@
         /* ---------- RESPONSIVE (MOBILE) ---------- */
         @media (max-width: 768px) {
             header { padding: 12px 20px; }
-            nav { flex-direction: column; gap: 12px; }
-            nav ul { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; padding: 0; }
-            nav ul a { font-size: 11px; }
-            .logo img { height: 75px; }
+            nav { flex-wrap: wrap; gap: 0; }
+            .nav-toggle { display: flex; }
+            nav ul, nav .lang-switcher { display: none; }
+            nav.open ul { display: flex; flex-direction: column; align-items: center; width: 100%; gap: 16px; padding: 18px 0 8px; margin: 0; }
+            nav.open .lang-switcher { display: flex; margin: 10px auto 6px; }
+            nav ul a { font-size: 13px; }
+            .logo img { height: 58px; padding: 4px 10px; }
             .lang-switcher button { padding: 5px 8px; font-size: 10px; }
 
             .hero { padding: 80px 20px; }
@@ -382,7 +391,8 @@
     <!-- HEADER -->
     <header>
         <nav>
-            <a href="#" class="logo"><img src="krico-logo.jpg" alt="Krico Global & Partners Logo"></a>
+            <a href="#" class="logo"><img src="krico-logo-hd.webp" alt="Krico Global & Partners Logo"></a>
+            <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false" onclick="var n=this.parentNode;var o=n.classList.toggle('open');this.setAttribute('aria-expanded',o)"><span></span><span></span><span></span></button>
             <ul>
                 <li><a href="#hakkimizda" data-tr="Hakkımızda" data-en="About" data-de="Über uns" data-ar="من نحن" data-zh="关于我们">Hakkımızda</a></li>
                 <li><a href="#biotech" data-tr="Biyoteknoloji" data-en="Biotech" data-de="Biotech" data-ar="التقنية الحيوية" data-zh="生物技术">Biyoteknoloji</a></li>
@@ -405,17 +415,17 @@
     <!-- HERO -->
     <div class="hero">
         <div class="hero-map" aria-hidden="true">
-            <svg class="hero-routes" viewBox="0 0 900 450" preserveAspectRatio="xMidYMid slice"><path id="rt0" class="route" d="M726 155 Q616 72 507 113" pathLength="1" style="animation-delay:0.00s"/><path id="rt1" class="route" d="M507 113 Q480 132 452 218" pathLength="1" style="animation-delay:0.45s"/><path id="rt2" class="route" d="M507 113 Q550 109 592 160" pathLength="1" style="animation-delay:0.90s"/><path id="rt3" class="route" d="M507 113 Q488 90 468 92" pathLength="1" style="animation-delay:1.35s"/><path id="rt4" class="route" d="M507 113 Q534 134 560 222" pathLength="1" style="animation-delay:1.80s"/><path id="rt5" class="route" d="M726 155 Q589 108 452 218" pathLength="1" style="animation-delay:2.25s"/><path id="rt6" class="route" d="M612 108 Q560 81 507 113" pathLength="1" style="animation-delay:2.70s"/><circle class="mover" r="2.2"><animateMotion dur="3.2s" begin="1.40s" repeatCount="indefinite"><mpath href="#rt0"/></animateMotion></circle><circle class="mover" r="2.2"><animateMotion dur="3.8s" begin="1.85s" repeatCount="indefinite"><mpath href="#rt1"/></animateMotion></circle><circle class="mover" r="2.2"><animateMotion dur="4.4s" begin="2.30s" repeatCount="indefinite"><mpath href="#rt2"/></animateMotion></circle><circle class="mover" r="2.2"><animateMotion dur="3.2s" begin="2.75s" repeatCount="indefinite"><mpath href="#rt3"/></animateMotion></circle><circle class="mover" r="2.2"><animateMotion dur="3.8s" begin="3.20s" repeatCount="indefinite"><mpath href="#rt4"/></animateMotion></circle><circle class="mover" r="2.2"><animateMotion dur="4.4s" begin="3.65s" repeatCount="indefinite"><mpath href="#rt5"/></animateMotion></circle><circle class="mover" r="2.2"><animateMotion dur="3.2s" begin="4.10s" repeatCount="indefinite"><mpath href="#rt6"/></animateMotion></circle><circle class="city hub" cx="507" cy="113" r="4"/><circle class="city" cx="726" cy="155" r="2.8"/><circle class="city" cx="592" cy="160" r="2.8"/><circle class="city" cx="452" cy="218" r="2.8"/><circle class="city" cx="468" cy="92" r="2.8"/><circle class="city" cx="560" cy="222" r="2.8"/><circle class="city" cx="612" cy="108" r="2.8"/><circle class="pulse" cx="507" cy="113" r="5"/></svg>
+            <svg class="hero-routes" viewBox="0 0 900 450" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><path id="rt0" class="route" d="M754 172 Q644 108 522 147" pathLength="1" style="animation-delay:0.00s"/><path id="rt1" class="route" d="M522 147 Q468 176 453 235" pathLength="1" style="animation-delay:0.45s"/><path id="rt2" class="route" d="M522 147 Q564 152 588 187" pathLength="1" style="animation-delay:0.90s"/><path id="rt3" class="route" d="M522 147 Q500 122 467 122" pathLength="1" style="animation-delay:1.35s"/><path id="rt4" class="route" d="M522 147 Q555 196 542 253" pathLength="1" style="animation-delay:1.80s"/><path id="rt5" class="route" d="M754 172 Q590 137 453 235" pathLength="1" style="animation-delay:2.25s"/><path id="rt6" class="route" d="M642 142 Q581 118 522 147" pathLength="1" style="animation-delay:2.70s"/><circle class="mover" r="2.2"><animateMotion dur="3.2s" begin="1.40s" repeatCount="indefinite"><mpath href="#rt0"/></animateMotion></circle><circle class="mover" r="2.2"><animateMotion dur="3.8s" begin="1.85s" repeatCount="indefinite"><mpath href="#rt1"/></animateMotion></circle><circle class="mover" r="2.2"><animateMotion dur="4.4s" begin="2.30s" repeatCount="indefinite"><mpath href="#rt2"/></animateMotion></circle><circle class="mover" r="2.2"><animateMotion dur="3.2s" begin="2.75s" repeatCount="indefinite"><mpath href="#rt3"/></animateMotion></circle><circle class="mover" r="2.2"><animateMotion dur="3.8s" begin="3.20s" repeatCount="indefinite"><mpath href="#rt4"/></animateMotion></circle><circle class="mover" r="2.2"><animateMotion dur="4.4s" begin="3.65s" repeatCount="indefinite"><mpath href="#rt5"/></animateMotion></circle><circle class="mover" r="2.2"><animateMotion dur="3.2s" begin="4.10s" repeatCount="indefinite"><mpath href="#rt6"/></animateMotion></circle><circle class="city hub" cx="522" cy="147" r="4"/><circle class="city" cx="754" cy="172" r="2.8"/><circle class="city" cx="588" cy="187" r="2.8"/><circle class="city" cx="453" cy="235" r="2.8"/><circle class="city" cx="467" cy="122" r="2.8"/><circle class="city" cx="542" cy="253" r="2.8"/><circle class="city" cx="642" cy="142" r="2.8"/><circle class="pulse" cx="522" cy="147" r="5"/></svg>
         </div>
         <div class="brand-name">Krico Global & Partners</div>
         <div class="slogan">Lifting Your Business...</div>
         <p class="description" 
-           data-tr="25 yılı aşkın ekip deneyimiyle, 40'tan fazla ülkede uluslararası cross trade, ihracat-ithalat ve uçtan uca dış ticaret danışmanlığı çözümleri sunuyoruz." 
-           data-en="With over 25 years of combined team experience, we provide international cross trade, export-import and end-to-end foreign trade consulting solutions in more than 40 countries."
-           data-de="Mit über 25 Jahren gebündelter Teamerfahrung bieten wir internationale Cross-Trade-, Export-Import- und End-to-End-Außenhandelsberatungslösungen in mehr als 40 Ländern an."
-           data-ar="بخبرة فريق تتجاوز 25 عامًا، نقدم حلول التجارة العابرة للحدود الدولية والاستيراد والتصدير والاستشارات الشاملة للتجارة الخارجية في أكثر من 40 دولة."
-           data-zh="凭借团队25年以上的综合经验，我们在40多个国家提供国际转口贸易、进出口和端到端外贸咨询服务。">
-           25 yılı aşkın ekip deneyimiyle, 40'tan fazla ülkede uluslararası cross trade, ihracat-ithalat ve uçtan uca dış ticaret danışmanlığı çözümleri sunuyoruz.
+           data-tr="25 yılı aşkın ekip deneyimi ve 40'tan fazla ülkeye uzanan tedarik ağımızla uluslararası cross trade, ihracat-ithalat ve uçtan uca dış ticaret danışmanlığı çözümleri sunuyoruz." 
+           data-en="With over 25 years of combined team experience and a supply network reaching more than 40 countries, we provide international cross trade, export-import and end-to-end foreign trade consulting solutions."
+           data-de="Mit über 25 Jahren gebündelter Teamerfahrung und einem Liefernetzwerk, das mehr als 40 Länder erreicht, bieten wir internationale Cross-Trade-, Export-Import- und End-to-End-Außenhandelsberatungslösungen an."
+           data-ar="بخبرة فريق تتجاوز 25 عامًا وشبكة توريد تمتد إلى أكثر من 40 دولة، نقدم حلول التجارة العابرة للحدود الدولية والاستيراد والتصدير والاستشارات الشاملة للتجارة الخارجية."
+           data-zh="凭借团队25年以上的综合经验和覆盖40多个国家的供应网络，我们提供国际转口贸易、进出口和端到端外贸咨询服务。">
+           25 yılı aşkın ekip deneyimi ve 40'tan fazla ülkeye uzanan tedarik ağımızla uluslararası cross trade, ihracat-ithalat ve uçtan uca dış ticaret danışmanlığı çözümleri sunuyoruz.
         </p>
         <div class="hero-buttons">
             <a href="#faaliyetler" class="btn-primary" data-tr="Faaliyetlerimiz" data-en="Our Operations" data-de="Unsere Tätigkeiten" data-ar="عملياتنا" data-zh="我们的业务">Faaliyetlerimiz</a>
@@ -432,7 +442,7 @@
             </div>
             <div class="stat-box">
                 <h3>40+</h3>
-                <p data-tr="Ülkede Faaliyet" data-en="Countries Served" data-de="Bediente Länder" data-ar="دولة نخدمها" data-zh="服务国家">Ülkede Faaliyet</p>
+                <p data-tr="Ülkeye Uzanan Ağ" data-en="Countries in Our Network" data-de="Länder in unserem Netzwerk" data-ar="دولة ضمن شبكتنا" data-zh="网络覆盖国家">Ülkeye Uzanan Ağ</p>
             </div>
             <div class="stat-box">
                 <h3>700+</h3>
@@ -448,12 +458,12 @@
                 Vizyonunuzu Küresel Başarıya Dönüştürüyoruz
             </h2>
             <p class="about-text" 
-               data-tr="Krico Global & Partners, hızla değişen küresel pazar dinamiklerinde kurumların ve markaların ihtiyaç duyduğu stratejik dış ticaret rehberliğini sunar. Ekibimizin 25 yılı aşkın deneyimiyle uluslararası cross trade, ihracat-ithalat, uçtan uca dış ticaret operasyonları ve danışmanlık alanında faaliyet gösteriyor, 40'tan fazla ülkede iş ortaklarımıza değer katıyoruz. Deneyimli uzman kadromuz, teknoloji odaklı yaklaşımımız ve geniş global ağımızla, dış ticaret operasyonlarınızı büyütmek ve sürdürülebilir rekabet avantajı sağlamak için yanınızdayız." 
-               data-en="Krico Global & Partners provides the strategic foreign trade guidance that institutions and brands need in rapidly changing global market dynamics. Drawing on over 25 years of team experience, we operate in international cross trade, export-import, end-to-end foreign trade operations and consulting, adding value to our partners in more than 40 countries. With our experienced expert team, technology-driven approach and extensive global network, we are by your side to grow your foreign trade operations and provide sustainable competitive advantage."
-               data-de="Krico Global & Partners bietet die strategische Außenhandelsberatung, die Institutionen und Marken in sich schnell verändernden globalen Marktdynamiken benötigen. Mit über 25 Jahren Teamerfahrung sind wir im internationalen Cross-Trade, Export-Import, End-to-End-Außenhandelsoperationen und in der Beratung tätig und schaffen Mehrwert für unsere Partner in mehr als 40 Ländern."
+               data-tr="Krico Global & Partners, hızla değişen küresel pazar dinamiklerinde kurumların ve markaların ihtiyaç duyduğu stratejik dış ticaret rehberliğini sunar. Ekibimizin 25 yılı aşkın deneyimiyle uluslararası cross trade, ihracat-ithalat, uçtan uca dış ticaret operasyonları ve danışmanlık alanında faaliyet gösteriyor, 40'tan fazla ülkeye uzanan iş ortaklığı ağımızla değer katıyoruz. Deneyimli uzman kadromuz, teknoloji odaklı yaklaşımımız ve geniş global ağımızla, dış ticaret operasyonlarınızı büyütmek ve sürdürülebilir rekabet avantajı sağlamak için yanınızdayız." 
+               data-en="Krico Global & Partners provides the strategic foreign trade guidance that institutions and brands need in rapidly changing global market dynamics. Drawing on over 25 years of team experience, we operate in international cross trade, export-import, end-to-end foreign trade operations and consulting, adding value through a partner network reaching more than 40 countries. With our experienced expert team, technology-driven approach and extensive global network, we are by your side to grow your foreign trade operations and provide sustainable competitive advantage."
+               data-de="Krico Global & Partners bietet die strategische Außenhandelsberatung, die Institutionen und Marken in sich schnell verändernden globalen Marktdynamiken benötigen. Mit über 25 Jahren Teamerfahrung sind wir im internationalen Cross-Trade, Export-Import, End-to-End-Außenhandelsoperationen und in der Beratung tätig und schaffen Mehrwert über ein Partnernetzwerk, das mehr als 40 Länder erreicht."
                data-ar="تقدم Krico Global & Partners التوجيه الاستراتيجي للتجارة الخارجية الذي تحتاجه المؤسسات والعلامات التجارية في ديناميكيات السوق العالمية سريعة التغير. بخبرة فريق تتجاوز 25 عامًا، نعمل في التجارة العابرة للحدود الدولية والاستيراد والتصدير وعمليات التجارة الخارجية الشاملة والاستشارات."
-               data-zh="Krico Global & Partners为快速变化的全球市场动态中的机构和品牌提供战略外贸指导。凭借团队25年以上的经验，我们从事国际转口贸易、进出口、端到端外贸业务和咨询，为40多个国家的合作伙伴创造价值。">
-               Krico Global & Partners, hızla değişen küresel pazar dinamiklerinde kurumların ve markaların ihtiyaç duyduğu stratejik dış ticaret rehberliğini sunar. Ekibimizin 25 yılı aşkın deneyimiyle uluslararası cross trade, ihracat-ithalat, uçtan uca dış ticaret operasyonları ve danışmanlık alanında faaliyet gösteriyor, 40'tan fazla ülkede iş ortaklarımıza değer katıyoruz.
+               data-zh="Krico Global & Partners为快速变化的全球市场动态中的机构和品牌提供战略外贸指导。凭借团队25年以上的经验，我们从事国际转口贸易、进出口、端到端外贸业务和咨询，依托覆盖40多个国家的合作伙伴网络创造价值。">
+               Krico Global & Partners, hızla değişen küresel pazar dinamiklerinde kurumların ve markaların ihtiyaç duyduğu stratejik dış ticaret rehberliğini sunar. Ekibimizin 25 yılı aşkın deneyimiyle uluslararası cross trade, ihracat-ithalat, uçtan uca dış ticaret operasyonları ve danışmanlık alanında faaliyet gösteriyor, 40'tan fazla ülkeye uzanan iş ortaklığı ağımızla değer katıyoruz.
             </p>
 
             <div class="mv-grid">
@@ -570,7 +580,7 @@
             <h2 class="section-title" data-tr="Faaliyetlerimiz ve Uzmanlık Alanlarımız" data-en="Our Operations & Areas of Expertise" data-de="Unsere Tätigkeiten & Fachgebiete" data-ar="عملياتنا ومجالات خبرتنا" data-zh="我们的业务与专业领域">Faaliyetlerimiz ve Uzmanlık Alanlarımız</h2>
 
             <div class="feature-row">
-                <div class="feature-image"><img src="trade%20map.webp" alt="Cross Trade" loading="lazy"></div>
+                <div class="feature-image"><img src="container%20ship%202.jpg" alt="Cross Trade" loading="lazy"></div>
                 <div class="feature-content">
                     <span class="badge" data-tr="Cross Trade" data-en="Cross Trade" data-de="Cross Trade" data-ar="التجارة العابرة" data-zh="转口贸易">Cross Trade</span>
                     <h3 data-tr="Uluslararası Cross Trade" data-en="International Cross Trade" data-de="Internationaler Cross Trade" data-ar="التجارة العابرة للحدود الدولية" data-zh="国际转口贸易">Uluslararası Cross Trade</h3>
@@ -673,12 +683,12 @@
                 <div class="feature-content">
                     <span class="badge" data-tr="Global Ağ" data-en="Global Network" data-de="Globales Netzwerk" data-ar="شبكة عالمية" data-zh="全球网络">Global Ağ</span>
                     <h3 data-tr="Global Tedarik ve İş Ortaklığı Ağı" data-en="Global Sourcing & Partnership Network" data-de="Globales Beschaffungs- und Partnernetzwerk" data-ar="شبكة التوريد والشراكات العالمية" data-zh="全球采购与合作网络">Global Tedarik ve İş Ortaklığı Ağı</h3>
-                    <p data-tr="40'tan fazla ülkede güçlü iş ortaklıklarımız ve doğrulanmış tedarikçi ağımızla, doğru ürünü, doğru fiyatla, doğru zamanda size ulaştırıyoruz." 
-                       data-en="With our strong partnerships and verified supplier network in more than 40 countries, we deliver the right product at the right price at the right time."
-                       data-de="Mit unseren starken Partnerschaften und einem verifizierten Lieferantennetzwerk in mehr als 40 Ländern liefern wir das richtige Produkt zum richtigen Preis zur richtigen Zeit."
-                       data-ar="من خلال شراكاتنا القوية وشبكة الموردين الموثوقة في أكثر من 40 دولة، نوصل المنتج المناسب بالسعر المناسب في الوقت المناسب."
-                       data-zh="凭借我们在40多个国家的强大合作伙伴关系和经过验证的供应商网络，我们在正确的时间以正确的价格提供正确的产品。">
-                       40'tan fazla ülkede güçlü iş ortaklıklarımız ve doğrulanmış tedarikçi ağımızla, doğru ürünü, doğru fiyatla, doğru zamanda size ulaştırıyoruz.</p>
+                    <p data-tr="40'tan fazla ülkeye uzanan iş ortaklığı ve doğrulanmış tedarikçi ağımızla, doğru ürünü, doğru fiyatla, doğru zamanda size ulaştırıyoruz." 
+                       data-en="With our partnerships and verified supplier network reaching more than 40 countries, we deliver the right product at the right price at the right time."
+                       data-de="Mit unseren Partnerschaften und einem verifizierten Lieferantennetzwerk, das mehr als 40 Länder erreicht, liefern wir das richtige Produkt zum richtigen Preis zur richtigen Zeit."
+                       data-ar="من خلال شراكاتنا وشبكة الموردين الموثوقة التي تمتد إلى أكثر من 40 دولة، نوصل المنتج المناسب بالسعر المناسب في الوقت المناسب."
+                       data-zh="凭借我们覆盖40多个国家的合作伙伴关系和经过验证的供应商网络，我们在正确的时间以正确的价格提供正确的产品。">
+                       40'tan fazla ülkeye uzanan iş ortaklığı ve doğrulanmış tedarikçi ağımızla, doğru ürünü, doğru fiyatla, doğru zamanda size ulaştırıyoruz.</p>
                     <ul>
                         <li data-tr="Küresel doğrulanmış tedarikçi ağı" data-en="Global verified supplier network" data-de="Globales verifiziertes Lieferantennetzwerk" data-ar="شبكة موردين عالمية موثوقة" data-zh="全球经过验证的供应商网络">Küresel doğrulanmış tedarikçi ağı</li>
                         <li data-tr="Bölgesel pazar uzmanlığı ve yerel temsil" data-en="Regional market expertise and local representation" data-de="Regionale Marktexpertise und lokale Vertretung" data-ar="خبرة السوق الإقليمية والتمثيل المحلي" data-zh="区域市场专业知识和本地代表">Bölgesel pazar uzmanlığı ve yerel temsil</li>
@@ -1026,9 +1036,9 @@
     <footer>
         <div class="footer-content">
             <div class="footer-col">
-                <img src="krico-logo.jpg" alt="Krico Global & Partners Logo" class="footer-logo" loading="lazy">
+                <img src="krico-logo-hd.webp" alt="Krico Global & Partners Logo" class="footer-logo" loading="lazy">
                 <p data-tr="Lifting Your Business..." data-en="Lifting Your Business..." data-de="Lifting Your Business..." data-ar="Lifting Your Business..." data-zh="Lifting Your Business...">Lifting Your Business...</p>
-                <p data-tr="25 yılı aşkın deneyim, 40+ ülkede güvenilir dış ticaret çözüm ortağınız." data-en="25+ years of experience, your trusted foreign trade solution partner in 40+ countries." data-de="Über 25 Jahre Erfahrung, Ihr vertrauenswürdiger Außenhandelspartner in über 40 Ländern." data-ar="أكثر من 25 عامًا من الخبرة، شريكك الموثوق في التجارة الخارجية في أكثر من 40 دولة." data-zh="25年以上的经验，您在40多个国家值得信赖的外贸解决方案合作伙伴。">25 yılı aşkın deneyim, 40+ ülkede güvenilir dış ticaret çözüm ortağınız.</p>
+                <p data-tr="25 yılı aşkın ekip deneyimi, 40+ ülkeye uzanan ağıyla güvenilir dış ticaret çözüm ortağınız." data-en="25+ years of team experience and a network reaching 40+ countries: your trusted foreign trade solution partner." data-de="Über 25 Jahre Teamerfahrung und ein Netzwerk in über 40 Ländern: Ihr vertrauenswürdiger Außenhandelspartner." data-ar="أكثر من 25 عامًا من خبرة الفريق وشبكة تمتد إلى أكثر من 40 دولة: شريكك الموثوق في التجارة الخارجية." data-zh="团队25年以上经验，网络覆盖40多个国家，您值得信赖的外贸解决方案合作伙伴。">25 yılı aşkın ekip deneyimi, 40+ ülkeye uzanan ağıyla güvenilir dış ticaret çözüm ortağınız.</p>
             </div>
             <div class="footer-col">
                 <h5 data-tr="Hızlı Erişim" data-en="Quick Links" data-de="Schnellzugriff" data-ar="روابط سريعة" data-zh="快速链接">Hızlı Erişim</h5>
@@ -1070,6 +1080,8 @@
 
     <!-- DİL DEĞİŞTİRME SCRIPT -->
     <script>
+        document.querySelectorAll('nav ul a').forEach(function (a) { a.addEventListener('click', function () { var n = document.querySelector('nav'); n.classList.remove('open'); n.querySelector('.nav-toggle').setAttribute('aria-expanded', 'false'); }); });
+
         function setLanguage(lang) {
             // Update all elements with the data attribute for the selected language
             document.querySelectorAll('[data-' + lang + ']').forEach(el => {
